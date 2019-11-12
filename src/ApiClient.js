@@ -14,7 +14,7 @@ export class ApiClient {
     }
 
     onUpdate(update) {
-        console.log(update)
+        // console.log(update)
         const type = update['@type']
         if(typeof this[type] === 'function') {
             this[type](update)
@@ -41,31 +41,45 @@ export class ApiClient {
                 system_version : 'Mac/iOS',
                 application_version : version
             }
-        }).then(console.log).catch(console.log)
+        }).then(console.log).catch(console.error)
     }
 
     authorizationStateWaitEncryptionKey(state) {
         this._client.send({
             '@type' : 'checkDatabaseEncryptionKey',
             encryption_key : ''
-        }).then(console.log).catch(console.log)
+        }).then(console.log).catch(console.error)
     }
 
     authorizationStateWaitPhoneNumber(state) {
         this._client.send({
             '@type' : 'setAuthenticationPhoneNumber',
             phone_number : '+79037307615'
-        }).then(console.log).catch(console.log)
+        }).then(console.log).catch(console.error)
     }
 
     authorizationStateWaitCode(state) {
         this._client.send({
             '@type' : 'checkAuthenticationCode',
             code : prompt('Enter authentication code')
-        }).then(console.log).catch(console.log)
+        }).then(console.log).catch(console.error)
     }
 
     authorizationStateReady(state) {
         console.log('Authorization success!')
+        this._client.send({
+            '@type' : 'getChats',
+            offset_order : '9223372036854775807',
+            limit : 20
+        }).then(response => {
+            if(response['@type'] === 'chats') {
+                Promise.all(response.chat_ids.map(chat_id => {
+                    return this._client.send({
+                        '@type' : 'getChat',
+                        chat_id
+                    })
+                })).then(console.log).catch(console.error)
+            }
+        }).catch(console.error)
     }
 }
