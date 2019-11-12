@@ -1,0 +1,8 @@
+.DS_Store
+info.log
+/.idea/
+/node_modules/
+/td/
+/tmp/
+/npm-debug.log
+/public/build.index.js
