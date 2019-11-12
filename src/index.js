@@ -5,17 +5,9 @@ const WASM_FILE_HASH = 'b4b0d61282108a31908dd6b2dbd7067b'
 const WASM_FILE_NAME = WASM_FILE_HASH + '.wasm'
 const API_ID = '1038348'
 const API_HASH = 'c18fa7085ac8a713f3df8ea921cfb760'
+const wasmUrl = `${ WASM_FILE_NAME }?_sw-precache=${ WASM_FILE_HASH }`
 
-const client = new TdClient({
-    /*logVerbosityLevel : 1,
-    jsLogVerbosityLevel : 3,
-    mode : 'wasm',
-    prefix : 'tdlib',
-    readOnly : false,
-    isBackground : false,
-    useDatabase : false,*/
-    wasmUrl : `${ WASM_FILE_NAME }?_sw-precache=${ WASM_FILE_HASH }`
-})
+const client = new TdClient({ wasmUrl })
 
 client.onUpdate = function(update) {
     console.log('[UPDATE]', update)
@@ -35,6 +27,26 @@ client.onUpdate = function(update) {
                 }
             }).then(console.log).catch(console.log)
         }
+        if(state['@type'] === 'authorizationStateWaitEncryptionKey') {
+            client.send({
+                '@type' : 'checkDatabaseEncryptionKey',
+                encryption_key : ''
+            }).then(console.log).catch(console.log)
+        }
+        if(state['@type'] === 'authorizationStateWaitPhoneNumber') {
+            client.send({
+                '@type' : 'setAuthenticationPhoneNumber',
+                phone_number : '+79037307615'
+            }).then(console.log).catch(console.log)
+        }
+        if(state['@type'] === 'authorizationStateWaitCode') {
+            client.send({
+                '@type' : 'checkAuthenticationCode',
+                code : prompt('Enter authentication code')
+            }).then(console.log).catch(console.log)
+        }
+        if(state['@type'] === 'authorizationStateReady') {
+            console.log('Authorization success!')
+        }
     }
-
 }
