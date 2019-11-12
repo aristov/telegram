@@ -78,7 +78,16 @@ export class ApiClient {
                         '@type' : 'getChat',
                         chat_id
                     })
-                })).then(console.log).catch(console.error)
+                })).then(chats => {
+                    console.log(chats)
+                    this._client.send({
+                        '@type' : 'getChatHistory',
+                        chat_id : chats[0].id,
+                        from_message_id : chats[0].last_message.id,
+                        offset : 0,
+                        limit : 20,
+                    }).then(console.log).catch(console.error)
+                }).catch(console.error)
             }
         }).catch(console.error)
     }
