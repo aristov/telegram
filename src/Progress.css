@@ -1,0 +1,32 @@
+.Progress
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.Progress::before
+{
+    content: '';
+    display: inline-block;
+    padding: 22px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color:
+            transparent
+            transparent
+            #4ea4f6
+            #4ea4f6;
+    vertical-align: middle;
+    animation: Progress 0.8s infinite linear;
+}
+@keyframes Progress
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}

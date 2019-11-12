@@ -66,7 +66,6 @@ export class ApiClient {
     }
 
     authorizationStateReady(state) {
-        console.log('Authorization success!')
         this._client.send({
             '@type' : 'getChats',
             offset_order : '9223372036854775807',

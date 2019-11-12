@@ -1,3 +1,5 @@
-import { ApiClient } from './ApiClient'
+import 'htmlmodule/lib/debug'
+import './HTMLWidget'
+import { Telegram } from './Telegram'
 
-new ApiClient
+new Telegram

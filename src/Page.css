@@ -1,0 +1,18 @@
+html
+{
+    height: 100%;
+}
+.Page
+{
+    font-family: Arial, sans-serif;
+    min-width: 320px;
+    height: 100%;
+    margin: 0;
+    background: #e6ebee;
+}
+.Page > .Inner
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
