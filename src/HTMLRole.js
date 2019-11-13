@@ -38,6 +38,18 @@ export class HTMLRole extends Role {
     }
 
     /**
+     * @param {string} name
+     * @param {string} value
+     */
+    setPropertyFallback(name, value) {
+        const ownerElement = this.ownerElement
+        if(name in ownerElement) {
+            this.ownerElement.setProperty(name, value)
+        }
+        else this.setPropertyMismatch(name, value)
+    }
+
+    /**
      * @param {*} dataset
      */
     set dataset(dataset) {

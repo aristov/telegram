@@ -8,17 +8,23 @@ export class ChatPhoto extends Img
     init(init) {
         super.init(init)
         const photo = init.chat.photo
+        const title = init.chat.title
+        this.textContent = title? title.charAt(0).toUpperCase() : '?'
         if(photo) {
-            const small = photo.small
-            const local = small.local
-            const file_id = small.id
-            if(local.is_downloading_completed) {
-                this.readFile({ file_id })
-            }
-            else if(!local.is_downloading_active && local.can_be_downloaded) {
-                api.send('downloadFile', { file_id, priority : 1 })
-            }
+            this.getPhoto(photo)
             api.on('updateFile', this.onUpdateFile.bind(this))
+        }
+    }
+
+    getPhoto(photo) {
+        const small = photo.small
+        const local = small.local
+        const file_id = small.id
+        if(local.is_downloading_completed) {
+            this.readFile({ file_id })
+        }
+        else if(!local.is_downloading_active && local.can_be_downloaded) {
+            api.send('downloadFile', { file_id, priority : 1 })
         }
     }
 
@@ -35,16 +41,6 @@ export class ChatPhoto extends Img
                this.src = URL.createObjectURL(response.data)
            })
            .catch(console.error)
-    }
-
-    set chat(chat) {
-        const title = chat.title
-        this.textContent = title? title.charAt(0).toUpperCase() : '?'
-        this._chat = chat
-    }
-
-    get chat() {
-        return this._chat
     }
 
     set src(src) {
