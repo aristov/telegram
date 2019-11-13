@@ -1,17 +1,39 @@
 import { Img } from 'ariamodule'
 import { Span } from 'htmlmodule'
+import { api } from './api'
 import './ChatPhoto.css'
 
 export class ChatPhoto extends Img
 {
     init(init) {
         super.init(init)
-        this.app.on('readFile', event => {
-            const photo = this.chat.photo
-            if(photo && event.detail.file.id === photo.small.id) {
-                this.src = URL.createObjectURL(event.detail.data)
+        const photo = init.chat.photo
+        if(photo) {
+            const small = photo.small
+            const local = small.local
+            if(local.is_downloading_completed) {
+                this.readFile({ file_id : small.id })
             }
-        }, this)
+            else if(!local.is_downloading_active && local.can_be_downloaded) {
+                api.downloadFile({ file_id : small.id })
+            }
+            api.addEventListener('updateFile', this.onUpdateFile.bind(this))
+        }
+    }
+
+    onUpdateFile(event) {
+        const file = event.detail.file
+        if(file.id !== this.chat.photo.small.id) return
+        if(!file.local.is_downloading_completed) return
+        this.readFile({ file_id : file.id })
+    }
+
+    readFile({ file_id }) {
+        api.readFile({ file_id })
+           .then(response => {
+               this.src = URL.createObjectURL(response.data)
+           })
+           .catch(console.error)
     }
 
     set chat(chat) {

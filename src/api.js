@@ -1,5 +1,3 @@
-const client = { send : () => {} }
+import { ApiClient } from './ApiClient'
 
-function getRemoteFile(params) {
-    return client.send(Object.assign({ '@type' : this.name }, params))
-}
+export const api = new ApiClient

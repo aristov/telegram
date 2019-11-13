@@ -1,7 +1,7 @@
 import { RoleArticle } from 'ariamodule/lib'
-import './ChatCard.css'
 import { Span } from 'htmlmodule/lib'
 import { ChatPhoto } from './ChatPhoto'
+import './ChatCard.css'
 
 export class ChatCard extends RoleArticle
 {

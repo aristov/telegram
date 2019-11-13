@@ -1,12 +1,13 @@
 import { WindowAssembler } from 'htmlmodule/lib'
-import { ApiClient } from './ApiClient'
+import { api } from './api'
 import { Page } from './Page'
 
 export class Telegram extends WindowAssembler {
     init(init) {
         super.init(init)
-        this._client = new ApiClient
-        new Page({ node : document.body })
+        api.addEventListener('authorizationStateReady', event => {
+            new Page({ node : document.body })
+        })
     }
 }
 
