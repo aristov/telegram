@@ -1,0 +1,3895 @@
+[
+  {
+    "@type": "chat",
+    "id": -1001183097449,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1183097449,
+      "is_channel": false
+    },
+    "title": "Старперы ФН",
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": true,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 182452224,
+      "sender_user_id": 564175851,
+      "chat_id": -1001183097449,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1573668204,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Приезжайте в Тольятти!",
+          "entities": []
+        }
+      }
+    },
+    "order": "6758853470935056558",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 182452224,
+    "last_read_outbox_message_id": 170917888,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 4
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001123560068,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1123560068,
+      "is_channel": true
+    },
+    "title": "Greatness",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 3,
+        "size": 5670,
+        "expected_size": 5670,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATH5tDDgAEAgADfMVi6Bb____c7HiMWYBtLJAZAgABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 5670
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 4,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATH5tDDgAEAwADfMVi6Bb____c7HiMWYBtLJIZAgABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 1719664640,
+      "sender_user_id": 0,
+      "chat_id": -1001123560068,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573662911,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 1,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "#мысли_вслух \n\nЕсли котенок с детства недоедает, то, дорвавшись до миски с кормом, он набьет себе полное пузико. И если насыпать ему еще, он еще раз набьет полное пузико. И будет объедаться до болей в животике до тех пор, пока не поймет, что еды достаточно и нет нужды съедать больше, чем тебе нужно.\n\nА если котенка с детства нормально кормить, то он не будет жадным. Он будет есть столько, сколько необходимо, и оставлять корм на потом.\n\nИменно пример котенка и миски с кормом лучше всего иллюстрирует ситуацию с коррупцией в России. Народ несколько поколений морили таким голодом, что, получив доступ к кормушке, мы начинаем набивать полные животы. Десять дач на стопятьсот квадратных километров, двадцать пять яхт, три самолета и кортеж из ста машин — вот как выглядит котенок, у которого болит животик.\n\nЧтобы успокоиться, котенку надо пожить в достатке буквально пару кошачьих лет. А стране — пару цивилизационных лет. В человеческих годах такие вещи, увы, не измеряются.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 12,
+              "type": {
+                "@type": "textEntityTypeHashtag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6758830737673160296",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 3,
+    "last_read_inbox_message_id": 1716518912,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 5
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001315078272,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1315078272,
+      "is_channel": true
+    },
+    "title": "Артемий Лебедев",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 5,
+        "size": 8992,
+        "expected_size": 8992,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATRz85DwAEAgADgG_43Bb___-yL3N1CTvfKekRBQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 8992
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 6,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATRz85DwAEAwADgG_43Bb___-yL3N1CTvfKesRBQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 2526019584,
+      "sender_user_id": 0,
+      "chat_id": -1001315078272,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573661112,
+      "edit_date": 1573680837,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 48612,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Главный секрет управления\n\nВ управлении булочной, дизайн-студией, атомной электростанцией или городом много общего. \n\nЕсть одна важнейшая для устойчивого и плодотворного развития вещь - умение вовремя послать нахуй.\n\nКонечно, нужно еще иметь план действий, нужно прислушиваться к общественному мнению. Но всегда, во все времена, в любой ситуации нужно уметь послать нахуй тех, кто этого заслуживает.\n\nКаждый раз, когда мудаки вовремя посылаются нахуй, мир становится лучше.\n\nНужно вовремя послать нахуй коллег, которые в приступе корпоративной тупости пришли с шапкой собирать денег на подарок старшему менеджеру. Нужно послать нахуй инициативную девочку, которая предложила штрафовать всех опоздавших. Нужно послать нахуй депутатов, которые предложили принять очередной мудацкий закон. \n\nУправление - это искусство посылания нахуй.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 25,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            }
+          ]
+        }
+      },
+      "reply_markup": {
+        "@type": "replyMarkupInlineKeyboard",
+        "rows": [
+          [
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "🤘 3.4K",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8w"
+              }
+            },
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "👎 58",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8x"
+              }
+            }
+          ],
+          [
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "Open Comments",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeUrl",
+                "url": "https://comments.bot/thread/H82KcMcf"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    "order": "6758823011026995561",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 2526019584,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 6
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001279115440,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1279115440,
+      "is_channel": true
+    },
+    "title": "ТОПЛЕС",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 10,
+        "size": 4698,
+        "expected_size": 4698,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATMlY5DwAEAgADUC8d3xb___-sVHRfmtZGkQO3BAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 4698
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 11,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATMlY5DwAEAwADUC8d3xb___-sVHRfmtZGkQW3BAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 1071644672,
+      "sender_user_id": 0,
+      "chat_id": -1001279115440,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573658058,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 1,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messagePhoto",
+        "photo": {
+          "@type": "photo",
+          "has_stickers": false,
+          "minithumbnail": {
+            "@type": "minithumbnail",
+            "width": 27,
+            "height": 40,
+            "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAbACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwAJ2gk9Kj3sfb+dJM2XC9hTRipKHAnP3jmn+Y49xUffgZpeh560AWEbeuRRUURKy/WiiwDbhORIPxqMHIq2euKqTgJIQvFADgaX9PeowTT4vmkAPNMCRAc5/KinH7wooEf/2Q=="
+          },
+          "sizes": [
+            {
+              "@type": "photoSize",
+              "type": "m",
+              "photo": {
+                "@type": "file",
+                "id": 7,
+                "size": 30336,
+                "expected_size": 30336,
+                "local": {
+                  "@type": "localFile",
+                  "path": "",
+                  "can_be_downloaded": true,
+                  "can_be_deleted": false,
+                  "is_downloading_active": false,
+                  "is_downloading_completed": false,
+                  "download_offset": 0,
+                  "downloaded_prefix_size": 0,
+                  "downloaded_size": 0
+                },
+                "remote": {
+                  "@type": "remoteFile",
+                  "id": "AgADAgADOqwxGy3EYEr0r_7mAyQQuy7ktw8ABAEAAwIAA20AA1C3BgABFgQ",
+                  "is_uploading_active": false,
+                  "is_uploading_completed": true,
+                  "uploaded_size": 30336
+                }
+              },
+              "width": 320,
+              "height": 214
+            },
+            {
+              "@type": "photoSize",
+              "type": "x",
+              "photo": {
+                "@type": "file",
+                "id": 8,
+                "size": 198704,
+                "expected_size": 198704,
+                "local": {
+                  "@type": "localFile",
+                  "path": "",
+                  "can_be_downloaded": true,
+                  "can_be_deleted": false,
+                  "is_downloading_active": false,
+                  "is_downloading_completed": false,
+                  "download_offset": 0,
+                  "downloaded_prefix_size": 0,
+                  "downloaded_size": 0
+                },
+                "remote": {
+                  "@type": "remoteFile",
+                  "id": "AgADAgADOqwxGy3EYEr0r_7mAyQQuy7ktw8ABAEAAwIAA3gAA1G3BgABFgQ",
+                  "is_uploading_active": false,
+                  "is_uploading_completed": true,
+                  "uploaded_size": 198704
+                }
+              },
+              "width": 800,
+              "height": 534
+            },
+            {
+              "@type": "photoSize",
+              "type": "y",
+              "photo": {
+                "@type": "file",
+                "id": 9,
+                "size": 263983,
+                "expected_size": 263983,
+                "local": {
+                  "@type": "localFile",
+                  "path": "",
+                  "can_be_downloaded": true,
+                  "can_be_deleted": false,
+                  "is_downloading_active": false,
+                  "is_downloading_completed": false,
+                  "download_offset": 0,
+                  "downloaded_prefix_size": 0,
+                  "downloaded_size": 0
+                },
+                "remote": {
+                  "@type": "remoteFile",
+                  "id": "AgADAgADOqwxGy3EYEr0r_7mAyQQuy7ktw8ABAEAAwIAA3kAA0-3BgABFgQ",
+                  "is_uploading_active": false,
+                  "is_uploading_completed": true,
+                  "uploaded_size": 263983
+                }
+              },
+              "width": 1024,
+              "height": 683
+            }
+          ]
+        },
+        "caption": {
+          "@type": "formattedText",
+          "text": "Вот так интересность. На канализационных люках в Оклахоме нарисована небольшая карта и синяя точка «вы находитесь здесь». Не очень удобный навигатор, зато необычный.\n\nЕще внизу есть надпись A LAND RUN CITY. Это отсылка к земельным гонкам 22 апреля 1889 года, когда 8 тысяч квадратных километров земли распределялись между гражданами бесплатно по самому простому и первобытному принципу «кто первый добежит, того и место». Да, именно так город Оклахома и появился.\n\n#топлес_интересное",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 465,
+              "length": 18,
+              "type": {
+                "@type": "textEntityTypeHashtag"
+              }
+            }
+          ]
+        },
+        "is_secret": false
+      }
+    },
+    "order": "6758809894196872190",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 4,
+    "last_read_inbox_message_id": 1066401792,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 1067450368,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 7
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001465759718,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1465759718,
+      "is_channel": true
+    },
+    "title": "Тебя обманули",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 12,
+        "size": 9057,
+        "expected_size": 9057,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATKWZfDwAEAgADGjj90xb____SePyGrCFTvK_ABQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 9057
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 13,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATKWZfDwAEAwADGjj90xb____SePyGrCFTvLHABQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 271581184,
+      "sender_user_id": 0,
+      "chat_id": -1001465759718,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573657511,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 1,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Почему для бойца американских коммандос любой из нас — смешная и лёгкая мишень?\n\n20 здоровых мужиков вывозят в поле затемно и приказывают 72 часа копать траншею без сна, воды и еды. Из колонок как резная орёт Рианна, а в глаза лупит стробоскоп. При малейшей попытке уйти в прострацию — мощный удар током.\n\nЧто происходит? Так элитный спецназ ЦРУ открывает доступ источнику энергии, скрытому внутри каждого из нас.\n\nНо самое главное — они избавляются от одного чудовищного эффекта…\n\nЭто тот же самый эффект, который заставляет вас ползти на нелюбимую работу, жить с нелюбимыми людьми, ходить на митинги, исходить слюнями на мерседес, депрессовать, ненавидеть понедельники, мечтать о пятничном пивасике и засыпать по 2 часа из-за нескончаемой вусмерть бредовой болтовни в вашей голове.\n\nХотите узнать, о каком эффекте идёт речь и как избавиться от него? Подписывайтесь на убийственный t.me/freeman365.\n\nНикакого копирования, рекламы и жвачки, только жёсткий авторский контент:\n\nПрощай, Дудь — ядерное очищение информационного пространства.\n\nТехасский рейнджер — во что начали превращаться «мужчины», начиная с 20 века?\n\nСобачка Павлова — немедленно избавьтесь от всех привычек вообще.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 81,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 415,
+              "length": 67,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 486,
+              "length": 19,
+              "type": {
+                "@type": "textEntityTypeItalic"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 883,
+              "length": 15,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 976,
+              "length": 12,
+              "type": {
+                "@type": "textEntityTypeTextUrl",
+                "url": "https://t.me/freeman365/313"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1039,
+              "length": 18,
+              "type": {
+                "@type": "textEntityTypeTextUrl",
+                "url": "https://t.me/freeman365/334"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1118,
+              "length": 15,
+              "type": {
+                "@type": "textEntityTypeTextUrl",
+                "url": "https://t.me/freeman365/328"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6758807544849760515",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 2,
+    "last_read_inbox_message_id": 269484032,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 65011712,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 8
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001075200571,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1075200571,
+      "is_channel": true
+    },
+    "title": "Радио Адонеж",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 14,
+        "size": 10331,
+        "expected_size": 10331,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATltmBDQAEAgADxa1E6xb____tw7xg3fQYxDVAAQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 10331
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 15,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATltmBDQAEAwADxa1E6xb____tw7xg3fQYxDdAAQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 1802502144,
+      "sender_user_id": 0,
+      "chat_id": -1001075200571,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573640143,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 4309,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "В ЮАР начато производство джина из слоновьего навоза",
+          "entities": []
+        }
+      }
+    },
+    "order": "6758732949857765047",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 1802502144,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 9
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001047166746,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1047166746,
+      "is_channel": true
+    },
+    "title": "Сталингулаг",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 16,
+        "size": 8628,
+        "expected_size": 8628,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATCqrnLwAEAgAD5nDw7Bb___8AAdXFnINt-PFDaQACFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 8628
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 17,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATCqrnLwAEAwAD5nDw7Bb___8AAdXFnINt-PFFaQACFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 1223688192,
+      "sender_user_id": 0,
+      "chat_id": -1001047166746,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573633382,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 38171,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Прикладная философия, ретивые управленцы, продуманная инфраструктура и беспощадная духовность, а также очередное запасное дно в богоугодном выпуске вестника оптимизма на моем канале: https://youtu.be/z-J-yQ9T4QU",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 183,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            }
+          ]
+        },
+        "web_page": {
+          "@type": "webPage",
+          "url": "https://youtu.be/z-J-yQ9T4QU",
+          "display_url": "youtube.com/watch?v=z-J-yQ9T4QU",
+          "type": "video",
+          "site_name": "YouTube",
+          "title": "Ад в школах и в армии России | Сталингулаг",
+          "description": "Резкие повороты судьбы наших граждан и страны в целом на примерах пожарных, солдат в армии, депутатов, попов, футболистов и «чикена макнаггетса». В Хакасии н...",
+          "photo": {
+            "@type": "photo",
+            "has_stickers": false,
+            "minithumbnail": {
+              "@type": "minithumbnail",
+              "width": 23,
+              "height": 40,
+              "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAXACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBwleT5eAxHBI4qN451J8wDPWrSweSVXG7HpzUc0qwuRIQABgYOT+VYO9tDoi7bjDZI0IcvIJT2XoD9KhVZBhGGXBx9alfUcbHEbhcYBI4NRLc+cwYYyvOCa0ktEZxk7uxaiaW3dQ6hRyeOc9KKLm6jKJzsOeQaKTclsUuV/EI5kCOI2G8KSKzZ2ZvmmDM/GWLUUUqWxNR6jFCyyhI4zk9i1WWsgIiygZ9dxooqpNppCSTVy7bwFEVGCnAwT+tFFFaOKEj/2Q=="
+            },
+            "sizes": [
+              {
+                "@type": "photoSize",
+                "type": "m",
+                "photo": {
+                  "@type": "file",
+                  "id": 18,
+                  "size": 25522,
+                  "expected_size": 25522,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADTKoxG1slXVIRfXz020ny6xiXoBsABAEAAwIAA20AA2vKAwABFgQ",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 25522
+                  }
+                },
+                "width": 320,
+                "height": 180
+              },
+              {
+                "@type": "photoSize",
+                "type": "x",
+                "photo": {
+                  "@type": "file",
+                  "id": 19,
+                  "size": 102160,
+                  "expected_size": 102160,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADTKoxG1slXVIRfXz020ny6xiXoBsABAEAAwIAA3gAA2zKAwABFgQ",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 102160
+                  }
+                },
+                "width": 800,
+                "height": 450
+              },
+              {
+                "@type": "photoSize",
+                "type": "y",
+                "photo": {
+                  "@type": "file",
+                  "id": 20,
+                  "size": 160776,
+                  "expected_size": 160776,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADTKoxG1slXVIRfXz020ny6xiXoBsABAEAAwIAA3kAA23KAwABFgQ",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 160776
+                  }
+                },
+                "width": 1280,
+                "height": 720
+              }
+            ]
+          },
+          "embed_url": "https://www.youtube.com/embed/z-J-yQ9T4QU",
+          "embed_type": "iframe",
+          "embed_width": 1280,
+          "embed_height": 720,
+          "duration": 0,
+          "author": "",
+          "instant_view_version": 0
+        }
+      }
+    },
+    "order": "6758703911583876239",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 1223688192,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 10
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001150229126,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1150229126,
+      "is_channel": true
+    },
+    "title": "Изумрудный город",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 21,
+        "size": 13874,
+        "expected_size": 13874,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATrLi3DgAEAgADetXL5hb___9Jkw78k-xX5ZO3BAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 13874
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 22,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATrLi3DgAEAwADetXL5hb___9Jkw78k-xX5ZW3BAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 181403648,
+      "sender_user_id": 0,
+      "chat_id": -1001150229126,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573631657,
+      "edit_date": 1573676875,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 515,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Группы\n\nДля того, чтобы чувствовать себя уверенней, защищённее, иметь больше возможностей в некоторых случаях и находиться в комфортной для общения среде, люди сбиваются в группы. Группы бывают разными: по интересам, по мировоззрению, по интеллектуальным способностям или по социальному статусу. Вариаций бесконечность. Так как человек социальное существо, одному ему выжить и добиться своих целей, в большинство случаев, намного труднее, чем если бы он находился в группе людей с такими же целями. Кроме того, есть психологические потребности в общении и прочее. \n\nЛюбые объединения определяют не только одним параметром. К примеру, группа может объединять в себе людей по месту проживанию и интеллектуальным способностям, а может по мировоззрению и финансовым. По этому принципу создаются политические партии, религиозные и другие объединения, да даже кружки по интересам. Просто похожие люди сбиваются вместе, чтобы развиваться, обеспечивать себе безопасность, достигать целей. У групп появляются свои лидеры, лица, которые представляют эту группу обществу. В основном люди составляют свое мнение о группе либо по ее лидерам и особо активным членам, либо же по большинству, находящемуся в ней.\n\nКогда вы судите о каких-то значимых группах, первый вариант оценки гораздо хуже, потому что так вы составляете мнение о тысячах людей по поведению максимум десятка. Так, к примеру, благодаря нескольким ярким личностям, негативную славу обрели феминстики и вегетарианцы. Все ли люди из этих групп такие же ебанутые, как те яркие представители, о которых мы знаем? Конечно же нет, но мнение складывается именно такое, и в итоге фемки и веганы имеют дурную славу. \n\nСмысл в том, что идиоты, фанатики и прочие \"лидеры\" могут очернить что угодно. Не стоит по ним судить о всех, кто по каким-то причинам принадлежит этой группе.\n\nА вот и ссылка на нашу группу, если кому-то интересно – @IzumrudnyGorod_Chat",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 6,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1878,
+              "length": 20,
+              "type": {
+                "@type": "textEntityTypeMention"
+              }
+            }
+          ]
+        }
+      },
+      "reply_markup": {
+        "@type": "replyMarkupInlineKeyboard",
+        "rows": [
+          [
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "👍 20",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8w"
+              }
+            },
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "👎",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8x"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    "order": "6758696502765289645",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 1,
+    "last_read_inbox_message_id": 180355072,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 141557760,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 11
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001405581834,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1405581834,
+      "is_channel": true
+    },
+    "title": "Художесть",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 23,
+        "size": 11691,
+        "expected_size": 11691,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATpQABCzAABAIAA_Z1k9cW____T-cVaihJRke-egQAARYE",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 11691
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 24,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATpQABCzAABAMAA_Z1k9cW____T-cVaihJRkfAegQAARYE",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 299892736,
+      "sender_user_id": 0,
+      "chat_id": -1001405581834,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573606811,
+      "edit_date": 1573642957,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 215,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "​​Мне всегда казалось, что я очень осознанный. Вот я хочу поднять руку - я поднимаю ее. Хочу пойти направо - иду направо. Но потом я узнал в интернете, что есть более осознанные люди. Есть такие, которые умеют как-то иначе медитировать, например. Они там видят всякие шамбалы и гексогены, а я сколько ни пытался, никогда ничего такого не видел. \nПотом я начал замечать в интернете людей, которые говорили что-то вроде: «чтобы быть счастливым,  нужно просто отказаться от осуждения! И все!»\nКак это? Что надо делать для этого? Куда нажать? Что это вообще, блять, такое? \nДальше - люди, которые отказывали себе в разном - нет молоку,  или там мясу, нет видеоиграм, нет семье потому чо «жизнь ради искуства», нет карьере ибо «это для лахов», нет телкам, ведь. ТНН. И у всех одна мантра на повторе:\n«Да, люди просыпаются, потому что начали (вставить из списка)!»\n\nКороче. Все это - полная хуйня. Нет никого более «проснувшегося», чем ты.\nНет никого, более «осознанного» чем ты.\nНет никого (и никогда не будет) более просвещенного, чем ты.\n\nЛюдям абы хвосты распушить. А по какому поводу - уже не важно. Что-то вроде павлинов с синдромом дауна.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 2,
+              "type": {
+                "@type": "textEntityTypeTextUrl",
+                "url": "https://telegra.ph/file/83b9794db5981931f6e31.jpg"
+              }
+            }
+          ]
+        },
+        "web_page": {
+          "@type": "webPage",
+          "url": "https://telegra.ph/file/83b9794db5981931f6e31.jpg",
+          "display_url": "telegra.ph/file/83b9794db5981931f6e31.jpg",
+          "type": "photo",
+          "site_name": "",
+          "title": "",
+          "description": "",
+          "photo": {
+            "@type": "photo",
+            "has_stickers": false,
+            "minithumbnail": {
+              "@type": "minithumbnail",
+              "width": 29,
+              "height": 40,
+              "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAdACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCAS7Y3AH8eacku75pAcbhyOlVsmrtsI4gPMTcSOeKBkcz73yDkdh6U63d1cMBnHcCo5diyMF+6DxRFMyZx0pCNTduc7jtYj7vrRWfvLnzmJJ+tFMCtF8zBNuc1ZBcfIMkHjFW7S1jWLd/ERndTHVC+NvJ7596AuUZnDSsfwpgNPljEcsiddp600HpxQAZwvFFBOOAOtFAH/9k="
+            },
+            "sizes": [
+              {
+                "@type": "photoSize",
+                "type": "m",
+                "photo": {
+                  "@type": "file",
+                  "id": 25,
+                  "size": 15750,
+                  "expected_size": 15750,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAAD6KkxG9IjTVKCfDxSTrdxL6R8qBsABAEAAwIAA20AA_EsBAABFgQ",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 15750
+                  }
+                },
+                "width": 320,
+                "height": 230
+              },
+              {
+                "@type": "photoSize",
+                "type": "x",
+                "photo": {
+                  "@type": "file",
+                  "id": 26,
+                  "size": 43307,
+                  "expected_size": 43307,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAAD6KkxG9IjTVKCfDxSTrdxL6R8qBsABAEAAwIAA3gAA_IsBAABFgQ",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 43307
+                  }
+                },
+                "width": 581,
+                "height": 418
+              }
+            ]
+          },
+          "embed_url": "",
+          "embed_type": "",
+          "embed_width": 0,
+          "embed_height": 0,
+          "duration": 0,
+          "author": "",
+          "instant_view_version": 0
+        }
+      },
+      "reply_markup": {
+        "@type": "replyMarkupInlineKeyboard",
+        "rows": [
+          [
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "🧟‍♀️ 12",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8w"
+              }
+            },
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "🦹‍♀️ 5",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeCallback",
+                "data": "c2VuZF9yZWFjdGlvbl8x"
+              }
+            }
+          ],
+          [
+            {
+              "@type": "inlineKeyboardButton",
+              "text": "Open Comments",
+              "type": {
+                "@type": "inlineKeyboardButtonTypeUrl",
+                "url": "https://comments.bot/thread/e938A-bR"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    "order": "6758589790007853342",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 2,
+    "last_read_inbox_message_id": 297795584,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 12
+    }
+  },
+  {
+    "@type": "chat",
+    "id": 777000,
+    "type": {
+      "@type": "chatTypePrivate",
+      "user_id": 777000
+    },
+    "title": "Telegram",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 27,
+        "size": 2818,
+        "expected_size": 2818,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQADr6cxGyjbCwAJRPdrBgAEAgADKNsLAAXIBLO8o5f8naozAAIWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 2818
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 28,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQADr6cxGyjbCwAJRPdrBgAEAwADKNsLAAXIBLO8o5f8nawzAAIWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 3923771402,
+      "sender_user_id": 777000,
+      "chat_id": 777000,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": true,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1573598763,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "New login. Dear Vyacheslav, we detected a login into your account from a new device on 12/11/2019 at 22:46:03 UTC.\n\nDevice: Web\nLocation: Moscow, Russia (IP = 2a02:2168:93a8:2700:f590:e019:27f8:348a)\n\nIf this wasn't you, you can go to Settings > Privacy and Security > Active Sessions and terminate that session.\n\nIf you think that somebody logged in to your account against your will, you can enable Two-Step Verification in Privacy and Security settings.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 10,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 235,
+              "length": 49,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 401,
+              "length": 21,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6758555224111058590",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": true,
+    "can_be_reported": false,
+    "default_disable_notification": false,
+    "unread_count": 1,
+    "last_read_inbox_message_id": 3923771392,
+    "last_read_outbox_message_id": 0,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 13
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001115234506,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1115234506,
+      "is_channel": true
+    },
+    "title": "english yopta",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 29,
+        "size": 8792,
+        "expected_size": 8792,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgAT3d63DgAEAgADNs_h6Bb___-4U1B61AkaKaQqAQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 8792
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 30,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgAT3d63DgAEAwADNs_h6Bb___-4U1B61AkaKaYqAQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 1034944512,
+      "sender_user_id": 0,
+      "chat_id": -1001115234506,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573579220,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 2930,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Алло, бизнесмены есть среди вас? Топ-менеджеры? Руководители? HR-гуру? Продаваны?\n\nПодвезу сегодня мальца словечек из мира людей в костюмах, но не охранников.\n\nИнфа пригодится тем, кто хочет завести трактор и устроиться в забугорную контору. Запоминайте.\n\n📌 DOE, depends on experience. Обратите внимание, что предлог on, а не of.\n\nЕсли эти три буквы есть в описании вакансии, то сразу прикидывайте хер к носу, насколько на самом деле шарите в этой сфере. Ибо зарплата будет зависеть от опыта в первую очередь. \n\n📌 ETA, estimated time of arrival\n\nГодится при общении со службами доставки, курьерами, поставщиками и вот этим всем. С курьерами яндекс.еды, наверное, использовать не стоит. А ваще везде в английском мире это понимают и применяют. Если с амазона или ибэя че-то будете брать, то обращайте внимание на ETA, чтобы не наебали.\n\n📌 MSRP, manufacturer's suggested retail price\n\nТо, что у нас называется РРЦ, рекомендованная розничная цена. Мы уыские не обманываем дуук дуука (С). Но у нас всем частенько похуй на такие вещи, лишь бы продать.\n\n📌 HQ, headquarters\n\nГоловной офис, так сказатб. У больших компаний дохера офисов может быть, но твой сложный и срочный вопрос, естественно, решат только в HQ, который обязательно находится на другом конце города в лютейших ебенях.\n\n📌 Ну и напоследок ООО. Неа, это не наше OOO, это их out of office.\n\nЕсли на втруннем портале компании видишь, что нужный тебе сотрудник OOO, то все, тю-тю. Можешь дальше листать мемы и смотреть видосики на ютуби.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 258,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 516,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 841,
+              "length": 43,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1054,
+              "length": 16,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1303,
+              "length": 48,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6758471287565190107",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 1034944512,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 14
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001315154741,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1315154741,
+      "is_channel": true
+    },
+    "title": "английский для дебилов",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 31,
+        "size": 11045,
+        "expected_size": 11045,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATVvUDDgAEAgADy0T33Bb___80RCNWvDY8cc4FAgABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 11045
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 32,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATVvUDDgAEAwADy0T33Bb___80RCNWvDY8cdAFAgABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 557842432,
+      "sender_user_id": 0,
+      "chat_id": -1001315154741,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573574317,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 7121,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "привет! сегодня рассмотрим классический le proeb всех начинающих. запомните плиз это один раз и больше не позорьтесь. \n\nкороче, как правильно перевести такой вопрос: как ты думаешь? how do you think или what do you think. \n\nпервый вариант даже не рассматривайте, потому что how - вопрос к образу действия. то есть как (каким образом) думаешь? - мозгом/жепой/чем угодно. единственный правильный вариант - what do you think. \n \nпереведём с русского на английский, чтоб закрепить: \nХотим заказать тайской еды. Как ты думаешь? - We want to order thai food. What do you think?",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 166,
+              "length": 15,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 274,
+              "length": 3,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 404,
+              "length": 17,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6758450229340537364",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 1,
+    "last_read_inbox_message_id": 556793856,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 527433728,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 15
+    }
+  },
+  {
+    "@type": "chat",
+    "id": 1016376427,
+    "type": {
+      "@type": "chatTypePrivate",
+      "user_id": 1016376427
+    },
+    "title": "ВасяСпесивцев",
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 3920625664,
+      "sender_user_id": 1016376427,
+      "chat_id": 1016376427,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": false,
+      "can_be_deleted_only_for_self": true,
+      "can_be_deleted_for_all_users": true,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1573511564,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageCall",
+        "discard_reason": {
+          "@type": "callDiscardReasonHungUp"
+        },
+        "duration": 918
+      }
+    },
+    "order": "6758180707257814683",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": true,
+    "can_be_reported": false,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 3920625664,
+    "last_read_outbox_message_id": 3896508416,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 16
+    }
+  },
+  {
+    "@type": "chat",
+    "id": 703883881,
+    "type": {
+      "@type": "chatTypePrivate",
+      "user_id": 703883881
+    },
+    "title": "Антон Аверкин",
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 3917479936,
+      "sender_user_id": 703883881,
+      "chat_id": 703883881,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": false,
+      "can_be_deleted_only_for_self": true,
+      "can_be_deleted_for_all_users": true,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1573424657,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageContactRegistered"
+      }
+    },
+    "order": "6757807444535021208",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": true,
+    "can_be_reported": false,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 3917479936,
+    "last_read_outbox_message_id": 0,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 17
+    }
+  },
+  {
+    "@type": "chat",
+    "id": 47526527,
+    "type": {
+      "@type": "chatTypePrivate",
+      "user_id": 47526527
+    },
+    "title": "Красен",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 35,
+        "size": 12826,
+        "expected_size": 12826,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgADRqkxG38y1QIACCk-Sw0ABAIAA38y1QIABNnL2uLsVn0uKZ8KAAEWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 12826
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 36,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgADRqkxG38y1QIACCk-Sw0ABAMAA38y1QIABNnL2uLsVn0uK58KAAEWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 3914334208,
+      "sender_user_id": 403947091,
+      "chat_id": 47526527,
+      "is_outgoing": true,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": true,
+      "can_be_deleted_for_all_users": true,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1573316213,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "в его компании я очень часто чувствую себя \"братишкой\")",
+          "entities": []
+        }
+      }
+    },
+    "order": "6757341681101573781",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": true,
+    "can_be_reported": false,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 3912237056,
+    "last_read_outbox_message_id": 3914334208,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 18
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001168086467,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1168086467,
+      "is_channel": true
+    },
+    "title": "Обещаю себе...",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 37,
+        "size": 7956,
+        "expected_size": 7956,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATBty3DgAEAgADPVq75Rb____SkbcswzMbRYleBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 7956
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 38,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATBty3DgAEAwADPVq75Rb____SkbcswzMbRYteBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 381681664,
+      "sender_user_id": 0,
+      "chat_id": -1001168086467,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573161970,
+      "edit_date": 1573161992,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 261,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "научиться ценить каждый сегодняшний день, как величайший дар.",
+          "entities": []
+        }
+      }
+    },
+    "order": "6756679212460933484",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 381681664,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 19
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001429899803,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1429899803,
+      "is_channel": true
+    },
+    "title": "Уже музыканты🤟",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 39,
+        "size": 10372,
+        "expected_size": 10372,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATUYAIDgAEAgAD5WUg1hb____Spbb-d0-V7xnRBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 10372
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 40,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATUYAIDgAEAwAD5WUg1hb____Spbb-d0-V7xvRBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 23068672,
+      "sender_user_id": 0,
+      "chat_id": -1001429899803,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573105551,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 15,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "Повесили в ВК голосовалку про следующий концерт. Кто ещё не высказался велкоме😜🤘🎸🎤🔥❤️",
+          "entities": []
+        }
+      }
+    },
+    "order": "6756436894701060118",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 23068672,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": false,
+      "show_preview": true,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 20
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001038976893,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1038976893,
+      "is_channel": true
+    },
+    "title": "Telegram Contests",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 41,
+        "size": 12598,
+        "expected_size": 12598,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATKLnQLwAEAgADg2ht7Rb___-PLEkKs0O_QQABIAEAARYE",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 12598
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 42,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAQATKLnQLwAEAwADg2ht7Rb___-PLEkKs0O_QQIgAQABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 126877696,
+      "sender_user_id": 0,
+      "chat_id": -1001038976893,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1573050004,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 115223,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "1) contest.com/animated-stickers/entry675\nt.me/addstickers/IrinkaGirl\n2) contest.com/animated-stickers/entry505\nt.me/addstickers/ChummyAlien\n3) contest.com/animated-stickers/entry571\nt.me/addstickers/CuteBrain\n4) contest.com/animated-stickers/entry442\nt.me/addstickers/Apollon4455\n5) contest.com/animated-stickers/entry471\nt.me/addstickers/Caterpilly\n6) contest.com/animated-stickers/entry650\nt.me/addstickers/grumpy_tiger\n7) contest.com/animated-stickers/entry460\nt.me/addstickers/animaxolotl\n8) contest.com/animated-stickers/entry510\nt.me/addstickers/Angry_look\n9) contest.com/animated-stickers/entry541\nt.me/addstickers/Spacewalkmoods\n10) contest.com/animated-stickers/entry469\nt.me/addstickers/KariSticker\n11) contest.com/animated-stickers/entry523\nt.me/addstickers/HelloweenTrick\n12) contest.com/animated-stickers/entry575\nt.me/addstickers/PancakeShibaInu\n13) contest.com/animated-stickers/entry516\nt.me/addstickers/QueenieKitty\n14) contest.com/animated-stickers/entry488\nt.me/addstickers/paggy_the_grebe\n15) contest.com/animated-stickers/entry492\nt.me/addstickers/TheCheshireOne\n16) contest.com/animated-stickers/entry607\nt.me/addstickers/cat_Teftel_animated\n17) contest.com/animated-stickers/entry479\nt.me/addstickers/cat_vasyan\n18)contest.com/animated-stickers/entry468\nt.me/addstickers/BarrryBear\n19) contest.com/animated-stickers/entry580\nt.me/addstickers/FitSweet\n20) contest.com/animated-stickers/entry443\nt.me/addstickers/skullskeleton\n21) contest.com/animated-stickers/entry625\nt.me/addstickers/AgriMony\n22) contest.com/animated-stickers/entry628\nt.me/addstickers/pangolinpeter\n23) contest.com/animated-stickers/entry478\nt.me/addstickers/friedrichanimdemo\n24) contest.com/animated-stickers/entry550\nt.me/addstickers/GentleSnails\n25) contest.com/animated-stickers/entry591\nt.me/addstickers/payotecactus\n26) contest.com/animated-stickers/entry620\nt.me/addstickers/Birdgie\n27) contest.com/animated-stickers/entry490\nt.me/addstickers/Pchelkina\n28) contest.com/animated-stickers/entry584\nt.me/addstickers/Christmasball\n29) contest.com/animated-stickers/entry674\nt.me/addstickers/KlevDY\n30) contest.com/animated-stickers/entry512\nt.me/addstickers/Lennypigginson\n31) contest.com/animated-stickers/entry623\nt.me/addstickers/funnymarshmallow\n32) contest.com/animated-stickers/entry569\nt.me/addstickers/MountainSheep\n33) contest.com/animated-stickers/entry694\nt.me/addstickers/ShoebillStork\n34) contest.com/animated-stickers/entry579\nt.me/addstickers/dogturbo\n35) contest.com/animated-stickers/entry982\nt.me/addstickers/StickySquares\n36) contest.com/animated-stickers/entry448\nt.me/addstickers/bubocat\n37) contest.com/animated-stickers/entry640\nt.me/addstickers/Stickersbystastaa\n38) contest.com/animated-stickers/entry680\nt.me/addstickers/PokyTibetanFox\n39) contest.com/animated-stickers/entry423\nt.me/addstickers/text_animated\n40) contest.com/animated-stickers/entry472\nt.me/addstickers/Pink_Bella\n\nCongratulations! The winners will soon receive further details from a verified Telegram account.",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 3,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 42,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 73,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 112,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 144,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 183,
+              "length": 26,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 213,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 252,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 284,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 323,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 354,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 393,
+              "length": 29,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 426,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 465,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 497,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 536,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 567,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 606,
+              "length": 31,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 642,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 681,
+              "length": 28,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 714,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 753,
+              "length": 31,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 789,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 828,
+              "length": 32,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 865,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 904,
+              "length": 29,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 938,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 977,
+              "length": 32,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1014,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1053,
+              "length": 31,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1089,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1128,
+              "length": 36,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1169,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1208,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1239,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1278,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1310,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1349,
+              "length": 25,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1379,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1418,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1453,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1492,
+              "length": 25,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1522,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1561,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1596,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1635,
+              "length": 34,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1674,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1713,
+              "length": 29,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1747,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1786,
+              "length": 29,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1820,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1859,
+              "length": 24,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1888,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1927,
+              "length": 26,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1958,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 1997,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2032,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2071,
+              "length": 23,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2099,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2138,
+              "length": 31,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2174,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2213,
+              "length": 33,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2251,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2290,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2325,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2364,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2399,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2438,
+              "length": 25,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2468,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2507,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2542,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2581,
+              "length": 24,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2610,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2649,
+              "length": 34,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2688,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2727,
+              "length": 31,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2763,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2802,
+              "length": 30,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2837,
+              "length": 38,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2876,
+              "length": 27,
+              "type": {
+                "@type": "textEntityTypeUrl"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "order": "6756198322152669305",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 126877696,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 21
+    }
+  },
+  {
+    "@type": "chat",
+    "id": 278857480,
+    "type": {
+      "@type": "chatTypePrivate",
+      "user_id": 278857480
+    },
+    "title": "Рома 0000",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 43,
+        "size": 7313,
+        "expected_size": 7313,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgADq6cxGwgHnxAACLOhmg4ABAIAAwgHnxAABI9QjLgOPWlA3_ADAAEWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 7313
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 44,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgADq6cxGwgHnxAACLOhmg4ABAMAAwgHnxAABI9QjLgOPWlA4fADAAEWBA",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": true,
+      "can_send_media_messages": true,
+      "can_send_polls": true,
+      "can_send_other_messages": true,
+      "can_add_web_page_previews": true,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 3903848448,
+      "sender_user_id": 403947091,
+      "chat_id": 278857480,
+      "is_outgoing": true,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": true,
+      "can_be_deleted_for_all_users": true,
+      "is_channel_post": false,
+      "contains_unread_mention": false,
+      "date": 1572902123,
+      "edit_date": 0,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 0,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "0000",
+          "entities": []
+        }
+      }
+    },
+    "order": "6755563178093973131",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": true,
+    "can_be_deleted_for_all_users": true,
+    "can_be_reported": false,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 0,
+    "last_read_outbox_message_id": 3903848448,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": true,
+      "mute_for": 0,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 0,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 22
+    }
+  },
+  {
+    "@type": "chat",
+    "id": -1001254502533,
+    "type": {
+      "@type": "chatTypeSupergroup",
+      "supergroup_id": 1254502533,
+      "is_channel": true
+    },
+    "title": "Мэверик",
+    "photo": {
+      "@type": "chatPhoto",
+      "small": {
+        "@type": "file",
+        "id": 45,
+        "size": 3936,
+        "expected_size": 3936,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": true,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATtraaDgAEAgADe7-U4Bb___-E1--6Tx6XwoRpBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 3936
+        }
+      },
+      "big": {
+        "@type": "file",
+        "id": 46,
+        "size": 0,
+        "expected_size": 0,
+        "local": {
+          "@type": "localFile",
+          "path": "",
+          "can_be_downloaded": true,
+          "can_be_deleted": false,
+          "is_downloading_active": false,
+          "is_downloading_completed": false,
+          "download_offset": 0,
+          "downloaded_prefix_size": 0,
+          "downloaded_size": 0
+        },
+        "remote": {
+          "@type": "remoteFile",
+          "id": "AQADAgATtraaDgAEAwADe7-U4Bb___-E1--6Tx6XwoZpBAABFgQ",
+          "is_uploading_active": false,
+          "is_uploading_completed": true,
+          "uploaded_size": 0
+        }
+      }
+    },
+    "permissions": {
+      "@type": "chatPermissions",
+      "can_send_messages": false,
+      "can_send_media_messages": false,
+      "can_send_polls": false,
+      "can_send_other_messages": false,
+      "can_add_web_page_previews": false,
+      "can_change_info": false,
+      "can_invite_users": false,
+      "can_pin_messages": false
+    },
+    "last_message": {
+      "@type": "message",
+      "id": 375390208,
+      "sender_user_id": 0,
+      "chat_id": -1001254502533,
+      "is_outgoing": false,
+      "can_be_edited": false,
+      "can_be_forwarded": true,
+      "can_be_deleted_only_for_self": false,
+      "can_be_deleted_for_all_users": false,
+      "is_channel_post": true,
+      "contains_unread_mention": false,
+      "date": 1572889462,
+      "edit_date": 1572899998,
+      "reply_to_message_id": 0,
+      "ttl": 0,
+      "ttl_expires_in": 0,
+      "via_bot_user_id": 0,
+      "author_signature": "",
+      "views": 13366,
+      "media_album_id": "0",
+      "content": {
+        "@type": "messageText",
+        "text": {
+          "@type": "formattedText",
+          "text": "​​Обусловили пацана\n\nА у нас тут снова история прикатила про некоих Машку и Алёнку.\n\nМашку, что называется, можно за ляшку, а вот с Алёнкой я погорячился, потому что не Алёнка это вовсе, а Алёна Владимировна Спартанова.\n\nМаша — вебкам-модел-эктрисс, деятель культуры, как говорят у нас в инстаграмах. Фрезеровщик фрезерует, камазист прицеп цепляет, а Машка ловенс лаш с айфоном синхронизировала — тем и живёт.\n\nАлёна Спартанова — с говорящей фамилией, человек и пароход, истинная спартанская жена. В её мире нет свиданий, только собеседования. Чтобы понравиться Спартановой, вы должны иметь:\n\nа) Щетину с покрытием 60-70% лица, разрешение блюрэй.\n\nб) БМВ Х5 или Х6, не старше 3-ёх лет.\n\nв) Дом в Подмосковье, микрорайон со шлагбаумом, яндекс-таксистов ака илотов пускают только по предварительному звонку.\n\nг) Силу серьёзного намерения.\n\nд) Достаточную мужскую фертильность.\n\nВаши деньги Алёне сильно не нужны, тут главное сам принцип.\n\nАлёна смотрит на Машу как на говно. Коли столкнутся их аккаунты в Инстаграме — жди беды.\n\n«Шлюха, такую страну просрала.» — заключает Алёна.\n\nЧСВ спартанской жены неимоверно. Как Гаргантюа засосало Макконахи, так ЧСВ Алёны уже обрело собственную гравитацию.\n\nКазалось бы, спрашивать «почему?» — неуместно, и так понятно, почему. Но почему и так понятно?\n\nПопробуем разобраться, несмотря на то, что то, что написано до этой строки, практически никак не связано с тем, что написано после неё.\n\nЗамечательные «просветленцы» 20 века вусмерть заелозили слово «обусловленность».\n\nМол, обсуловленность ваша мудацкая, снимите это немедленно, просветляйтесь.\n\nОни говорили так не просто так — перед ними стояла определённая задача, с которой они, в целом, справились, насколько вообще имеет смысл это оценивать (не имеет).\n\nОднако же, заставь дурака молиться — он и дьявола вызовет.\n\nДуховные лемминги тему подхватили, в ретрит съехались — и давай торрент раздачу.\n\nВключите любого обосранного имитатора просветления, который с Балишки на селфи-камеру свои откровения в сторис швыряет — так он вам разложет, что к чему, и обусловленности вашей несчастной достанется по первое, и по второе число, и снова третье сентября.\n\nНо коли о чём обосранный имитатор просветления (ОИП) начал говорить — так то немедленно надо переставать слушать.\n\nИтак, что ж такое эта ваша обусловленность, можно ли с ней жить, и, главное, можно ли жить без неё.\n\nВызываем сравнительного гномика!\n\n— Гномик-гномик, нам нужно проиллюстировать понятие «обусловленность». Нужно какое-нибудь слово, чтобы понял даже Эйнштейн с деменцией.\n\n— Я тебе скажу. Но только в следующий раз, чтобы более или менее подстегнуть вовлечение подписчиков на твоём канале, хотя понятно, что эта тема со сраным дроблением контента всех уже заебала, и тебя в том числе, но всё-таки понять можно, надо же запас иметь на посты в моменты декоменсации. Плюс успокой людей — Машка и Алёна Спартанова, в отличие от Тони Старка, ещё вернутся.\n\nСвязь: @henry365bot",
+          "entities": [
+            {
+              "@type": "textEntity",
+              "offset": 0,
+              "length": 2,
+              "type": {
+                "@type": "textEntityTypeTextUrl",
+                "url": "https://tgraph.io/file/a4c555e4943e77550658b.jpg"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2,
+              "length": 17,
+              "type": {
+                "@type": "textEntityTypeBold"
+              }
+            },
+            {
+              "@type": "textEntity",
+              "offset": 2923,
+              "length": 12,
+              "type": {
+                "@type": "textEntityTypeMention"
+              }
+            }
+          ]
+        },
+        "web_page": {
+          "@type": "webPage",
+          "url": "https://tgraph.io/file/a4c555e4943e77550658b.jpg",
+          "display_url": "tgraph.io/file/a4c555e4943e77550658b.jpg",
+          "type": "photo",
+          "site_name": "",
+          "title": "",
+          "description": "",
+          "photo": {
+            "@type": "photo",
+            "has_stickers": false,
+            "minithumbnail": {
+              "@type": "minithumbnail",
+              "width": 22,
+              "height": 40,
+              "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAWACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDPRxI+HyM9xSI7rKuzqGyMUxNuTv6EH88cU9MoFfAINAGqJRNH5c64Y8g46fQ1R+yXU+GRCyqdoy3T86tLdFIo5OCudv6VLFKcsY5Cqsc4HripWhW5nO89vMYiAWVcEYzxiioZZWNw8m45JPNFUSMParUBSSAo4OB3HX1oooAVmX7E8a5IQg5I5JpLKQyOsBxsJPaiikxoqkbWwexxRRRTEf/Z"
+            },
+            "sizes": [
+              {
+                "@type": "photoSize",
+                "type": "m",
+                "photo": {
+                  "@type": "file",
+                  "id": 47,
+                  "size": 15917,
+                  "expected_size": 15917,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADfaoxGyFVBFLXMkNRrSurjX38IRsABAEAAwIAA20AAwOiAAIWBA",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 15917
+                  }
+                },
+                "width": 320,
+                "height": 175
+              },
+              {
+                "@type": "photoSize",
+                "type": "x",
+                "photo": {
+                  "@type": "file",
+                  "id": 48,
+                  "size": 59847,
+                  "expected_size": 59847,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADfaoxGyFVBFLXMkNRrSurjX38IRsABAEAAwIAA3gAAwSiAAIWBA",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 59847
+                  }
+                },
+                "width": 800,
+                "height": 438
+              },
+              {
+                "@type": "photoSize",
+                "type": "y",
+                "photo": {
+                  "@type": "file",
+                  "id": 49,
+                  "size": 79995,
+                  "expected_size": 79995,
+                  "local": {
+                    "@type": "localFile",
+                    "path": "",
+                    "can_be_downloaded": true,
+                    "can_be_deleted": false,
+                    "is_downloading_active": false,
+                    "is_downloading_completed": false,
+                    "download_offset": 0,
+                    "downloaded_prefix_size": 0,
+                    "downloaded_size": 0
+                  },
+                  "remote": {
+                    "@type": "remoteFile",
+                    "id": "AgADBAADfaoxGyFVBFLXMkNRrSurjX38IRsABAEAAwIAA3kAAwWiAAIWBA",
+                    "is_uploading_active": false,
+                    "is_uploading_completed": true,
+                    "uploaded_size": 79995
+                  }
+                },
+                "width": 1000,
+                "height": 547
+              }
+            ]
+          },
+          "embed_url": "",
+          "embed_type": "",
+          "embed_width": 0,
+          "embed_height": 0,
+          "duration": 0,
+          "author": "",
+          "instant_view_version": 0
+        }
+      }
+    },
+    "order": "6755508799513035110",
+    "is_pinned": false,
+    "is_marked_as_unread": false,
+    "is_sponsored": false,
+    "can_be_deleted_only_for_self": false,
+    "can_be_deleted_for_all_users": false,
+    "can_be_reported": true,
+    "default_disable_notification": false,
+    "unread_count": 0,
+    "last_read_inbox_message_id": 375390208,
+    "last_read_outbox_message_id": 2251799812636672,
+    "unread_mention_count": 0,
+    "notification_settings": {
+      "@type": "chatNotificationSettings",
+      "use_default_mute_for": false,
+      "mute_for": 573800590,
+      "use_default_sound": true,
+      "sound": "default",
+      "use_default_show_preview": true,
+      "show_preview": false,
+      "use_default_disable_pinned_message_notifications": true,
+      "disable_pinned_message_notifications": false,
+      "use_default_disable_mention_notifications": true,
+      "disable_mention_notifications": false
+    },
+    "pinned_message_id": 350224384,
+    "reply_markup_message_id": 0,
+    "client_data": "",
+    "@extra": {
+      "query_id": 23
+    }
+  }
+]
