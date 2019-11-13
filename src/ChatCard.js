@@ -1,13 +1,15 @@
 import { RoleArticle } from 'ariamodule/lib'
 import './ChatCard.css'
-import { UserPic } from './UserPic'
+import { Span } from 'htmlmodule/lib'
+import { ChatPhoto } from './ChatPhoto'
 
 export class ChatCard extends RoleArticle
 {
     init(init) {
         super.init(init)
         this.children = [
-            // new UserPic({ data })
+            new ChatPhoto({ chat : init.chat }),
+            new Span(init.chat.title)
         ]
     }
 }

@@ -1,4 +1,4 @@
-.ChatsFeed
+.ChatFeed
 {
     position: relative;
     width: 420px;
@@ -6,7 +6,7 @@
     border-right: 1px solid #dadce0;
     overflow: auto;
 }
-.ChatsFeed .Progress
+.ChatFeed .Progress
 {
     position: absolute;
     width: 100%;

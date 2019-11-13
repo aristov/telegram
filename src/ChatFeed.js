@@ -1,9 +1,8 @@
 import { Feed } from 'ariamodule/lib'
-import { Img } from 'htmlmodule/lib'
 import { ChatCard } from './ChatCard'
-import './ChatsFeed.css'
+import './ChatFeed.css'
 
-export class ChatsFeed extends Feed
+export class ChatFeed extends Feed
 {
     init(init) {
         super.init(init)
@@ -14,8 +13,7 @@ export class ChatsFeed extends Feed
     onAppReady(event) {
         this.busy = false
         this.children = event.detail.chats.map(chat => {
-            return new ChatCard(chat.title)
+            return new ChatCard({ chat })
         })
-        this.append(new Img({ src : `blob:${ location }AQADAgATRz85DwAEAgADgG_43Bb___-yL3N1CTvfKekRBQABFgQ` }))
     }
 }

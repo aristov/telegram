@@ -29,6 +29,20 @@ export class ApiClient {
         }
     }
 
+    updateFile(update) {
+        this._client.send({
+            '@type' : 'readFile',
+            file_id : update.file.id
+        }).then(response => {
+            window.dispatchEvent(new CustomEvent('readFile', {
+                detail : {
+                    file : update.file,
+                    data : response.data
+                }
+            }))
+        }).catch(console.error)
+    }
+
     authorizationStateWaitTdlibParameters(state) {
         this._client.send({
             '@type' : 'setTdlibParameters',
@@ -80,13 +94,20 @@ export class ApiClient {
                 })).then(chats => {
                     console.log(chats)
                     window.dispatchEvent(new CustomEvent('ready', { detail : { chats } }))
-                    this._client.send({
+                    Promise.all(chats.filter(({ photo }) => photo).map(chat => {
+                        this._client.send({
+                            '@type' : 'downloadFile',
+                            file_id : chat.photo.small.id,
+                            priority : 1
+                        })
+                    })).then(console.log).catch(console.error)
+                    /*this._client.send({
                         '@type' : 'getChatHistory',
                         chat_id : chats[0].id,
                         from_message_id : chats[0].last_message.id,
                         offset : 0,
                         limit : 20,
-                    }).then(console.log).catch(console.error)
+                    }).then(console.log).catch(console.error)*/
                 }).catch(console.error)
             }
         }).catch(console.error)
