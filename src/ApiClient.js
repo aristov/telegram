@@ -89,32 +89,6 @@ export class ApiClient extends EventTarget
         this.emit('authorizationStateReady', { detail : state })
     }
 
-    getChats() {
-        return this.send('getChats', {
-            offset_order : '9223372036854775807',
-            limit : 20
-        })
-    }
-
-    getChat({ chat_id }) {
-        return this.send('getChat', {
-            chat_id
-        })
-    }
-
-    downloadFile({ file_id }) {
-        return this.send('downloadFile', {
-            file_id,
-            priority : 1
-        })
-    }
-
-    readFile({ file_id }) {
-        return this.send('readFile', {
-            file_id
-        })
-    }
-
     getChatHistory({ chat_id, from_message_id }) {
         return this.send('getChatHistory', {
             chat_id,

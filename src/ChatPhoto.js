@@ -11,11 +11,12 @@ export class ChatPhoto extends Img
         if(photo) {
             const small = photo.small
             const local = small.local
+            const file_id = small.id
             if(local.is_downloading_completed) {
-                this.readFile({ file_id : small.id })
+                this.readFile({ file_id })
             }
             else if(!local.is_downloading_active && local.can_be_downloaded) {
-                api.downloadFile({ file_id : small.id })
+                api.send('downloadFile', { file_id, priority : 1 })
             }
             api.on('updateFile', this.onUpdateFile.bind(this))
         }
@@ -29,7 +30,7 @@ export class ChatPhoto extends Img
     }
 
     readFile({ file_id }) {
-        api.readFile({ file_id })
+        api.send('readFile', { file_id })
            .then(response => {
                this.src = URL.createObjectURL(response.data)
            })
