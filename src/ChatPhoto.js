@@ -17,7 +17,7 @@ export class ChatPhoto extends Img
             else if(!local.is_downloading_active && local.can_be_downloaded) {
                 api.downloadFile({ file_id : small.id })
             }
-            api.addEventListener('updateFile', this.onUpdateFile.bind(this))
+            api.on('updateFile', this.onUpdateFile.bind(this))
         }
     }
 

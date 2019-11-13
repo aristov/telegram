@@ -14,13 +14,35 @@ export class ApiClient extends EventTarget
         client.onUpdate = this.onUpdate.bind(this)
     }
 
+    on(type, callback, options) {
+        this.addEventListener(type, callback, options)
+    }
+
+    un(type, callback, options) {
+        this.removeEventListener(type, callback, options)
+    }
+
+    emit(eventOrType, eventInitDict) {
+        if(typeof eventOrType === 'string') {
+            eventOrType = new CustomEvent(eventOrType, eventInitDict)
+        }
+        return this.dispatchEvent(eventOrType)
+    }
+
+    send(type, query = {}) {
+        query['@type'] = type
+        return client.send(query)
+    }
+
     onUpdate(update) {
-        // console.log(update)
         const type = update['@type']
         if(typeof this[type] === 'function') {
             this[type](update)
         }
+        else this.emit(type, { detail : update })
     }
+
+    /*================================================================*/
 
     updateAuthorizationState(update) {
         const state = update.authorization_state
@@ -30,13 +52,8 @@ export class ApiClient extends EventTarget
         }
     }
 
-    updateFile(update) {
-        this.dispatchEvent(new CustomEvent('updateFile', { detail : update }))
-    }
-
     authorizationStateWaitTdlibParameters(state) {
-        client.send({
-            '@type' : 'setTdlibParameters',
+        this.send('setTdlibParameters', {
             parameters : {
                 '@type' : 'tdParameters',
                 api_id : API_ID,
@@ -50,64 +67,56 @@ export class ApiClient extends EventTarget
     }
 
     authorizationStateWaitEncryptionKey(state) {
-        client.send({
-            '@type' : 'checkDatabaseEncryptionKey',
+        this.send('checkDatabaseEncryptionKey', {
             encryption_key : ''
         }).then(console.log).catch(console.error)
     }
 
     authorizationStateWaitPhoneNumber(state) {
-        client.send({
-            '@type' : 'setAuthenticationPhoneNumber',
+        this.send('setAuthenticationPhoneNumber', {
             phone_number : '+79037307615'
         }).then(console.log).catch(console.error)
     }
 
     authorizationStateWaitCode(state) {
-        client.send({
-            '@type' : 'checkAuthenticationCode',
+        this.send('checkAuthenticationCode', {
             code : prompt('Enter authentication code')
         }).then(console.log).catch(console.error)
     }
 
     authorizationStateReady(state) {
         console.log(state)
-        this.dispatchEvent(new CustomEvent('authorizationStateReady', { detail : state }))
+        this.emit('authorizationStateReady', { detail : state })
     }
 
     getChats() {
-        return client.send({
-            '@type' : 'getChats',
+        return this.send('getChats', {
             offset_order : '9223372036854775807',
             limit : 20
         })
     }
 
     getChat({ chat_id }) {
-        return client.send({
-            '@type' : 'getChat',
+        return this.send('getChat', {
             chat_id
         })
     }
 
     downloadFile({ file_id }) {
-        return client.send({
-            '@type' : 'downloadFile',
+        return this.send('downloadFile', {
             file_id,
             priority : 1
         })
     }
 
     readFile({ file_id }) {
-        return client.send({
-            '@type' : 'readFile',
+        return this.send('readFile', {
             file_id
         })
     }
 
     getChatHistory({ chat_id, from_message_id }) {
-        return client.send({
-            '@type' : 'getChatHistory',
+        return this.send('getChatHistory', {
             chat_id,
             from_message_id,
             offset : 0,
