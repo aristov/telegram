@@ -12,7 +12,9 @@ html
 }
 .Page > .Inner
 {
-    height: 100%;
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
 }

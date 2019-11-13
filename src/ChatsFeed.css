@@ -4,6 +4,7 @@
     width: 420px;
     background: #fff;
     border-right: 1px solid #dadce0;
+    overflow: auto;
 }
 .ChatsFeed .Progress
 {

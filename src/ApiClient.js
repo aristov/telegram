@@ -79,6 +79,7 @@ export class ApiClient {
                     })
                 })).then(chats => {
                     console.log(chats)
+                    window.dispatchEvent(new CustomEvent('ready', { detail : { chats } }))
                     this._client.send({
                         '@type' : 'getChatHistory',
                         chat_id : chats[0].id,
