@@ -29,23 +29,28 @@ export class ChatPreview extends Span
                 return new ChatPreviewInfo(chat.title + ' joined Telegram')
             case 'messageText':
                 const user_id = message.sender_user_id
-                if(user_id) {
-                    if(user_id === api.options.my_id) {
-                        return [
+                if(chat.id !== 777000 && user_id) {
+                    return user_id === api.options.my_id?
+                        [
                             new ChatPreviewInfo('You: '),
                             content.text.text
-                        ]
-                    }
-                    api.send('getUser', { user_id })
-                        .then(user => {
-                            this.children = [
-                                new ChatPreviewInfo(user.first_name + ': '),
-                                content.text.text
-                            ]
-                        })
+                        ] :
+                        api.send('getUser', { user_id }).then(user => [
+                            new ChatPreviewInfo(user.first_name + ': '),
+                            content.text.text
+                        ])
                 }
                 else return content.text.text
         }
+    }
+
+    set children(children) {
+        if(children instanceof Promise) {
+            children
+                .then(result => super.children = result)
+                .catch(error => super.children = error)
+        }
+        else super.children = children
     }
 }
 
