@@ -11,6 +11,7 @@ export class ApiClient extends EventTarget
 {
     constructor(...args) {
         super(...args)
+        this.options = {}
         client.onUpdate = this.onUpdate.bind(this)
     }
 
@@ -35,6 +36,7 @@ export class ApiClient extends EventTarget
     }
 
     onUpdate(update) {
+        // console.log(update)
         const type = update['@type']
         if(typeof this[type] === 'function') {
             this[type](update)
@@ -43,6 +45,10 @@ export class ApiClient extends EventTarget
     }
 
     /*================================================================*/
+
+    updateOption(update) {
+        this.options[update.name] = update.value.value
+    }
 
     updateAuthorizationState(update) {
         const state = update.authorization_state

@@ -44,6 +44,10 @@
     text-overflow: ellipsis;
     padding: 3px 0;
 }
+.ChatCard .ChatPreviewInfo
+{
+    color: #000;
+}
 .ChatCard .ChatNotifier
 {
     color: white;
@@ -53,6 +57,10 @@
     margin-left: 8px;
     border-radius: 12px;
     font-size: .9rem;
+}
+.ChatCard .ChatNotifier.muted
+{
+    background-color: #c4c9cc;
 }
 .ChatCard:hover,
 .ChatCard:focus

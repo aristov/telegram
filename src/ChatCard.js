@@ -23,7 +23,7 @@ export class ChatCard extends Article
             ]),
             new Inner([
                 new ChatPreview({ chat }),
-                !!chat.unread_count && new ChatNotifier(chat.unread_count)
+                !!chat.unread_count && new ChatNotifier({ chat })
             ])
         ]
     }

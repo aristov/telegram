@@ -1,4 +1,4 @@
-import 'ariamodule/lib/debug'
+import './debug'
 import './HTMLWidget'
 import { Telegram } from './Telegram'
 
