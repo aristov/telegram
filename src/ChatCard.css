@@ -8,7 +8,7 @@
     cursor: pointer;
     border-radius: 10px;
 }
-.ChatCard > div
+.ChatCard > .Inner
 {
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,8 @@
     border-radius: 12px;
     font-size: .9rem;
 }
-.ChatCard:hover
+.ChatCard:hover,
+.ChatCard:focus
 {
     background-color: rgba(112, 117, 121, .08);
 }

@@ -8,7 +8,6 @@ html
     min-width: 320px;
     height: 100%;
     margin: 0;
-    background: #e6ebee;
 }
 .Page > .Inner
 {
@@ -17,4 +16,26 @@ html
     height: 100%;
     max-width: 1680px;
     margin: 0 auto;
+    background: #e6ebee;
+}
+.Page > .Progress
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Page > .Progress::before
+{
+    padding: 50px;
+}
+@media (min-width: 1680px)
+{
+    .Page > .Inner
+    {
+        border-left: 1px solid #dadce0;
+        border-right: 1px solid #dadce0;
+    }
 }

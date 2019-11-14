@@ -1,33 +1,11 @@
-import moment from './moment'
-import { Article, Status } from 'ariamodule/lib'
-import { Div, Span, Time } from 'htmlmodule/lib'
+import { Article } from 'ariamodule/lib'
+import { ChatNotifier } from './ChatNotifier'
 import { ChatPhoto } from './ChatPhoto'
+import { ChatPreview } from './ChatPreview'
+import { ChatTime } from './ChatTime'
+import { ChatTitle } from './ChatTitle'
+import { Inner } from './Inner'
 import './ChatCard.css'
-
-class ChatTitle extends Span
-{
-}
-
-class ChatPreview extends Span
-{
-    init(init) {
-        super.init(init)
-        const content = init.chat.last_message.content
-        const text = content.text? content.text.text : content.caption
-        this.children = text && typeof text.substring === 'function' && text.substring(0, 50)
-    }
-}
-
-class ChatTime extends Time
-{
-}
-
-class ChatNotifier extends Status
-{
-    static get elementAssembler() {
-        return Span
-    }
-}
 
 export class ChatCard extends Article
 {
@@ -37,14 +15,13 @@ export class ChatCard extends Article
     }
 
     build({ chat }) {
-        const time = chat.last_message.date
         return [
             new ChatPhoto({ chat }),
-            new Div([
+            new Inner([
                 new ChatTitle(chat.title),
-                new ChatTime(moment(time * 1000).format('H:mm'))
+                new ChatTime({ chat })
             ]),
-            new Div([
+            new Inner([
                 new ChatPreview({ chat }),
                 !!chat.unread_count && new ChatNotifier(chat.unread_count)
             ])
