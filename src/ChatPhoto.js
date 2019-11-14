@@ -9,7 +9,7 @@ export class ChatPhoto extends Img
         super.init(init)
         const photo = init.chat.photo
         const title = init.chat.title
-        this.textContent = title? title.charAt(0).toUpperCase() : '?'
+        this.textContent = title? title.charAt(0).toUpperCase() : 'DA'
         if(photo) {
             this.getPhoto(photo)
             api.on('updateFile', this.onUpdateFile.bind(this))

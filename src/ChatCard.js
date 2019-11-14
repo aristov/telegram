@@ -18,7 +18,7 @@ export class ChatCard extends Article
         return [
             new ChatPhoto({ chat }),
             new Inner([
-                new ChatTitle(chat.title),
+                new ChatTitle({ chat }),
                 new ChatTime({ chat })
             ]),
             new Inner([
