@@ -36,7 +36,7 @@ export class ApiClient extends EventTarget
     }
 
     onUpdate(update) {
-        // console.log(update)
+        console.log(update)
         const type = update['@type']
         if(typeof this[type] === 'function') {
             this[type](update)

@@ -19,10 +19,10 @@ export class ChatCard extends Article
             new ChatPhoto({ chat }),
             new Inner([
                 new ChatTitle({ chat }),
-                new ChatTime({ chat })
+                chat.last_message && new ChatTime({ chat })
             ]),
             new Inner([
-                new ChatPreview({ chat }),
+                chat.last_message && new ChatPreview({ chat }),
                 !!chat.unread_count && new ChatNotifier({ chat })
             ])
         ]

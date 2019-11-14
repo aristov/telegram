@@ -4,8 +4,6 @@ import { api } from './api'
 import savedmessages_svg from './icons/savedmessages_svg.svg'
 import './ChatPhoto.css'
 
-console.log(savedmessages_svg)
-
 export class ChatPhoto extends Img
 {
     init(init) {
