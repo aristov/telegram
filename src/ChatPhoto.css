@@ -4,11 +4,17 @@
     font-size: 1.4em;
     line-height: 2.5;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 54px;
     height: 54px;
     border-radius: 50%;
     overflow: hidden;
     vertical-align: middle;
     background: #4ea4f6 center center / cover no-repeat;
+}
+.ChatPhoto path
+{
+    fill: #fff;
 }

@@ -1,14 +1,25 @@
 import { Img } from 'ariamodule'
 import { Span } from 'htmlmodule'
 import { api } from './api'
+import savedmessages_svg from './icons/savedmessages_svg.svg'
 import './ChatPhoto.css'
+
+console.log(savedmessages_svg)
 
 export class ChatPhoto extends Img
 {
     init(init) {
         super.init(init)
-        const photo = init.chat.photo
-        const title = init.chat.title
+        this.build(init)
+    }
+
+    build({ chat }) {
+        if(chat.id === api.options.my_id) {
+            this.innerHTML = savedmessages_svg
+            return
+        }
+        const photo = chat.photo
+        const title = chat.title
         this.textContent = title? title.charAt(0).toUpperCase() : 'DA'
         if(photo) {
             this.getPhoto(photo)
