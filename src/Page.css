@@ -18,15 +18,6 @@ html
     margin: 0 auto;
     background: #e6ebee;
 }
-.Page > .Progress
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .Page > .Progress::before
 {
     padding: 50px;

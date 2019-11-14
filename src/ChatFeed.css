@@ -6,12 +6,13 @@
     border-right: 1px solid #dadce0;
     overflow: auto;
 }
-.ChatFeed .Progress
+.ChatFeed .FeedProgress
 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+.ChatFeed:not([aria-busy=true]) .FeedProgress
+{
+    opacity: 0;
 }
