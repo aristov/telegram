@@ -2,6 +2,7 @@
 {
     position: relative;
     width: 420px;
+    min-width: 250px;
     background: #fff;
     border-right: 1px solid #dadce0;
     overflow: auto;
