@@ -1,6 +1,7 @@
 import { Body } from 'htmlmodule/lib'
 import { api } from './api'
 import { ChatFeed } from './ChatFeed'
+import { ChatMain } from './ChatMain'
 import { CoverProgress } from './CoverProgress'
 import { Content } from './Content'
 import './Page.css'
@@ -14,6 +15,9 @@ export class Page extends Body
     }
 
     onAuthorizationStateReady() {
-        this.children = new Content(new ChatFeed)
+        this.children = new Content([
+            new ChatFeed,
+            new ChatMain
+        ])
     }
 }
