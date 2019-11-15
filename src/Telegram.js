@@ -1,10 +1,10 @@
 import { WindowAssembler } from 'htmlmodule/lib'
-import { api } from './api'
 import { Page } from './Page'
 
 export class Telegram extends WindowAssembler {
     init(init) {
         super.init(init)
+        this.document.documentElement.lang = 'en'
         new Page({ node : document.body })
     }
 }

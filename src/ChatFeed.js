@@ -43,13 +43,17 @@ export class ChatFeed extends Feed
 
     onExpanded(record) {
         const card = ChatCard.getRoleOf(record.target)
-        if(!card.expanded) return
+        if(!card || !card.expanded) return
         for(const article of this.articles) {
             if(article !== card) {
                 article.expanded = false
             }
         }
         this.resetTabIndex()
+        this.emit('chatSelected', {
+            bubbles : true,
+            detail : { chat : card.chat }
+        })
     }
 
     async onUpdateChatLastMessage(event) {

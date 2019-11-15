@@ -1,0 +1,36 @@
+.ChatHead
+{
+    height: 60px;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 1px solid #dadce0;
+    white-space: nowrap;
+}
+.ChatHead .ChatPhoto
+{
+    font-size: 1.2rem;
+    width: 44px;
+    height: 44px;
+    margin: 0 18px 0 10px;
+    vertical-align: middle;
+}
+.ChatHead .ChatHeadInfo
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.ChatHead .ChatTitle
+{
+    line-height: 18px;
+}
+.ChatHead .ChatStatus
+{
+    color: rgba(0, 0, 0, .5);
+    font-size: .9rem;
+    margin-top: 4px;
+}
+.ChatHead .ChatStatus.online
+{
+    color: #4ea4f6;
+}

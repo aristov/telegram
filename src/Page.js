@@ -19,5 +19,10 @@ export class Page extends Body
             new ChatFeed,
             new ChatMain
         ])
+        this.on('chatSelected', this.onChatSelected, this)
+    }
+
+    onChatSelected(event) {
+        this.find(ChatMain).replaceWith(new ChatMain({ chat : event.detail.chat }))
     }
 }

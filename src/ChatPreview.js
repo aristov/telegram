@@ -61,6 +61,16 @@ export class ChatPreview extends Span
                         user.last_name
                     ].filter(Boolean).join(' '))
                 })
+            case 'messageBasicGroupChatCreate':
+                return api.send('getUser', { user_id : content.member_user_ids[0] })
+                    .then(user => {
+                        return new ChatPreviewInfo([
+                            user.first_name,
+                            user.last_name,
+                            'created the group',
+                            `«${ chat.title }»`
+                        ].filter(Boolean).join(' '))
+                    })
             case 'messageSupergroupChatCreate':
                 return new ChatPreviewInfo('You joined this channel')
             case 'messageVideo':
