@@ -40,7 +40,9 @@ export class ChatCard extends Article
     }
     
     onClick(event) {
-        this.expanded = true
+        if(!this.expanded) {
+            this.expanded = true
+        }
     }
 
     async onUpdate({ detail : { chat_id } }) {
