@@ -1,4 +1,4 @@
-import { Feed } from 'ariamodule/lib'
+import { Expanded, Feed } from 'ariamodule/lib'
 import { api } from './api'
 import { ChatCard } from './ChatCard'
 import { CoverProgress } from './CoverProgress'
@@ -12,9 +12,44 @@ export class ChatFeed extends Feed
     init(init) {
         super.init(init)
         this.loadChats()
-        api.on('updateNewChat', this.onUpdateNewChat.bind(this))
+        this.on('focusin', this.onFocusIn)
+        this.on('focusout', this.onFocusOut)
+        this.on(Expanded, this.onExpanded, { subtree : true })
+        // api.on('updateNewChat', this.onUpdateNewChat.bind(this))
         api.on('updateChatOrder', this.onUpdateChatOrder.bind(this))
         api.on('updateChatLastMessage', this.onUpdateChatLastMessage.bind(this))
+    }
+
+    resetTabIndex() {
+        const articles = this.articles
+        if(!articles.length) return
+        let card
+        for(const article of this.articles) {
+            if(article.tabIndex = article.expanded? 0 : -1) continue
+            card = article
+        }
+        if(!card) {
+            articles[0].tabIndex = 0
+        }
+    }
+
+    onFocusIn(event) {
+        this.classList.add('focus')
+    }
+
+    onFocusOut(event) {
+        this.classList.remove('focus')
+    }
+
+    onExpanded(record) {
+        const card = ChatCard.getRoleOf(record.target)
+        if(!card.expanded) return
+        for(const article of this.articles) {
+            if(article !== card) {
+                article.expanded = false
+            }
+        }
+        this.resetTabIndex()
     }
 
     async onUpdateChatLastMessage(event) {
@@ -59,17 +94,18 @@ export class ChatFeed extends Feed
     }
 
     insertCard(card) {
-        let item, nextItem
-        for(item of this.articles) {
-            if(card.chat.order > item.chat.order) {
-                nextItem = item
+        let article, next
+        for(article of this.articles) {
+            if(card.chat.order > article.chat.order) {
+                next = article
                 break
             }
         }
-        if(nextItem) {
-            nextItem.before(card)
+        if(next) {
+            next.before(card)
         }
-        else item && item.after(card)
+        else article && article.after(card)
+        this.resetTabIndex()
     }
 
     onScroll(event) {
@@ -89,6 +125,7 @@ export class ChatFeed extends Feed
                     this._progress = new FeedProgress
                 ]
                 this.busy = false
+                this.resetTabIndex()
                 this.on('scroll', this.onScroll)
             })
             .catch(error => this.children = error)

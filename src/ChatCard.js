@@ -12,12 +12,35 @@ export class ChatCard extends Article
 {
     init(init) {
         super.init(init)
+        this.expanded = false
         this.build(init)
+        this.on('keydown', this.onKeyDown)
+        this.on('click', this.onClick)
         api.on('updateChatPhoto', this.onUpdate.bind(this))
         api.on('updateChatTitle', this.onUpdate.bind(this))
         api.on('updateChatLastMessage', this.onUpdate.bind(this))
         api.on('updateChatReadInbox', this.onUpdate.bind(this))
         api.on('updateChatIsMarkedAsUnread', this.onUpdate.bind(this))
+    }
+
+    onKeyDown(event) {
+        if(event.key === 'ArrowDown') {
+            event.preventDefault()
+            const card = this.nextCard
+            card && card.focus()
+        }
+        else if(event.key === 'ArrowUp') {
+            event.preventDefault()
+            const card = this.prevCard
+            card && card.focus()
+        }
+        else if(event.key === 'Enter') {
+            this.click()
+        }
+    }
+    
+    onClick(event) {
+        this.expanded = true
     }
 
     async onUpdate({ detail : { chat_id } }) {
@@ -39,5 +62,15 @@ export class ChatCard extends Article
                 !!chat.unread_count && new ChatNotifier({ chat })
             ])
         ]
+    }
+
+    get nextCard() {
+        const articles = this.feed.articles
+        return articles[articles.indexOf(this) + 1] || null
+    }
+
+    get prevCard() {
+        const articles = this.feed.articles
+        return articles[articles.indexOf(this) - 1] || null
     }
 }

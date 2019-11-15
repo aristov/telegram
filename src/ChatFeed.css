@@ -5,6 +5,7 @@
     background: #fff;
     border-right: 1px solid #dadce0;
     overflow: auto;
+    padding: 5px 0;
 }
 .ChatFeed .FeedProgress
 {
@@ -15,4 +16,10 @@
 .ChatFeed:not([aria-busy=true]) .FeedProgress
 {
     opacity: 0;
+}
+.ChatFeed .ChatCard:hover,
+.ChatFeed .ChatCard:focus,
+.ChatFeed:not(.focus):not(:hover) .ChatCard[aria-expanded=true]
+{
+    background-color: rgba(112, 117, 121, .08);
 }
