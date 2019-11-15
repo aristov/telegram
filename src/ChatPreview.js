@@ -12,6 +12,10 @@ export class ChatPreview extends Span
         const message = chat.last_message
         const content = message.content
         switch(content['@type']) {
+            case 'messageChatChangeTitle' :
+                return new ChatPreviewInfo('Channel name changed to ' + content.title)
+            case 'messageChatChangePhoto' :
+                return new ChatPreviewInfo('Channel photo changed')
             case 'messagePhoto' :
                 return [
                     new ChatPreviewInfo(['Photo', content.caption.text && ', ']),
