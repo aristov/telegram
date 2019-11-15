@@ -46,6 +46,32 @@ export class ApiClient extends EventTarget
 
     /*================================================================*/
 
+    async getFileSrc(file) {
+        const { id, local } = file
+        if(local.is_downloading_completed) {
+            return await this.readFile(id)
+        }
+        else if(!local.is_downloading_active && local.can_be_downloaded) {
+            this.send('downloadFile', { file_id : id, priority : 1 })
+            return new Promise(resolve => {
+                const handler = ({ detail : { file } }) => {
+                    if(file.id === id && file.local.is_downloading_completed) {
+                        this.readFile(file.id).then(resolve)
+                        this.un('updateFile', handler)
+                    }
+                }
+                this.on('updateFile', handler)
+            })
+        }
+    }
+
+    async readFile(file_id) {
+        const { data } = await this.send('readFile', { file_id })
+        return URL.createObjectURL(data)
+    }
+
+    /*================================================================*/
+
     updateOption(update) {
         this.options[update.name] = update.value.value
     }
@@ -91,7 +117,6 @@ export class ApiClient extends EventTarget
     }
 
     authorizationStateReady(state) {
-        console.log(state)
         this.emit('authorizationStateReady', { detail : state })
     }
 

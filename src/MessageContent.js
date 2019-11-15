@@ -1,8 +1,17 @@
 import { Img, Pre } from 'htmlmodule'
+import { api } from './api'
 import { Content } from './Content'
 
 export class MessageContent extends Content
 {
+}
+
+class MessagePhoto extends Img
+{
+    init(init) {
+        super.init(init)
+        api.getFileSrc(init.photo.sizes[1].photo).then(src => this.src = src)
+    }
 }
 
 export default {
@@ -22,9 +31,8 @@ export default {
         })
     },
     messagePhoto(content) {
-        content.photo.sizes[0].photo.remote.id
         return new MessageContent({
-            children : new Img({ src })
+            children : new MessagePhoto({ photo : content.photo })
         })
     },
     messageAnimation(content) {
