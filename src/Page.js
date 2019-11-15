@@ -2,7 +2,7 @@ import { Body } from 'htmlmodule/lib'
 import { api } from './api'
 import { ChatFeed } from './ChatFeed'
 import { CoverProgress } from './CoverProgress'
-import { Inner } from './Inner'
+import { Content } from './Content'
 import './Page.css'
 
 export class Page extends Body
@@ -14,6 +14,6 @@ export class Page extends Body
     }
 
     onAuthorizationStateReady() {
-        this.children = new Inner(new ChatFeed)
+        this.children = new Content(new ChatFeed)
     }
 }

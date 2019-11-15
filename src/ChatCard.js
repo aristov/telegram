@@ -1,4 +1,5 @@
 import { Article } from 'ariamodule/lib'
+import { api } from './api'
 import { ChatNotifier } from './ChatNotifier'
 import { ChatPhoto } from './ChatPhoto'
 import { ChatPreview } from './ChatPreview'
@@ -11,11 +12,23 @@ export class ChatCard extends Article
 {
     init(init) {
         super.init(init)
-        this.children = this.build(init)
+        this.build(init)
+        api.on('updateChatPhoto', this.onUpdate.bind(this))
+        api.on('updateChatTitle', this.onUpdate.bind(this))
+        api.on('updateChatLastMessage', this.onUpdate.bind(this))
+        api.on('updateChatReadInbox', this.onUpdate.bind(this))
+        api.on('updateChatIsMarkedAsUnread', this.onUpdate.bind(this))
+    }
+
+    async onUpdate({ detail : { chat_id } }) {
+        if(chat_id !== this.chat.id) return
+        this.build({
+            chat : this.chat = await api.send('getChat', { chat_id })
+        })
     }
 
     build({ chat }) {
-        return [
+        this.children = [
             new ChatPhoto({ chat }),
             new Inner([
                 new ChatTitle({ chat }),

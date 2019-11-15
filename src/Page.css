@@ -9,7 +9,7 @@ html
     height: 100%;
     margin: 0;
 }
-.Page > .Inner
+.Page > .Content
 {
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ html
 }
 @media (min-width: 1680px)
 {
-    .Page > .Inner
+    .Page > .Content
     {
         border-left: 1px solid #dadce0;
         border-right: 1px solid #dadce0;

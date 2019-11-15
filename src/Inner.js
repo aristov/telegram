@@ -1,3 +1,3 @@
-import { Div } from 'htmlmodule/lib'
+import { Span } from 'htmlmodule/lib'
 
-export class Inner extends Div {}
+export class Inner extends Span {}

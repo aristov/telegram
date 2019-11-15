@@ -12,24 +12,53 @@ export class ChatFeed extends Feed
     init(init) {
         super.init(init)
         this.loadChats()
-        // api.on('updateNewChat', this.onUpdateNewChat.bind(this))
+        api.on('updateNewChat', this.onUpdateNewChat.bind(this))
         api.on('updateChatOrder', this.onUpdateChatOrder.bind(this))
+        api.on('updateChatLastMessage', this.onUpdateChatLastMessage.bind(this))
     }
 
-    onUpdateChatOrder(event) {
+    async onUpdateChatLastMessage(event) {
+        const { chat_id } = event.detail
+        const card = this.getCardByChatId(chat_id)
+        if(card) {
+            card.chat = await this.getChat(chat_id)
+            this.insertCard(card)
+        }
+    }
+
+    async onUpdateChatOrder(event) {
         const { chat_id, order } = event.detail
-        const card = this.find(ChatCard, ({ chat }) => chat.id === chat_id)
+        const card = this.getCardByChatId(chat_id)
         if(card) {
             card.chat.order = order
-            this.insertCardByOrder(card)
-            return
+            this.insertCard(card)
         }
-        api.send('getChat', { chat_id }).then(chat => {
-            this.insertCardByOrder(new ChatCard({ chat }))
-        })
+        else this.addChat(await this.getChat(chat_id))
     }
 
-    insertCardByOrder(card) {
+    async onUpdateNewChat(event) {
+        const { chat } = event.detail
+        const card = this.getCardByChatId(chat.id)
+        if(!card) {
+            this.addChat(await this.getChat(chat.id))
+        }
+    }
+
+    async getChat(chat_id) {
+        return await api.send('getChat', { chat_id })
+    }
+
+    getCardByChatId(chat_id) {
+        return this.find(ChatCard, ({ chat : { id } }) => id === chat_id)
+    }
+
+    addChat(chat) {
+        if(!this.chatIds.includes(chat.id)) {
+            this.insertCard(new ChatCard({ chat }))
+        }
+    }
+
+    insertCard(card) {
         let item, nextItem
         for(item of this.articles) {
             if(card.chat.order > item.chat.order) {
@@ -41,18 +70,6 @@ export class ChatFeed extends Feed
             nextItem.before(card)
         }
         else item && item.after(card)
-    }
-
-    onUpdateNewChat(event) {
-        const chat = event.detail.chat
-        const card = this.find(ChatCard, ({ chat : { id } }) => id === chat.id)
-        if(card) return
-        this.children = [
-            [new ChatCard({ chat }), ...this.articles].sort((card1, card2) => {
-                return card1.chat.order - card2.chat.order
-            }),
-            this._progress
-        ]
     }
 
     onScroll(event) {
@@ -98,8 +115,12 @@ export class ChatFeed extends Feed
     async getChats() {
         const { chat_ids } = await api.send('getChats', this.query)
         return await Promise.all(chat_ids.map(chat_id => {
-            return api.send('getChat', { chat_id })
+            return this.getChat(chat_id)
         }))
+    }
+    
+    get chatIds() {
+        return this.articles.map(({ chat }) => chat.id)
     }
 
     get query() {
