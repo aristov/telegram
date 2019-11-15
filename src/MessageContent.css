@@ -1,0 +1,27 @@
+.MessageContent .Notice
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+    padding: 4px 7px;
+    border-radius: 12px;
+}
+.MessageText
+{
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    line-height: 1.4;
+    box-shadow: 0 1px 2px 0 rgba(16,35,47,0.15);
+}
+.MessageText p:first-child
+{
+    margin-top: 0;
+}
+.MessageText p:last-child
+{
+    margin-bottom: 0;
+}
+.MessagePhoto img
+{
+    max-width: 100%;
+}

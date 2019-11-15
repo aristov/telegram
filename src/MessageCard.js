@@ -1,15 +1,19 @@
 import { Article } from 'ariamodule/lib'
-import types from './MessageContent'
-import './MessageCard.css'
+import { MessageContent } from './MessageContent'
+import * as index from './MessageContent.index'
+
+const types = {}
+
+for(const key of Object.keys(index)) {
+    types[key.toLowerCase()] = index[key]
+}
 
 export class MessageCard extends Article
 {
     init(init) {
         super.init(init)
         const content = init.message.content
-        const handler = types[content['@type']]
-        if(typeof handler === 'function') {
-            this.children = handler(content)
-        }
+        const type = types[content['@type'].toLowerCase()] || MessageContent
+        this.children = new type({ content })
     }
 }
