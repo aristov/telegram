@@ -2,6 +2,15 @@ html
 {
     height: 100%;
 }
+a[href]
+{
+    color: #4ea4f6;
+    outline: none;
+}
+a[href]:not(:hover):not(:focus)
+{
+    text-decoration: none;
+}
 .Page
 {
     font-family: Arial, sans-serif;
