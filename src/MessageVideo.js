@@ -1,6 +1,7 @@
-import { P, Video } from 'htmlmodule/lib'
+import { Video } from 'htmlmodule/lib'
 import { api } from './api'
 import { Bubble } from './Bubble'
+import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
 import './MessageVideo.css'
 
@@ -15,7 +16,7 @@ export class MessageVideo extends MessageContent
                     src : await api.getFileUrl(video),
                     controls : true
                 }),
-                content.caption.text && new P(content.caption.text)
+                content.caption.text && new FormattedText({ text : content.caption })
             ]
         })
     }

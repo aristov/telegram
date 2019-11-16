@@ -1,6 +1,7 @@
-import { Img, P } from 'htmlmodule/lib'
+import { Img } from 'htmlmodule/lib'
 import { api } from './api'
 import { Bubble } from './Bubble'
+import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
 import './MessagePhoto.css'
 
@@ -20,7 +21,7 @@ export class MessagePhoto extends MessageContent
                     src : await api.getFileUrl(photo),
                     alt : 'Photo'
                 }),
-                content.caption.text && new P(content.caption.text)
+                content.caption.text && new FormattedText({ text : content.caption })
             ]
         })
     }

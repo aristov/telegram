@@ -1,5 +1,6 @@
 .MessageContent,
-.MessageContent p
+.MessageContent p,
+.MessageContent .FormattedText
 {
     line-height: 1.4;
 }
