@@ -1,0 +1,59 @@
+.ListBox
+{
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    margin: var(--Button--margin);
+}
+.ListBox > .Inner
+{
+    position: relative;
+    display: block;
+    overflow-y: auto;
+    border: var(--Button--border);
+    border-radius: var(--Button--border-radius);
+    padding: var(--ListBox--padding);
+}
+.ListBox:hover:not([aria-expanded]) > .Inner
+{
+    border-color: var(--Button_hover--border-color);
+}
+.ListBox:focus > .Inner
+{
+    border-color: var(--Button_focus--border-color);
+    box-shadow: var(--Button_focus--box-shadow);
+}
+.ListBox:focus .Option[aria-selected=true]:active,
+.ListBox:focus .Option[aria-selected=true].active
+{
+    background: var(--Option_selected_active--background);
+}
+.ListBox[aria-readonly=true] > .Inner,
+.ListBox[aria-readonly=true] label
+{
+    opacity: var(--Button_readonly--opacity);
+}
+.ListBox[aria-disabled=true] > .Inner
+{
+    background: var(--Button_disabled--background);
+    border-color: var(--Button_disabled--border-color);
+}
+.ListBox[aria-disabled=true],
+.ListBox[aria-disabled=true] .Option
+{
+    color: var(--Button_disabled--color);
+    cursor: var(--Button_disabled--cursor);
+}
+.ListBox[aria-disabled=true] .Option[aria-selected=true]:not([aria-checked])
+{
+    background: var(--Option_selected_disabled--background);
+}
+.ListBox[aria-disabled=true] .Option[aria-checked=true]::before
+{
+    opacity: var(--CheckMark_disabled--opacity);
+}
+.ListBox[aria-expanded] > .Inner
+{
+    max-height: 500px;
+}

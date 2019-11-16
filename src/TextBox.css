@@ -1,0 +1,94 @@
+.TextBox
+{
+    display: inline-block;
+    position: relative;
+    margin: var(--Button--margin);
+}
+.TextBox > .Box
+{
+    display: inline-block;
+    box-sizing: border-box;
+    background: var(--Button--background);
+    width: var(--TextBox-Box--width);
+    padding: var(--TextBox-Box--padding);
+    border: var(--Button--border);
+    border-radius: var(--Button--border-radius);
+    vertical-align: middle;
+}
+.TextBox .Edit
+{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    width: 100%;
+    /*height: var(--TextBox-Edit--height);*/
+    padding: var(--TextBox-Edit--padding);
+}
+.TextBox .Placeholder
+{
+    position: absolute;
+    padding: var(--TextBox-Edit--padding);
+    color: var(--TextBox-Placeholder--color);
+}
+.TextBox .ClearButton
+{
+    position: absolute;
+    right: 0;
+    border-color: transparent;
+    box-shadow: none;
+    margin: 0;
+}
+.TextBox .ClearButton:not(:hover)
+{
+    opacity: var(--Button_haspopup-after__opacity);
+}
+.TextBox:hover > .Box
+{
+    border-color: var(--Button_hover--border-color);
+}
+.TextBox.focus > .Box
+{
+    border-color: var(--Button_focus--border-color);
+    box-shadow: var(--Button_focus--box-shadow);
+}
+.TextBox[aria-readonly=true]
+{
+    opacity: var(--Button_readonly--opacity);
+}
+.TextBox[aria-disabled=true]
+{
+    color: var(--Button_disabled--color);
+    cursor: var(--Button_disabled--cursor);
+}
+.TextBox[aria-disabled=true] > .Box
+{
+    background: var(--Button_disabled--background);
+    border-color: var(--Button_disabled--border-color);
+}
+.TextBox[aria-disabled=true]:not([data-value]) .Edit::after
+{
+    content: ' ';
+}
+.TextBox[aria-multiline] .Edit
+{
+    white-space: normal;
+    overflow: auto;
+    height: var(--TextBox_multiline--height);
+}
+.TextBox[data-value] .Placeholder,
+.TextBox:not([data-value]) .ClearButton
+{
+    display: none;
+}
+@media (max-width: 499px)
+{
+    .TextBox,
+    .TextBox > .Box
+    {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+}

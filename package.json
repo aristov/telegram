@@ -24,5 +24,8 @@
   "scripts": {
     "start": "node server/app.js",
     "watch": "webpack -w"
+  },
+  "dependencies": {
+    "lodash": "latest"
   }
 }

@@ -1,10 +1,10 @@
 import 'ariamodule/lib/debug'
 import { Details, Pre, Summary } from 'htmlmodule/lib'
-import { api } from './api'
+// import { api } from './api'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
 
-window.api = api
+// window.api = api
 
 const build = MessageContent.prototype.build
 

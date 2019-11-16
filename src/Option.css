@@ -1,0 +1,39 @@
+.Option
+{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: var(--Option--padding);
+}
+.Option:hover
+{
+    background: var(--Option_hover--background);
+}
+.Option[aria-selected=true]
+{
+    color: var(--Option_selected--color);
+    background: var(--Option_selected--background);
+}
+.Option[aria-checked]
+{
+    padding-left: 25px;
+}
+.Option[aria-checked=true]::before
+{
+    /*content: url(images/CheckMark_black.svg);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 4px 6px;
+}
+.Option[aria-disabled=true]
+{
+    color: var(--Button_disabled--color);
+    cursor: var(--Button_disabled--cursor);
+    background: var(--Button--background);
+    opacity: .5;
+}
+.Option[aria-hidden=true]
+{
+    display: none;
+}

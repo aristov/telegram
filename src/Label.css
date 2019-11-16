@@ -1,0 +1,13 @@
+.Label
+{
+    display: block;
+    color: var(--Label--color);
+    font-size: var(--Label--font-size);
+    margin: var(--Label--margin);
+    cursor: default;
+}
+[aria-disabled=true] > .Label,
+.disabled > .Label
+{
+    opacity: .5;
+}

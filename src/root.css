@@ -1,0 +1,118 @@
+:root
+{
+    --Link_focus--color: rgba(0, 127, 127, 1);
+}
+:root
+{
+    --Button--background: transparent;
+
+    --Button--padding-top: 5px;
+    --Button--padding-right: 12px;
+    --Button--padding-bottom: var(--Button--padding-top);
+    --Button--padding-left: var(--Button--padding-right);
+    --Button--padding: var(--Button--padding-top) var(--Button--padding-right) var(--Button--padding-bottom) var(--Button--padding-left);
+
+    --Button--border-color: rgba(0, 0, 0, .2);
+    --Button--border-width: 3px;
+    --Button--border-radius: 6px;
+    --Button--border: var(--Button--border-width) solid var(--Button--border-color);
+
+    --Button--margin-top: 15px;
+    --Button--margin-right: 15px;
+    --Button--margin-bottom: 15px;
+    --Button--margin-left: 0;
+    --Button--margin:
+            var(--Button--margin-top)
+            var(--Button--margin-right)
+            var(--Button--margin-bottom)
+            var(--Button--margin-left);
+
+    --Button--min-width: calc(var(--Button--padding-left) + 5px + var(--Button--padding-right));
+
+    --Button_hover--border-color: rgba(0, 0, 0, .3);
+
+    /*--Button_focus--border-color: #7ff;*/
+    --Button_focus--border-color: rgb(102, 255, 197);
+    --Button_focus--box-shadow: 0 0 0 1px var(--Button_focus--border-color);
+
+    --Button_active--background: #f3f1ed;
+
+    --Button_disabled--color: rgba(0, 0, 0, .5);
+    --Button_disabled--background: #e8e8e8;
+    --Button_disabled--border-color: transparent;
+    --Button_disabled--cursor: default;
+
+    --Button_pressed--color: #fff;
+    --Button_pressed--background: rgba(103, 192, 255, 1);
+    --Button_pressed_active--background: rgba(103, 192, 255, .7);
+    --Button_pressed_disabled--background: rgba(0, 0, 0, .15);
+
+    --Button_readonly--opacity: .7;
+
+    --Button_haspopup-after__opacity: .4;
+}
+:root
+{
+    --CheckBox--padding: var(--Button--padding-top) var(--Button--padding-right) var(--Button--padding-bottom) 0;
+
+    --CheckBox-before--padding: 9px;
+
+    --CheckBox-label--margin: 0 0 0 8px;
+
+    --CheckBox_checked-before--background: var(--Button_pressed--background);
+    --CheckBox_checked_active-before--background: var(--Button_pressed_active--background);
+    --CheckBox_checked_disabled-before--background: var(--Button_pressed_disabled--background);
+}
+:root
+{
+    --Option--padding: var(--Button--padding);
+
+    --Option_selected--color: var(--Button_pressed--color);
+    --Option_selected--background: var(--Button_pressed--background);
+    --Option_selected_active--background: var(--Button_pressed_active--background);
+    --Option_selected_disabled--background: var(--Button_pressed_disabled--background);
+
+    --Option_hover--background: rgba(0, 0, 0, 0.01);
+
+    --ListBox--padding: 6px 0;
+    
+    --ListBox_expanded--box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .5);
+    --ListBox_expanded--background: #fff;
+}
+:root
+{
+    --TextBox-Box--width: 200px;
+    --TextBox-Box--padding-left: 8px;
+    --TextBox-Box--padding-right: 8px;
+    --TextBox-Box--padding: 0 var(--TextBox-Box--padding-right) 0 var(--TextBox-Box--padding-left);
+
+    /*--TextBox-Edit--height: 16px;*/
+    --TextBox-Edit--padding: var(--Button--padding-top) 0 var(--Button--padding-bottom);
+
+    --TextBox-Placeholder--color: #aaa;
+
+    --TextBox_multiline--height: 60px;
+    --TextBox_invalid-Box--border-color: #f00;
+}
+:root
+{
+    --Label--margin: 0 0 2px 0;
+    --Label--color: rgba(0, 0, 0, .5);
+    --Label--font-size: .8em;
+}
+:root
+{
+    --CheckMark_disabled--opacity: .4;
+}
+:root
+{
+    --Dialog_modal-before--background: rgba(0, 0, 0, .5);
+}
+@media (max-width: 499px)
+{
+    :root
+    {
+        --Button--padding-top: 10px;
+        --Button--padding-right: 15px;
+    }
+}

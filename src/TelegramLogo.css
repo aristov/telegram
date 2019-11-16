@@ -1,0 +1,7 @@
+.TelegramLogo
+{
+    width: 160px;
+    height: 160px;
+    background: url('TelegramLogo.png') center center / contain no-repeat;
+    margin: 0 auto;
+}

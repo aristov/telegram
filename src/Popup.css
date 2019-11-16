@@ -1,0 +1,28 @@
+.Popup
+{
+    position: fixed;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    /*transition: opacity .2s, transform .2s;*/
+}
+.Popup > .Inner
+{
+    background: var(--ListBox_expanded--background);
+    border-color: var(--Button_focus--border-color);
+    box-shadow: var(--ListBox_expanded--box-shadow);
+    box-sizing: border-box;
+    height: 100%;
+}
+.Popup[hidden=false-true],
+.Popup[hidden=true-false]
+{
+    opacity: 0;
+    transform: translateY(1em);
+}
+.Popup[hidden='']
+{
+    display: none;
+}

@@ -1,12 +1,15 @@
 import { WindowAssembler } from 'htmlmodule/lib'
-import { Page } from './Page'
+import { AuthorizationPage } from './AuthorizationPage'
 
 export class Telegram extends WindowAssembler {
     init(init) {
         super.init(init)
         this.document.documentElement.lang = 'en'
-        new Page({ node : document.body })
+        new AuthorizationPage({ node : document.body })
+        // api.on('updateAuthorizationState', this.onUpdateAuthorizationState.bind(this))
     }
+
+    /*onUpdateAuthorizationState(event) {}*/
 }
 
 Object.defineProperty(Telegram.Assembler.prototype, 'app', {
