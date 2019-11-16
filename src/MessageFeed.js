@@ -22,7 +22,6 @@ export class MessageFeed extends Feed
     }
 
     onLoad(event) {
-        console.log(event)
         this.resetScroll()
     }
 
@@ -46,19 +45,22 @@ export class MessageFeed extends Feed
     }
 
     addMessages(messages) {
+        const node = this.node
         this.saveScrollDelta()
         for(const message of messages) {
             this.prepend(new MessageCard({ message }))
         }
-        this.node.scrollTo(0, this.node.scrollHeight - this._scrollDelta)
+        node.scrollTo(0, node.scrollHeight - this._scrollDelta)
     }
 
     saveScrollDelta() {
-        this._scrollDelta = this.node.scrollHeight - this.node.scrollTop
+        const node = this.node
+        this._scrollDelta = node.scrollHeight - node.scrollTop
     }
 
     resetScroll() {
-        this.node.scrollTo(0, this.node.scrollHeight - this._scrollDelta)
+        const node = this.node
+        node.scrollTo(0, node.scrollHeight - this._scrollDelta)
         this.saveScrollDelta()
     }
 
