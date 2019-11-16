@@ -1,0 +1,8 @@
+.MessageText p:first-child
+{
+    margin-top: 0;
+}
+.MessageText p:last-child
+{
+    margin-bottom: 0;
+}

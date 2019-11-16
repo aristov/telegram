@@ -10,32 +10,7 @@
     padding: 4px 7px;
     border-radius: 12px;
 }
-.MessageText .MessageBubble
-{
-    padding: 10px;
-}
-.MessageText p:first-child
-{
-    margin-top: 0;
-}
-.MessageText p:last-child
-{
-    margin-bottom: 0;
-}
-.MessageCall .CallTimeInfo
+.MessageContent .CallTimeInfo
 {
     color: rgba(0, 0, 0, .4);
-}
-.MessagePhoto .MessageBubble
-{
-    line-height: 0;
-}
-.MessagePhoto img
-{
-    max-width: 100%;
-}
-.MessagePhoto p
-{
-    margin: 10px 0;
-    padding: 0 10px;
 }
