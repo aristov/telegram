@@ -11,7 +11,7 @@ export class ChatTime extends Time
     build(init) {
         const now = moment()
         const dayBefore = moment().subtract(1, 'day')
-        const time = moment(init.chat.last_message.date * 1000)
+        const time = moment.unix(init.chat.last_message.date)
         const format = time.isAfter(dayBefore, 'day')?
             'H:mm' :
             time.isSame(now, 'week')? 'ddd' : 'D.MM.YY'

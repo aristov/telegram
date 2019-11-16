@@ -73,7 +73,7 @@ export class ChatStatus extends Status
                         case 'userStatusOffline' :
                             this.children = [
                                 'last seen ',
-                                moment(user.status.was_online * 1000).fromNow()
+                                moment.unix(user.status.was_online).fromNow()
                             ]
                             break
                     }

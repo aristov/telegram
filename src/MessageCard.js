@@ -12,8 +12,9 @@ export class MessageCard extends Article
 {
     init(init) {
         super.init(init)
-        const content = init.message.content
+        const message = init.message
+        const content = message.content
         const type = types[content['@type'].toLowerCase()] || MessageContent
-        this.children = new type({ content })
+        this.children = new type({ content, message })
     }
 }

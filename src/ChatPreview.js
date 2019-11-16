@@ -1,4 +1,5 @@
-import { Span } from 'htmlmodule/lib'
+import moment from './moment'
+import { Span, Time } from 'htmlmodule/lib'
 import { api } from './api'
 
 export class ChatPreview extends Span
@@ -27,23 +28,12 @@ export class ChatPreview extends Span
                     content.caption.text
                 ]
             case 'messageCall' :
-                const callTitle = content.discard_reason['@type'] === 'callDiscardReasonMissed'?
-                    'Missed call' :
+                const durationTime = new Time(moment.duration(content.duration, 'seconds').humanize())
+                return new ChatPreviewInfo([
                     message.sender_user_id === api.options.my_id?
                         'Outgoing call' :
-                        'Incoming call'
-                const duration = content.duration
-                const minutes = duration / 60 | 0
-                const seconds = duration % 60
-                return new ChatPreviewInfo([
-                    callTitle,
-                    !!duration && [
-                        ' (',
-                        !!minutes && minutes + ' min',
-                        (!!minutes || !!seconds) && ' ',
-                        !!seconds && seconds + ' s',
-                        ')'
-                    ]
+                        'Incoming call',
+                    !!content.duration && [', ', durationTime]
                 ])
             case 'messageContactRegistered' :
                 const title = chat.title || 'Deleted Account'

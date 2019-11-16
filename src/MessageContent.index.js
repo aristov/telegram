@@ -1,3 +1,5 @@
+import moment from './moment'
+import { Div, Time } from 'htmlmodule'
 import { Img, P } from 'htmlmodule/lib'
 import { api } from './api'
 import { MessageContent } from './MessageContent'
@@ -44,14 +46,41 @@ export class MessageBasicGroupChatCreate extends MessageContent
     }
 }
 
-export class MessageAnimation extends MessageContent {}
+export class MessageAnimation extends MessageContent
+{
+}
 
-export class MessageCall extends MessageContent {}
+export class MessageCall extends MessageText
+{
+    build({ content, message }) {
+        const callType = message.sender_user_id === api.options.my_id?
+            'Outgoing call' :
+            'Incoming call'
+        const durationTime = new Time(moment.duration(content.duration, 'seconds').humanize())
+        return [
+            new Div(callType),
+            new CallTimeInfo([
+                new Time(moment.unix(message.date).format('HH:mm')),
+                !!content.duration && [', ', durationTime]
+            ])
+        ]
+    }
+}
 
-export class MessageContactRegistered extends MessageContent {}
+export class MessageContactRegistered extends MessageContent
+{
+}
 
-export class MessageChatDeleteMember extends MessageContent {}
+export class MessageChatDeleteMember extends MessageContent
+{
+}
 
-export class MessageSupergroupChatCreate extends MessageContent {}
+export class MessageSupergroupChatCreate extends MessageContent
+{
+}
 
-export class MessageVideo extends MessageContent {}
+export class MessageVideo extends MessageContent
+{
+}
+
+class CallTimeInfo extends Div {}

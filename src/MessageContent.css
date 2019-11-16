@@ -25,3 +25,7 @@
 {
     max-width: 100%;
 }
+.MessageContent .CallTimeInfo
+{
+    color: rgba(0, 0, 0, .4);
+}
