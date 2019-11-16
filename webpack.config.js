@@ -16,7 +16,7 @@ const rules = [
             {
                 loader : 'css-loader',
                 options : {
-                    importLoaders : 1,
+                    importLoaders : 1
                     // url : false
                 }
             },
@@ -69,6 +69,12 @@ module.exports = [
             filename : 'build.[name].js'
         },
         module : { rules },
+        devServer : {
+            contentBase : path.join(__dirname, 'public'),
+            publicPath : '/build/',
+            open: 'Google Chrome',
+            hot : true
+        },
         plugins
     }
 ]

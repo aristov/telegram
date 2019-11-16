@@ -26,7 +26,8 @@ export class AuthorizationStateWaitPhoneNumber extends AuthorizationState
                 label : new Label('Phone Number')
             }),
             new CheckBox({
-                label : new HTMLLabel('Keep me signed in')
+                label : new HTMLLabel('Keep me signed in'),
+                checked : true
             })
         ]
     }

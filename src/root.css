@@ -1,25 +1,30 @@
 :root
 {
+    --color-highlight: #4ea4f6;
+}
+/*================================================================*/
+:root
+{
     --Link_focus--color: rgba(0, 127, 127, 1);
 }
 :root
 {
     --Button--background: transparent;
 
-    --Button--padding-top: 5px;
+    --Button--padding-top: 15px;
     --Button--padding-right: 12px;
     --Button--padding-bottom: var(--Button--padding-top);
     --Button--padding-left: var(--Button--padding-right);
     --Button--padding: var(--Button--padding-top) var(--Button--padding-right) var(--Button--padding-bottom) var(--Button--padding-left);
 
-    --Button--border-color: rgba(0, 0, 0, .2);
-    --Button--border-width: 3px;
-    --Button--border-radius: 6px;
+    --Button--border-color: rgba(0, 0, 0, .15);
+    --Button--border-width: 1px;
+    --Button--border-radius: 10px;
     --Button--border: var(--Button--border-width) solid var(--Button--border-color);
 
-    --Button--margin-top: 15px;
+    --Button--margin-top: 25px;
     --Button--margin-right: 15px;
-    --Button--margin-bottom: 15px;
+    --Button--margin-bottom: 25px;
     --Button--margin-left: 0;
     --Button--margin:
             var(--Button--margin-top)
@@ -32,8 +37,8 @@
     --Button_hover--border-color: rgba(0, 0, 0, .3);
 
     /*--Button_focus--border-color: #7ff;*/
-    --Button_focus--border-color: rgb(102, 255, 197);
-    --Button_focus--box-shadow: 0 0 0 1px var(--Button_focus--border-color);
+    --Button_focus--border-color: var(--color-highlight);
+    --Button_focus--box-shadow: 0 0 0 1px var(--color-highlight) inset;
 
     --Button_active--background: #f3f1ed;
 
@@ -43,7 +48,7 @@
     --Button_disabled--cursor: default;
 
     --Button_pressed--color: #fff;
-    --Button_pressed--background: rgba(103, 192, 255, 1);
+    --Button_pressed--background: var(--color-highlight);
     --Button_pressed_active--background: rgba(103, 192, 255, .7);
     --Button_pressed_disabled--background: rgba(0, 0, 0, .15);
 
@@ -82,8 +87,8 @@
 :root
 {
     --TextBox-Box--width: 200px;
-    --TextBox-Box--padding-left: 8px;
-    --TextBox-Box--padding-right: 8px;
+    --TextBox-Box--padding-left: 15px;
+    --TextBox-Box--padding-right: 15px;
     --TextBox-Box--padding: 0 var(--TextBox-Box--padding-right) 0 var(--TextBox-Box--padding-left);
 
     /*--TextBox-Edit--height: 16px;*/
@@ -97,8 +102,8 @@
 :root
 {
     --Label--margin: 0 0 2px 0;
-    --Label--color: rgba(0, 0, 0, .5);
-    --Label--font-size: .8em;
+    --Label--color: rgba(0, 0, 0, .3);
+    --Label--font-size: 1em;
 }
 :root
 {

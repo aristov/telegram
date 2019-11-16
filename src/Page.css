@@ -4,7 +4,7 @@ html
 }
 a[href]
 {
-    color: #4ea4f6;
+    color: var(--color-highlight);
     outline: none;
 }
 a[href]:not(:hover):not(:focus)

@@ -9,6 +9,7 @@
     "csso-webpack-plugin": "^1.0.0-beta.12",
     "express": "^4.17.1",
     "htmlmodule": "github:aristov/htmlmodule",
+    "lodash": "latest",
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
     "postcss-svg": "^3.0.0",
@@ -19,13 +20,12 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
     "start": "node server/app.js",
+    "dev": "webpack-dev-server",
     "watch": "webpack -w"
-  },
-  "dependencies": {
-    "lodash": "latest"
   }
 }
