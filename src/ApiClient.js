@@ -119,13 +119,4 @@ export class ApiClient extends EventTarget
     authorizationStateReady(state) {
         this.emit('authorizationStateReady', { detail : state })
     }
-
-    getChatHistory({ chat_id, from_message_id }) {
-        return this.send('getChatHistory', {
-            chat_id,
-            from_message_id,
-            offset : 0,
-            limit : 20
-        })
-    }
 }

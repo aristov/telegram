@@ -1,12 +1,12 @@
 .MessageFeed
 {
-    padding: 20px;
+    padding: 10px 20px;
     overflow: auto;
     width: 100%;
     box-sizing: border-box;
 }
-.MessageCard
+.MessageFeed .MessageCard
 {
     max-width: 696px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
