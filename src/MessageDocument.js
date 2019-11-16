@@ -6,7 +6,7 @@ import { TdFile } from './TdFile'
 
 export class MessageDocument extends MessageContent
 {
-    async build({ message, content }) {
+    async build({ content }) {
         const { file_name, document } = content.document
         return new Bubble([
             new A({

@@ -61,7 +61,7 @@ export class ChatPreview extends Span
             case 'messageSupergroupChatCreate':
                 return new ChatPreviewInfo('You joined this channel')
             case 'messageVideo':
-                return new ChatPreviewInfo('Album')
+                return new ChatPreviewInfo('Video')
             case 'messageText':
                 const user_id = message.sender_user_id
                 if(chat.id !== 777000 && user_id) {
