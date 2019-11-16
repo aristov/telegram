@@ -5,7 +5,9 @@ export class FormattedText extends Div
 {
     init(init) {
         super.init(init)
-        this.innerHTML = this.build(init)
+        if(init.formattedText) {
+            this.innerHTML = this.build(init)
+        }
     }
 
     build({ formattedText }) {

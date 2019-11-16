@@ -1,16 +1,24 @@
 import 'ariamodule/lib/debug'
 import { Details, Pre, Summary } from 'htmlmodule/lib'
 import { api } from './api'
+import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
 
 window.api = api
 
-MessageContent.prototype.build = function({ message, content }) {
-    return [
-        new Pre(JSON.stringify(content, null, 2)),
+const build = MessageContent.prototype.build
+
+MessageContent.prototype.build = function(init) {
+    const bubble = build.call(this, init)
+    bubble.append(new FormattedText([
+        new Details([
+            new Summary('content'),
+            new Pre(JSON.stringify(init.content, null, 2)),
+        ]),
         new Details([
             new Summary('message'),
-            new Pre(JSON.stringify(message, null, 2)),
+            new Pre(JSON.stringify(init.message, null, 2)),
         ])
-    ]
+    ]))
+    return bubble
 }

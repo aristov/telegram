@@ -26,3 +26,8 @@
 {
     display: block;
 }
+.MessageContent img,
+.MessageContent video
+{
+    max-width: 100%;
+}

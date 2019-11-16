@@ -31,7 +31,6 @@ export class MessageFeed extends Feed
     }
 
     addMessages(messages) {
-        console.log(messages)
         for(const message of messages) {
             this.prepend(new MessageCard({ message }))
         }
