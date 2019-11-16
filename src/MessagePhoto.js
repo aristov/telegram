@@ -2,8 +2,8 @@ import { Img } from 'htmlmodule/lib'
 import { api } from './api'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
+import { MediaContainer } from './MediaContainer'
 import { MessageContent } from './MessageContent'
-import './MessagePhoto.css'
 
 export class MessagePhoto extends MessageContent
 {
@@ -17,10 +17,10 @@ export class MessagePhoto extends MessageContent
         return new Bubble({
             style : { maxWidth : width + 'px' },
             children : [
-                new Img({
+                new MediaContainer(new Img({
                     src : await api.getFileUrl(photo),
                     alt : 'Photo'
-                }),
+                })),
                 content.caption.text?
                     new FormattedText({ formattedText : content.caption }) :
                     null

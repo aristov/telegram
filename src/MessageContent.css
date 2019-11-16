@@ -8,6 +8,11 @@
 {
     margin: 18px 0;
 }
+.MessageContent img,
+.MessageContent video
+{
+    max-width: 100%;
+}
 .MessageContent .Notice
 {
     color: #fff;
@@ -26,8 +31,10 @@
 {
     display: block;
 }
-.MessageContent img,
-.MessageContent video
+.MessageContent .ChatPhoto
 {
-    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto 15px;
+    display: block;
 }
