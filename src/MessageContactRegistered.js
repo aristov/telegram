@@ -5,13 +5,11 @@ import { TdUser } from './TdUser'
 
 export class MessageContactRegistered extends MessageContent
 {
-    build({ message, content }) {
-        api.send('getUser', { user_id : message.sender_user_id })
-            .then(user => {
-                this.children = new Notice([
-                    TdUser.getFullName(user),
-                    ' joined Telegram'
-                ])
-            })
+    async build({ message, content }) {
+        const user = await api.send('getUser', { user_id : message.sender_user_id })
+        return new Notice([
+            TdUser.getFullName(user),
+            ' joined Telegram'
+        ])
     }
 }

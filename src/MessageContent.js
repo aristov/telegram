@@ -1,4 +1,5 @@
-import { Details, Div, Pre, Summary } from 'htmlmodule'
+import { Div } from 'htmlmodule'
+import { Bubble } from './Bubble'
 import './MessageContent.css'
 
 export class MessageContent extends Div
@@ -9,12 +10,9 @@ export class MessageContent extends Div
     }
 
     build({ message, content }) {
-        return [
-            new Pre(JSON.stringify(content, null, 2)),
-            new Details([
-                new Summary('message'),
-                new Pre(JSON.stringify(message, null, 2)),
-            ])
-        ]
+        return new Bubble({
+            style : { color : '#aaa', fontFamily : 'monospace' },
+            children : `The message type "${ content['@type'] }" is not supported`
+        })
     }
 }
