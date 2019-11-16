@@ -1,13 +1,19 @@
+.MessageContent,
+.MessageContent p
+{
+    line-height: 1.4;
+}
 .MessageContent p
 {
     margin: 18px 0;
-    line-height: 1.4;
 }
 .MessageContent .Notice
 {
     color: #fff;
     background: rgba(0, 0, 0, .3);
-    padding: 4px 7px;
+    width: fit-content;
+    padding: 2px 7px;
+    margin: 0 auto;
     border-radius: 12px;
 }
 .MessageContent .CallTimeInfo

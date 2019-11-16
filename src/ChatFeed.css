@@ -1,12 +1,15 @@
 .ChatFeed
 {
-    position: relative;
+    position: absolute;
     width: 420px;
+    height: 100%;
+    box-sizing: border-box;
     min-width: 250px;
     background: #fff;
     border-right: 1px solid #dadce0;
     overflow: auto;
     padding: 5px 0;
+    z-index: 1;
 }
 .ChatFeed .FeedProgress
 {
