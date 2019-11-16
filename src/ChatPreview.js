@@ -1,6 +1,7 @@
 import moment from './moment'
 import { Span, Time } from 'htmlmodule/lib'
 import { api } from './api'
+import { User } from './User'
 
 export class ChatPreview extends Span
 {
@@ -42,15 +43,11 @@ export class ChatPreview extends Span
                 return Promise.all([
                     api.send('getUser', { user_id : message.sender_user_id }),
                     api.send('getUser', { user_id : content.user_id })
-                ]).then(([sender, user]) => {
-                    return new ChatPreviewInfo([
-                        sender.first_name,
-                        sender.last_name,
-                        'removed',
-                        user.first_name,
-                        user.last_name
-                    ].filter(Boolean).join(' '))
-                })
+                ]).then(([sender, user]) => new ChatPreviewInfo([
+                    User.getFullName(sender),
+                    ' removed ',
+                    User.getFullName(user)
+                ]))
             case 'messageBasicGroupChatCreate':
                 return api.send('getUser', { user_id : content.member_user_ids[0] })
                     .then(user => {

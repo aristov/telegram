@@ -1,3 +1,8 @@
+.MessageContent p
+{
+    margin: 18px 0;
+    line-height: 1.4;
+}
 .MessageContent .Notice
 {
     color: #fff;
@@ -5,13 +10,9 @@
     padding: 4px 7px;
     border-radius: 12px;
 }
-.MessageText
+.MessageText .MessageBubble
 {
     padding: 10px;
-    background: #fff;
-    border-radius: 10px;
-    line-height: 1.4;
-    box-shadow: 0 1px 2px 0 rgba(16,35,47,0.15);
 }
 .MessageText p:first-child
 {
@@ -21,11 +22,20 @@
 {
     margin-bottom: 0;
 }
+.MessageCall .CallTimeInfo
+{
+    color: rgba(0, 0, 0, .4);
+}
+.MessagePhoto .MessageBubble
+{
+    line-height: 0;
+}
 .MessagePhoto img
 {
     max-width: 100%;
 }
-.MessageContent .CallTimeInfo
+.MessagePhoto p
 {
-    color: rgba(0, 0, 0, .4);
+    margin: 10px 0;
+    padding: 0 10px;
 }
