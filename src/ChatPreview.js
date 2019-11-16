@@ -1,7 +1,7 @@
 import moment from './moment'
 import { Span, Time } from 'htmlmodule/lib'
 import { api } from './api'
-import { User } from './User'
+import { TdUser } from './TdUser'
 
 export class ChatPreview extends Span
 {
@@ -29,12 +29,12 @@ export class ChatPreview extends Span
                     content.caption.text
                 ]
             case 'messageCall' :
-                const durationTime = new Time(moment.duration(content.duration, 'seconds').humanize())
+                const durationTime = moment.duration(content.duration, 'seconds').humanize()
                 return new ChatPreviewInfo([
                     message.sender_user_id === api.options.my_id?
                         'Outgoing call' :
                         'Incoming call',
-                    !!content.duration && [', ', durationTime]
+                    !!content.duration && [', ', new Time(durationTime)]
                 ])
             case 'messageContactRegistered' :
                 const title = chat.title || 'Deleted Account'
@@ -44,9 +44,9 @@ export class ChatPreview extends Span
                     api.send('getUser', { user_id : message.sender_user_id }),
                     api.send('getUser', { user_id : content.user_id })
                 ]).then(([sender, user]) => new ChatPreviewInfo([
-                    User.getFullName(sender),
+                    TdUser.getFullName(sender),
                     ' removed ',
-                    User.getFullName(user)
+                    TdUser.getFullName(user)
                 ]))
             case 'messageBasicGroupChatCreate':
                 return api.send('getUser', { user_id : content.member_user_ids[0] })
@@ -78,6 +78,8 @@ export class ChatPreview extends Span
                             ])
                 }
                 else return content.text.text
+            case 'messageDocument':
+                return new ChatPreviewInfo(content.document.file_name)
         }
     }
 }

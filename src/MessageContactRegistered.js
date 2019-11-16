@@ -1,7 +1,7 @@
 import { api } from './api'
 import { MessageContent } from './MessageContent'
 import { Notice } from './Notice'
-import { User } from './User'
+import { TdUser } from './TdUser'
 
 export class MessageContactRegistered extends MessageContent
 {
@@ -9,7 +9,7 @@ export class MessageContactRegistered extends MessageContent
         api.send('getUser', { user_id : message.sender_user_id })
             .then(user => {
                 this.children = new Notice([
-                    User.getFullName(user),
+                    TdUser.getFullName(user),
                     ' joined Telegram'
                 ])
             })

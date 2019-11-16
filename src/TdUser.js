@@ -1,4 +1,4 @@
-export class User
+export class TdUser
 {
     static getFullName({ first_name, last_name }) {
         return [first_name, last_name].filter(Boolean).join(' ') || this.emptyUserName

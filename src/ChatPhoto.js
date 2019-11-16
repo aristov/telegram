@@ -19,7 +19,7 @@ export class ChatPhoto extends Img
         const { title, photo } = chat
         this.textContent = title? title.charAt(0).toUpperCase() : 'DA'
         if(photo) {
-            api.getFileSrc(photo.small).then(src => this.src = src)
+            api.getFileUrl(photo.small).then(src => this.src = src)
         }
     }
 

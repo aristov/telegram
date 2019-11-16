@@ -8,7 +8,7 @@ export class MessagePhoto extends MessageContent
 {
     build({ content }) {
         const { photo, width } = content.photo.sizes[1]
-        api.getFileSrc(photo).then(src => {
+        api.getFileUrl(photo).then(src => {
             this.children = new Bubble({
                 style : { maxWidth : width + 'px' },
                 children : [

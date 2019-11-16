@@ -1,7 +1,7 @@
 import { api } from './api'
 import { MessageContent } from './MessageContent'
 import { Notice } from './Notice'
-import { User } from './User'
+import { TdUser } from './TdUser'
 
 export class MessageChatDeleteMember extends MessageContent
 {
@@ -11,9 +11,9 @@ export class MessageChatDeleteMember extends MessageContent
             api.send('getUser', { user_id : content.user_id })
         ]).then(([sender, user]) => {
             this.children = new Notice([
-                User.getFullName(sender),
+                TdUser.getFullName(sender),
                 ' removed ',
-                User.getFullName(user)
+                TdUser.getFullName(user)
             ])
         })
     }

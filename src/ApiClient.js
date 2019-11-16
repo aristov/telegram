@@ -46,7 +46,7 @@ export class ApiClient extends EventTarget
 
     /*================================================================*/
 
-    async getFileSrc(file) {
+    async getFileUrl(file) {
         const { id, local } = file
         if(local.is_downloading_completed) {
             return await this.readFile(id)
