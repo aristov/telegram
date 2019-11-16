@@ -1,4 +1,4 @@
-import { Div, Pre } from 'htmlmodule'
+import { Details, Div, Pre, Summary } from 'htmlmodule'
 import './MessageContent.css'
 
 export class MessageContent extends Div
@@ -8,7 +8,13 @@ export class MessageContent extends Div
         this.setProperty('children', this.build(init))
     }
 
-    build({ content }) {
-        return new Pre(JSON.stringify(content, null, 2))
+    build({ message, content }) {
+        return [
+            new Pre(JSON.stringify(content, null, 2)),
+            new Details([
+                new Summary('message'),
+                new Pre(JSON.stringify(message, null, 2)),
+            ])
+        ]
     }
 }

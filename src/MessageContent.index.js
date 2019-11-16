@@ -4,6 +4,7 @@ import { Img, P } from 'htmlmodule/lib'
 import { api } from './api'
 import { MessageContent } from './MessageContent'
 import { Notice } from './Notice'
+import { User } from './User'
 
 export class MessageText extends MessageContent
 {
@@ -35,14 +36,14 @@ export class MessageChatChangeTitle extends MessageContent
 export class MessageChatChangePhoto extends MessageContent
 {
     build({ content }) {
-        return new Notice(`Channel photo changed`)
+        return new Notice('Channel photo changed')
     }
 }
 
 export class MessageBasicGroupChatCreate extends MessageContent
 {
     build({ content }) {
-        return new Notice(`Group created`)
+        return new Notice('Group created')
     }
 }
 
@@ -69,6 +70,15 @@ export class MessageCall extends MessageText
 
 export class MessageContactRegistered extends MessageContent
 {
+    build({ message, content }) {
+        api.send('getUser', { user_id : message.sender_user_id })
+            .then(user => {
+                this.children = new Notice([
+                    User.getFullName(user),
+                    ' joined Telegram'
+                ])
+            })
+    }
 }
 
 export class MessageChatDeleteMember extends MessageContent
@@ -83,4 +93,6 @@ export class MessageVideo extends MessageContent
 {
 }
 
-class CallTimeInfo extends Div {}
+class CallTimeInfo extends Div
+{
+}

@@ -83,19 +83,6 @@ export class ChatPreview extends Span
                 else return content.text.text
         }
     }
-
-    set children(children) {
-        if(children instanceof Promise) {
-            children
-                .then(result => super.children = result)
-                .catch(error => super.children = error)
-        }
-        else super.children = children
-    }
-
-    get children() {
-        return super.children
-    }
 }
 
 class ChatPreviewInfo extends Span
