@@ -1,13 +1,8 @@
 .MessagePhoto .Bubble
 {
     line-height: 0;
-    padding: 0;
 }
 .MessagePhoto img
 {
     max-width: 100%;
-}
-.MessagePhoto .FormattedText
-{
-    padding: 0 10px;
 }

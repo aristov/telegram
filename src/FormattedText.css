@@ -1,0 +1,12 @@
+.FormattedText
+{
+    padding: 7px 10px;
+}
+.FormattedText p:first-child
+{
+    margin-top: 0;
+}
+.FormattedText p:last-child
+{
+    margin-bottom: 0;
+}

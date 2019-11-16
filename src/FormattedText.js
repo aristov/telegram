@@ -1,55 +1,57 @@
-import { A, Br, Div, P, Strong } from 'htmlmodule/lib'
+import { Div } from 'htmlmodule/lib'
+import './FormattedText.css'
 
 export class FormattedText extends Div
 {
     init(init) {
         super.init(init)
-        console.log(this.children = this.build(init))
+        this.innerHTML = this.build(init)
     }
 
-    build({ text }) {
-        return this.splitByEntities(text.text, text.entities)
+    build({ formattedText }) {
+        return this.constructor.format(formattedText)
     }
 
-    splitByEntities(str, entities) {
-        const children = []
-        let startIndex = 0
-        let entity, type, offset, chunk, textContent
-        for(entity of entities) {
-            type = entity.type['@type']
-            if(type === 'textEntityTypeUrl' || type === 'textEntityTypeTextUrl') {
-                offset = entity.offset
-                chunk = str.slice(startIndex, offset)
-                children.push(...this.splitByParagraphs(chunk))
-                startIndex = offset + entity.length
-                textContent = str.slice(offset, startIndex)
-                children.push(new A({
-                    href : entity.type.url || textContent,
-                    target : '_blank',
-                    textContent
-                }))
-                // children.push(`<a href="${ href }" target="_blank">${ textContent }</a>`)
-            }
-            else if(type === 'textEntityTypeBold') {
-                offset = entity.offset
-                chunk = str.slice(startIndex, offset)
-                children.push(...this.splitByParagraphs(chunk))
-                startIndex = offset + entity.length
-                textContent = str.slice(offset, startIndex)
-                children.push(new Strong(textContent))
+    static format(formattedText) {
+        return this.formatLineBreaks(this.formatEntities(formattedText))
+    }
+
+    static formatEntities({ text, entities }) {
+        if(!text) return ''
+        const result = []
+        let index = 0, content
+        for(const entity of entities) {
+            const { type, offset } = entity
+            const $type = type['@type']
+            result.push(text.slice(index, offset))
+            index = offset + entity.length
+            content = text.slice(offset, index)
+            switch($type) {
+                case 'textEntityTypeUrl':
+                case 'textEntityTypeTextUrl':
+                    const href = type.url || content
+                    content = this.formatLongUrl(content)
+                    result.push(`<a href="${ href }" target="_blank">${ content }</a>`)
+                    break
+                case 'textEntityTypeBold':
+                    result.push(`<strong>${ content }</strong>`)
+                    break
+                case 'textEntityTypeItalic':
+                    result.push(`<em>${ content }</em>`)
+                    break
+                default:
+                    result.push(`<!--<${ $type }-->${ content }<!--${ $type }>-->`)
             }
         }
-        children.push(...this.splitByParagraphs(str.slice(startIndex)))
-        return children
+        result.push(text.slice(index))
+        return result.join('')
     }
 
-    splitByParagraphs(str) {
-        return str.split('\n\n').filter(Boolean).map(paragraph => {
-            return new P(...this.splitByLineBreaks(paragraph))
-        })
+    static formatLineBreaks(text) {
+        return text.replace(/\n/g, '<br>')
     }
 
-    splitByLineBreaks(str) {
-        return str.split('\n').map((chunk, i) => [!!i && new Br, chunk])
+    static formatLongUrl(text) {
+        return text.replace(/([^\^])\b(\w)/g, '$1<wbr>$2')
     }
 }

@@ -16,7 +16,9 @@ export class MessageVideo extends MessageContent
                     src : await api.getFileUrl(video),
                     controls : true
                 }),
-                content.caption.text && new FormattedText({ text : content.caption })
+                content.caption.text?
+                    new FormattedText({ formattedText : content.caption }) :
+                    null
             ]
         })
     }
