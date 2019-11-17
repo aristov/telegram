@@ -1,9 +1,6 @@
 import { Input } from 'htmlmodule/lib'
 import { InputBox } from './InputBox'
 
-const CODE_LENGTH = 5
-const RE = new RegExp(`^\\d{${ CODE_LENGTH }}$`)
-
 export class AuthCodeBox extends InputBox
 {
     buildEdit(init) {
@@ -18,14 +15,15 @@ export class AuthCodeBox extends InputBox
         if(/(ArrowUp|ArrowDown)/.test(event.key)) {
             event.preventDefault()
         }
-        if(/^\d$/.test(event.key) && this.value.length === CODE_LENGTH) {
+        if(/^\d$/.test(event.key) && this.value.length === this.codeLength) {
             event.preventDefault()
         }
     }
 
     onInput(event) {
         super.onInput(event)
-        if(RE.test(this.value)) {
+        const codeTestRE = new RegExp(`^\\d{${ this.codeLength }}$`)
+        if(codeTestRE.test(this.value)) {
             this.emit('submit', { bubbles : true, cancelable : true })
         }
     }

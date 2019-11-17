@@ -13,6 +13,10 @@
     margin: 40px auto 15px;
     width: fit-content;
 }
+.AuthForm .Heading > *
+{
+    vertical-align: middle;
+}
 .AuthForm .AuthMessage
 {
     color: rgba(0, 0, 0, .4);
@@ -36,4 +40,13 @@
 .AuthForm .SubmitButton[aria-disabled=true]
 {
     opacity: 0;
+}
+.AuthForm .EditPhoneNumber
+{
+    padding: 15px;
+    min-width: auto;
+    margin-left: 10px;
+    opacity: .6;
+    border: none;
+    background: url('IconEdit.svg') center center / 80% no-repeat;
 }

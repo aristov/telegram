@@ -22,6 +22,7 @@ class ComboBox extends RoleComboBox {
                 onchange : event => event.stopPropagation(),
                 oninput : event => this.onTextBoxInput(event),
                 onkeydown : event => this.onTextBoxKeyDown(event),
+                onsubmit : event => event.stopPropagation(),
                 controls : this._listBox = new ListBox({
                     ownerElement : new Popup({ trigger : this }),
                     tabIndex : null,

@@ -54,7 +54,9 @@ export class ApiClient extends EventTarget
         const state = update.authorization_state
         const type = state['@type']
         if(typeof this[type] === 'function') {
-            this[type](state).then(console.log).catch(console.error)
+            this[type](state).then(console.log).catch(error => {
+                console.error(Error(error.message))
+            })
         }
     }
 
@@ -78,3 +80,17 @@ export class ApiClient extends EventTarget
         })
     }
 }
+
+// authorizationStateWaitTdlibParameters     +
+// authorizationStateWaitEncryptionKey       +
+
+// authorizationStateWaitPhoneNumber         +
+// authorizationStateWaitCode                +
+// authorizationStateWaitPassword
+// authorizationStateWaitRegistration
+
+// authorizationStateReady                   +
+
+// authorizationStateClosed                  +
+// authorizationStateClosing                 +
+// authorizationStateLoggingOut              +

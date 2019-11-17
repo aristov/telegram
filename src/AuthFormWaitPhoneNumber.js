@@ -48,7 +48,8 @@ export class AuthFormWaitPhoneNumber extends AuthForm
         this._submitButton.disabled = !value || invalid
     }
 
-    onSubmit() {
+    onSubmit(event) {
+        if(event.defaultPrevented) return
         api.send('setAuthenticationPhoneNumber', {
             phone_number : this._phoneNumberBox.value
         }).catch(error => this.onError(error))

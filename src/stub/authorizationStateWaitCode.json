@@ -1,0 +1,16 @@
+{
+  "@type": "authorizationStateWaitCode",
+  "code_info": {
+    "@type": "authenticationCodeInfo",
+    "phone_number": "+7 9037307615",
+    "type": {
+      "@type": "authenticationCodeTypeTelegramMessage",
+      "length": 5
+    },
+    "next_type": {
+      "@type": "authenticationCodeTypeSms",
+      "length": 0
+    },
+    "timeout": 0
+  }
+}
