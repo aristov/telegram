@@ -16,4 +16,8 @@ export class AuthForm extends Form
     onSubmit(event) {
         console.log(event)
     }
+
+    onError(error) {
+        console.error(Error(error.message))
+    }
 }

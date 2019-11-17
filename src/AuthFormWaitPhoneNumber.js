@@ -56,7 +56,7 @@ export class AuthFormWaitPhoneNumber extends AuthForm
     }
 
     onError(error) {
-        console.error(Error(error.message))
+        super.onError(error)
         this._phoneNumberBox.invalid = true
     }
 }
