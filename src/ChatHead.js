@@ -1,5 +1,5 @@
-import { Region } from './lib'
-import { Div } from './lib'
+import { Region } from './lib/RoleRegion'
+import { Div } from './lib/HTMLDiv'
 import { api } from './api'
 import { ChatPhoto } from './ChatPhoto'
 import { ChatStatus } from './ChatStatus'

@@ -1,4 +1,4 @@
-import { RoleImg as Img } from './lib'
+import { RoleImg as Img } from './lib/RoleImg'
 import './TelegramLogo.css'
 
 export class TelegramLogo extends Img

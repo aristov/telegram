@@ -1,4 +1,4 @@
-import { WindowAssembler } from './lib'
+import { WindowAssembler } from './lib/WindowAssembler'
 import { api } from './api'
 import { AuthPage } from './AuthPage'
 import { ChatPage } from './ChatPage'

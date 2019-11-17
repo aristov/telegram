@@ -1,3 +1,3 @@
-import { Div } from './lib'
+import { Div } from './lib/HTMLDiv'
 
 export class Content extends Div {}

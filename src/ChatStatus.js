@@ -1,5 +1,5 @@
 import moment from './moment'
-import { Status } from './lib'
+import { Status } from './lib/RoleStatus'
 import { api } from './api'
 
 export class ChatStatus extends Status

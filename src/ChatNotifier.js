@@ -1,5 +1,5 @@
-import { Status } from './lib'
-import { Span } from './lib'
+import { Status } from './lib/RoleStatus'
+import { Span } from './lib/HTMLSpan'
 
 export class ChatNotifier extends Status
 {

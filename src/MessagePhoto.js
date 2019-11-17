@@ -1,4 +1,4 @@
-import { HTMLImg as Img } from './lib'
+import { HTMLImg as Img } from './lib/HTMLImg'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MediaContainer } from './MediaContainer'

@@ -1,4 +1,4 @@
-import { RoleOption } from './lib'
+import { RoleOption } from './lib/RoleOption'
 import './Option.css'
 
 /**

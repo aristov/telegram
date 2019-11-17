@@ -1,9 +1,9 @@
 import './HTMLRole'
-import { Role } from './lib'
-import { RoleRoleType } from './lib'
-import { RoleStructure } from './lib'
-import { RoleWidget } from './lib'
-import { RoleWindow } from './lib'
+import { Role } from './lib/Role'
+import { RoleRoleType } from './lib/RoleRoleType'
+import { RoleStructure } from './lib/RoleStructure'
+import { RoleWidget } from './lib/RoleWidget'
+import { RoleWindow } from './lib/RoleWindow'
 import { HTMLElementAssembler } from './lib/HTMLElementAssembler'
 
 let undefined

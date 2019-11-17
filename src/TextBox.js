@@ -1,4 +1,4 @@
-import { RoleTextBox } from './lib'
+import { RoleTextBox } from './lib/RoleTextBox'
 import { Span } from './lib/HTMLSpan'
 import { TextBoxEdit } from './TextBoxEdit'
 import './TextBox.css'

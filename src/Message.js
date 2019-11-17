@@ -1,4 +1,4 @@
-import { RoleArticle as Article } from './lib'
+import { RoleArticle as Article } from './lib/RoleArticle'
 import { MessageContent } from './MessageContent'
 import * as index from './MessageContent.index'
 import './Message.css'

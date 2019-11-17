@@ -1,5 +1,5 @@
-import { Expanded } from './lib'
-import { Feed } from './lib'
+import { Expanded } from './lib/ARIAExpanded'
+import { Feed } from './lib/RoleFeed'
 import { api } from './api'
 import { ChatCard } from './ChatCard'
 import { CoverProgress } from './CoverProgress'

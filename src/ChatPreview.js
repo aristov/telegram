@@ -1,6 +1,6 @@
 import moment from './moment'
-import { Span } from './lib'
-import { Time } from './lib'
+import { Span } from './lib/HTMLSpan'
+import { Time } from './lib/HTMLTime'
 import { api } from './api'
 import { TdUser } from './TdUser'
 

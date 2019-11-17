@@ -1,4 +1,4 @@
-import { RoleArticle as Article } from './lib'
+import { RoleArticle as Article } from './lib/RoleArticle'
 import { api } from './api'
 import { ChatNotifier } from './ChatNotifier'
 import { ChatPhoto } from './ChatPhoto'

@@ -1,5 +1,5 @@
 import { HTMLInput } from './lib/HTMLInput'
-import { RoleCheckBox } from './lib'
+import { RoleCheckBox } from './lib/RoleCheckBox'
 import CheckBoxSvg from './CheckBox.svg'
 import './CheckBox.css'
 

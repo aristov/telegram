@@ -1,5 +1,5 @@
-import { Role } from './lib'
-import { RoleRoleType } from './lib'
+import { Role } from './lib/Role'
+import { RoleRoleType } from './lib/RoleRoleType'
 import { HTMLDiv } from './lib/HTMLDiv'
 
 const ROLE_CLASS_PREFIX_RE = /^Role/

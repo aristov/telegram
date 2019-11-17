@@ -1,4 +1,4 @@
-import { RoleButton } from './lib'
+import { RoleButton } from './lib/RoleButton'
 import './Button.css'
 
 let undefined

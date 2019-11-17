@@ -1,10 +1,10 @@
 import './HTMLRoleType'
-import { RoleWidget } from './lib'
-import { RoleTab } from './lib'
-import { RoleComposite } from './lib'
-import { RoleRange } from './lib'
-import { RoleCommand } from './lib'
-import { RoleInput } from './lib'
+import { RoleWidget } from './lib/RoleWidget'
+import { RoleTab } from './lib/RoleTab'
+import { RoleComposite } from './lib/RoleComposite'
+import { RoleRange } from './lib/RoleRange'
+import { RoleCommand } from './lib/RoleCommand'
+import { RoleInput } from './lib/RoleInput'
 import { Span } from './lib/HTMLSpan'
 
 /**

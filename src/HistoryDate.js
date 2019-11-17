@@ -1,6 +1,6 @@
 import moment from './moment'
-import { Time } from './lib'
-import { Separator } from './lib'
+import { Time } from './lib/HTMLTime'
+import { Separator } from './lib/RoleSeparator'
 import { Notice } from './Notice'
 
 export class HistoryDate extends Separator

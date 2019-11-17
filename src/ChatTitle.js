@@ -1,4 +1,4 @@
-import { Span } from './lib'
+import { Span } from './lib/HTMLSpan'
 import { api } from './api'
 
 export class ChatTitle extends Span

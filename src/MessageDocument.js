@@ -1,5 +1,5 @@
-import { A } from './lib'
-import { Data } from './lib'
+import { A } from './lib/HTMLA'
+import { Data } from './lib/HTMLData'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'

@@ -1,5 +1,5 @@
-import { Heading } from './lib'
-import { Span } from './lib'
+import { Heading } from './lib/RoleHeading'
+import { Span } from './lib/HTMLSpan'
 import { AuthCodeBox } from './AuthCodeBox'
 import { AuthForm } from './AuthForm'
 import { AuthMessage } from './AuthMessage'

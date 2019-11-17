@@ -1,4 +1,4 @@
-import { RoleComboBox } from './lib'
+import { RoleComboBox } from './lib/RoleComboBox'
 import { ListBox } from './ListBox'
 import { Option } from './Option'
 import { Popup } from './Popup'

@@ -1,5 +1,5 @@
 import moment from './moment'
-import { Time } from './lib'
+import { Time } from './lib/HTMLTime'
 
 export class ChatTime extends Time
 {
