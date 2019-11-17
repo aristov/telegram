@@ -1,2 +1,2 @@
 export * from './AuthFormWaitPhoneNumber'
-export * from './AuthFormReady'
+export * from './AuthFormWaitCode'

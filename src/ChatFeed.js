@@ -50,7 +50,7 @@ export class ChatFeed extends Feed
             }
         }
         this.resetTabIndex()
-        this.emit('chatSelected', {
+        this.emit('chatselected', {
             bubbles : true,
             detail : { chat : card.chat }
         })

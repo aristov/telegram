@@ -15,7 +15,7 @@ export class TdFile
         return Math.round(size * 10 / mb) / 10 + ' KB'
     }
 
-    async static getFileUrl(file) {
+    static async getFileUrl(file) {
         const { id, local } = file
         if(local.is_downloading_completed) {
             return await this.readFile(id)
@@ -34,7 +34,7 @@ export class TdFile
         }
     }
 
-    async static readFile(file_id) {
+    static async readFile(file_id) {
         const { data } = await api.send('readFile', { file_id })
         return URL.createObjectURL(data)
     }

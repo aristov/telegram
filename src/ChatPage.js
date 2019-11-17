@@ -5,8 +5,8 @@ import { Page } from './Page'
 
 export class ChatPage extends Page
 {
-    build() {
-        this.on('chatSelected', this.onChatSelected, this)
+    build(init) {
+        this.on('chatselected', this.onChatSelected, this)
         return new Content([
             new ChatFeed,
             new ChatMain

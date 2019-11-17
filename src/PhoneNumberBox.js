@@ -19,17 +19,28 @@ export class PhoneNumberBox extends InputBox
     }
 
     onChange(event) {
-        this.checkValidity()
+        this.reportValidity()
     }
 
     checkValidity() {
+        if(!super.checkValidity()) {
+            return false
+        }
         const value = this.value
-        return !value || TEST_RE.test(value.replace(REPLACE_RE, ''))
+        return !!value && TEST_RE.test(value.replace(REPLACE_RE, ''))
     }
 
-    reportValidity() {
-        if(!this.checkValidity()) {
-            this.invalid = true
+    set invalid(invalid) {
+        super.invalid = invalid
+        const label = this.labelledBy[0]
+        if(label) {
+            label.textContent = invalid?
+                'Invalid Phone Number' :
+                'Phone Number'
         }
+    }
+
+    get invalid() {
+        return super.invalid
     }
 }

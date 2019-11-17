@@ -41,7 +41,7 @@ export class ApiClient extends EventTarget
         if(typeof this[type] === 'function') {
             this[type](update)
         }
-        else this.emit(type, { detail : update })
+        this.emit(type, { detail : update })
     }
 
     /*================================================================*/
@@ -76,21 +76,5 @@ export class ApiClient extends EventTarget
         return this.send('checkDatabaseEncryptionKey', {
             encryption_key : ''
         })
-    }
-
-    authorizationStateWaitPhoneNumber(state) {
-        return this.send('setAuthenticationPhoneNumber', {
-            phone_number : '+79037307615'
-        })
-    }
-
-    authorizationStateWaitCode(state) {
-        return this.send('checkAuthenticationCode', {
-            code : prompt('Enter authentication code')
-        })
-    }
-
-    authorizationStateReady(state) {
-        this.emit('authorizationStateReady', { detail : state })
     }
 }

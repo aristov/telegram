@@ -90,7 +90,23 @@ export class TextBox extends RoleTextBox {
      * @param {KeyboardEvent} event
      */
     onEnterKeyDown(event) {
-        this.multiLine || event.preventDefault()
+        if(this.multiLine) return
+        event.preventDefault()
+        if(this.reportValidity()) {
+            this.emit('submit', { bubbles : true, cancelable : true })
+        }
+    }
+
+    checkValidity() {
+        return !this.required || !!this.value
+    }
+
+    reportValidity() {
+        const result = this.checkValidity()
+        if(!result) {
+            this.invalid = true
+        }
+        return result
     }
 
     /**

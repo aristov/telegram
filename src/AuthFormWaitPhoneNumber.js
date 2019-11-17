@@ -8,8 +8,7 @@ import { Label } from './Label'
 import { PhoneNumberBox } from './PhoneNumberBox'
 import { SubmitButton } from './SubmitButton'
 import { TelegramLogo } from './TelegramLogo'
-
-// import { api } from './api'
+import { api } from './api'
 
 export class AuthFormWaitPhoneNumber extends AuthForm
 {
@@ -26,7 +25,7 @@ export class AuthFormWaitPhoneNumber extends AuthForm
             }),
             this._phoneNumberBox = new PhoneNumberBox({
                 label : new Label('Phone Number'),
-                value : '+7 903 730 7615', // fixme
+                required : true,
                 onchange : event => this.onPhoneNumberChange(event)
             }),
             new CheckBox({
@@ -50,8 +49,13 @@ export class AuthFormWaitPhoneNumber extends AuthForm
     }
 
     onSubmit() {
-        /*api.send('setAuthenticationPhoneNumber', {
+        api.send('setAuthenticationPhoneNumber', {
             phone_number : this._phoneNumberBox.value
-        })*/
+        }).catch(error => this.onError(error))
+    }
+
+    onError(error) {
+        console.error(Error(error.message))
+        this._phoneNumberBox.invalid = true
     }
 }
