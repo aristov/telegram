@@ -1,8 +1,6 @@
 import { Article } from 'ariamodule/lib'
 import { MessageContent } from './MessageContent'
 import * as index from './MessageContent.index'
-import { MessageTypeService } from './MessageTypeService'
-import { UserPhoto } from './UserPhoto'
 import './Message.css'
 
 const types = {}
@@ -15,16 +13,16 @@ export class Message extends Article
 {
     init(init) {
         super.init(init)
-        const message = init.message
+        this.setProperty('children', this.build(init))
+    }
+
+    build({ chat, message }) {
         const content = message.content
-        const contentType = types[content['@type'].toLowerCase()] || MessageContent
-        this.children = [
-            !message.is_outgoing && !MessageTypeService.isPrototypeOf(contentType)?
-                new UserPhoto({
-                    user_id : message.sender_user_id
-                }) :
-                null,
-            new contentType({ chat : init.chat, message, content })
-        ]
+        const contentType = this.constructor.getContentType(content)
+        return new contentType({ chat, message, content })
+    }
+
+    static getContentType(content) {
+        return types[content['@type'].toLowerCase()] || MessageContent
     }
 }
