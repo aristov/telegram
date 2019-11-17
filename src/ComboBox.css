@@ -2,7 +2,7 @@
 {
     display: inline-block;
     position: relative;
-    margin: var(--Button--margin);
+    margin: var(--margin__widget);
 }
 .ComboBox .TextBox
 {
@@ -10,7 +10,7 @@
 }
 .ComboBox[aria-invalid=true] .TextBox:not(.focus) > .Box
 {
-    border-color: var(--TextBox_invalid-Box--border-color);
+    border-color: #f00;
 }
 @media (max-width: 499px)
 {

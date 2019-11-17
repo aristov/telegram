@@ -1,7 +1,11 @@
 .AuthorizationState
 {
-    width: 360px;
     line-height: 1.35;
+}
+.AuthorizationState,
+.AuthorizationState .ListBox
+{
+    width: 360px;
 }
 .AuthorizationState .Heading
 {

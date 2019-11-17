@@ -32,5 +32,5 @@
 }
 .ChatHead .ChatStatus.online
 {
-    color: var(--color--text-highlight);
+    color: var(--color__text-highlight);
 }

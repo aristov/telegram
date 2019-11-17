@@ -4,57 +4,57 @@
     white-space: nowrap;
     user-select: none;
     outline: none;
-    margin: var(--Button--margin);
+    margin: var(--margin__widget);
 }
 .ListBox > .Inner
 {
     position: relative;
     display: block;
     overflow-y: auto;
-    border-radius: var(--Button--border-radius);
-    padding: var(--ListBox--padding);
+    border-radius: 10px;
+    padding: 6px 0;
 }
 .ListBox:hover:not([aria-expanded]) > .Inner
 {
-    border-color: var(--Button_hover--border-color);
+    border-color: var(--border-color__hover);
 }
 /*.ListBox:focus > .Inner
 {
-    border-color: var(--Button_focus--border-color);
-    box-shadow: var(--Button_focus--box-shadow);
+    border-color: var(--color__text-highlight);
+    box-shadow: var(--box-shadow__focus);
 }*/
 .ListBox:focus .Option[aria-selected=true]:active,
 .ListBox:focus .Option[aria-selected=true].active
 {
-    background: var(--Option_selected_active--background);
+    background: var(--background__checked_active);
 }
 .ListBox:not(:hover) .Option[aria-selected=true]
 {
-    background: var(--background-color--hover);
+    background: var(--background-color__hover);
 }
 .ListBox[aria-readonly=true] > .Inner,
 .ListBox[aria-readonly=true] label
 {
-    opacity: var(--Button_readonly--opacity);
+    opacity: var(--opacity__readonly);
 }
 .ListBox[aria-disabled=true] > .Inner
 {
-    background: var(--Button_disabled--background);
-    border-color: var(--Button_disabled--border-color);
+    background: var(--background__disabled);
+    border-color: var(--border-color__disabled);
 }
 .ListBox[aria-disabled=true],
 .ListBox[aria-disabled=true] .Option
 {
-    color: var(--Button_disabled--color);
-    cursor: var(--Button_disabled--cursor);
+    color: var(--color__disabled);
+    cursor: var(--cursor__disabled);
 }
 .ListBox[aria-disabled=true] .Option[aria-selected=true]:not([aria-checked])
 {
-    background: var(--Option_selected_disabled--background);
+    background: var(--background__checked_disabled);
 }
 .ListBox[aria-disabled=true] .Option[aria-checked=true]::before
 {
-    opacity: var(--CheckMark_disabled--opacity);
+    opacity: .4;
 }
 .ListBox[aria-expanded] > .Inner
 {

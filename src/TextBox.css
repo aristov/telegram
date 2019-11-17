@@ -2,17 +2,17 @@
 {
     display: inline-block;
     position: relative;
-    margin: var(--Button--margin);
+    margin: var(--margin__widget);
 }
 .TextBox > .Box
 {
     display: inline-block;
     box-sizing: border-box;
-    background: var(--Button--background);
-    width: var(--TextBox-Box--width);
-    padding: var(--TextBox-Box--padding);
-    border: var(--Button--border);
-    border-radius: var(--Button--border-radius);
+    background: transparent;
+    width: 200px;
+    padding: 0 15px 0;
+    border: var(--border__widget);
+    border-radius: 10px;
     vertical-align: middle;
 }
 .TextBox .Edit
@@ -22,14 +22,13 @@
     white-space: nowrap;
     outline: none;
     width: 100%;
-    /*height: var(--TextBox-Edit--height);*/
-    padding: var(--TextBox-Edit--padding);
+    padding: 15px 0 15px;
 }
 .TextBox .Placeholder
 {
     position: absolute;
-    padding: var(--TextBox-Edit--padding);
-    color: var(--TextBox-Placeholder--color);
+    padding: 15px 0 15px;
+    color: #aaa;
 }
 .TextBox .ClearButton
 {
@@ -41,30 +40,30 @@
 }
 .TextBox .ClearButton:not(:hover)
 {
-    opacity: var(--Button_haspopup-after__opacity);
+    opacity: .4;
 }
 .TextBox:hover > .Box
 {
-    border-color: var(--Button_hover--border-color);
+    border-color: var(--border-color__hover);
 }
 .TextBox.focus > .Box
 {
-    border-color: var(--Button_focus--border-color);
-    box-shadow: var(--Button_focus--box-shadow);
+    border-color: var(--color__text-highlight);
+    box-shadow: var(--box-shadow__focus);
 }
 .TextBox[aria-readonly=true]
 {
-    opacity: var(--Button_readonly--opacity);
+    opacity: var(--opacity__readonly);
 }
 .TextBox[aria-disabled=true]
 {
-    color: var(--Button_disabled--color);
-    cursor: var(--Button_disabled--cursor);
+    color: var(--color__disabled);
+    cursor: var(--cursor__disabled);
 }
 .TextBox[aria-disabled=true] > .Box
 {
-    background: var(--Button_disabled--background);
-    border-color: var(--Button_disabled--border-color);
+    background: var(--background__disabled);
+    border-color: var(--border-color__disabled);
 }
 .TextBox[aria-disabled=true]:not([data-value]) .Edit::after
 {
@@ -74,7 +73,7 @@
 {
     white-space: normal;
     overflow: auto;
-    height: var(--TextBox_multiline--height);
+    height: 60px;
 }
 .TextBox[data-value] .Placeholder,
 .TextBox:not([data-value]) .ClearButton

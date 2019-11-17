@@ -3,29 +3,19 @@
     display: block;
     position: relative;
     cursor: pointer;
-    padding: var(--Option--padding);
+    padding: var(--padding__widget);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .Option:hover
 {
-    background: var(--background-color--hover);
-}
-.Option[aria-checked]
-{
-    padding-left: 25px;
-}
-.Option[aria-checked=true]::before
-{
-    /*content: url(images/CheckMark_black.svg);*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 4px 6px;
+    background: var(--background-color__hover);
 }
 .Option[aria-disabled=true]
 {
-    color: var(--Button_disabled--color);
-    cursor: var(--Button_disabled--cursor);
-    background: var(--Button--background);
+    color: var(--color__disabled);
+    cursor: var(--cursor__disabled);
+    background: transparent;
     opacity: .5;
 }
 .Option[aria-hidden=true]

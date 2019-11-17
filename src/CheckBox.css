@@ -6,8 +6,8 @@
     cursor: pointer;
     user-select: none;
     outline: none;
-    /*padding: var(--CheckBox--padding);*/
-    /*margin: var(--Button--margin);*/
+    /*padding: var(--CheckBox__padding);*/
+    /*margin: var(--margin__widget);*/
 }
 .CheckBox::before
 {
@@ -17,15 +17,15 @@
     vertical-align: middle;
     padding: 8px;
     margin: 0 25px 0 15px;
-    background: var(--Button--background);
-    border: 2px solid var(--Button--border-color);
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .15);
     line-height: 0;
     border-radius: 3px;
 }
 .CheckBox label
 {
     vertical-align: middle;
-    margin: var(--CheckBox-label--margin);
+    margin: 0 0 0 8px;
 }
 .CheckBox:not([aria-disabled=true]) label
 {
@@ -33,22 +33,22 @@
 }
 .CheckBox:hover::before
 {
-    border-color: var(--Button_hover--border-color);
+    border-color: var(--border-color__hover);
 }
 .CheckBox:focus::before
 {
-    border-color: var(--Button_focus--border-color);
-    box-shadow: var(--Button_focus--box-shadow);
+    border-color: var(--color__text-highlight);
+    box-shadow: var(--box-shadow__focus);
 }
 .CheckBox:active::before,
 .CheckBox.active::before
 {
-    background: var(--Button_active--background);
+    background: var(--background-color__active);
 }
 .CheckBox[aria-checked=true]::before,
 .CheckBox[aria-checked=mixed]::before
 {
-    background: var(--CheckBox_checked-before--background);
+    background: var(--color__text-highlight);
     border-color: transparent;
 }
 .CheckBox[aria-checked=true]:active::before,
@@ -56,21 +56,21 @@
 .CheckBox[aria-checked=mixed]:active::before,
 .CheckBox[aria-checked=mixed].active::before
 {
-    background: var(--CheckBox_checked_active-before--background);
+    background: var(--background__active);
 }
 .CheckBox[aria-readonly=true]
 {
-    opacity: var(--Button_readonly--opacity);
+    opacity: var(--opacity__readonly);
 }
 .CheckBox[aria-disabled=true]
 {
-    cursor: var(--Button_disabled--cursor);
-    color: var(--Button_disabled--color);
+    cursor: var(--cursor__disabled);
+    color: var(--color__disabled);
 }
 .CheckBox[aria-disabled=true]::before
 {
-    background: var(--Button_disabled--background);
-    border-color: var(--Button_disabled--border-color);
+    background: var(--background__disabled);
+    border-color: var(--border-color__disabled);
 }
 .CheckBox[aria-checked=true]::after
 {
@@ -83,7 +83,7 @@
 }
 .CheckBox[aria-checked=true][aria-disabled=true]::before
 {
-    background: var(--CheckBox_checked_disabled-before--background);
+    background: var(--background__disabled);
 }
 .CheckBox[aria-checked=mixed]::after
 {
@@ -98,7 +98,7 @@
 }
 .CheckBox[aria-disabled=true]::after
 {
-    opacity: var(--CheckMark_disabled--opacity);
+    opacity: .4;
 }
 @media (max-width: 499px)
 {

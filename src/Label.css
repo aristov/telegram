@@ -2,15 +2,9 @@
 {
     position: absolute;
     border: 1px solid transparent;
-    padding:
-            var(--Button--padding-top)
-            var(--TextBox-Box--padding-right)
-            var(--Button--padding-bottom)
-            var(--TextBox-Box--padding-left);
+    padding: 15px 15px 15px 15px;
     display: block;
-    color: var(--Label--color);
-    font-size: var(--Label--font-size);
-    margin: var(--Label--margin);
+    color: rgba(0, 0, 0, .3);
 }
 [aria-disabled=true] > .Label,
 .disabled > .Label
