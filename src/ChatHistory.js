@@ -1,11 +1,13 @@
 import { Feed } from 'ariamodule/lib'
 import { api } from './api'
-import { MessageCard } from './MessageCard'
-import './MessageFeed.css'
+import { MessageChannelPost } from './MessageChannelPost'
+import { MessageIncoming } from './MessageIncoming'
+import { MessageOutgoing } from './MessageOutgoing'
+import './ChatHistory.css'
 
 const LIMIT = 20
 
-export class MessageFeed extends Feed
+export class ChatHistory extends Feed
 {
     init(init) {
         super.init(init)
@@ -48,7 +50,11 @@ export class MessageFeed extends Feed
         const node = this.node
         this.saveScrollDelta()
         for(const message of messages) {
-            this.prepend(new MessageCard({ message }))
+            this.prepend(message.is_channel_post?
+                new MessageChannelPost({ message }) :
+                message.is_outgoing?
+                    new MessageOutgoing({ message }) :
+                    new MessageIncoming({ message }))
         }
         node.scrollTo(0, node.scrollHeight - this._scrollDelta)
     }

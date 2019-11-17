@@ -1,6 +1,7 @@
 import { Article } from 'ariamodule/lib'
 import { MessageContent } from './MessageContent'
 import * as index from './MessageContent.index'
+import './Message.css'
 
 const types = {}
 
@@ -8,7 +9,7 @@ for(const key of Object.keys(index)) {
     types[key.toLowerCase()] = index[key]
 }
 
-export class MessageCard extends Article
+export class Message extends Article
 {
     init(init) {
         super.init(init)

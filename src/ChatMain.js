@@ -1,6 +1,6 @@
 import { Main } from 'ariamodule/lib'
 import { ChatHead } from './ChatHead'
-import { MessageFeed } from './MessageFeed'
+import { ChatHistory } from './ChatHistory'
 import './ChatMain.css'
 
 export class ChatMain extends Main
@@ -15,7 +15,7 @@ export class ChatMain extends Main
     build({ chat }) {
         this.children = [
             new ChatHead({ chat }),
-            this._feed = new MessageFeed({ chat })
+            this._feed = new ChatHistory({ chat })
         ]
     }
 

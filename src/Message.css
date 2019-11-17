@@ -1,0 +1,25 @@
+.Message
+{
+    display: flex;
+    max-width: 696px;
+    margin: 10px auto;
+}
+.MessageIncoming,
+.MessageChannelPost
+{
+    justify-content: flex-start;
+}
+.MessageIncoming .Bubble,
+.MessageChannelPost .Bubble
+{
+    border-bottom-left-radius: 0;
+}
+.MessageOutgoing
+{
+    justify-content: flex-end;
+}
+.MessageOutgoing .Bubble
+{
+    border-bottom-right-radius: 0;
+    background: #eeffde;
+}

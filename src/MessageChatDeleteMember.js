@@ -1,9 +1,9 @@
 import { api } from './api'
-import { MessageContent } from './MessageContent'
+import { MessageTypeService } from './MessageTypeService'
 import { Notice } from './Notice'
 import { TdUser } from './TdUser'
 
-export class MessageChatDeleteMember extends MessageContent
+export class MessageChatDeleteMember extends MessageTypeService
 {
     async build({ message, content }) {
         const sender = await api.send('getUser', { user_id : message.sender_user_id })

@@ -1,3 +1,7 @@
+.MessageContent
+{
+    position: relative;
+}
 .MessageContent,
 .MessageContent p,
 .MessageContent .FormattedText
@@ -37,4 +41,8 @@
     height: 120px;
     margin: 10px auto 15px;
     display: block;
+}
+.MessageContent.MessageTypeService
+{
+    margin: 0 auto;
 }

@@ -1,9 +1,9 @@
 import { api } from './api'
 import { ChatPhoto } from './ChatPhoto'
-import { MessageContent } from './MessageContent'
+import { MessageTypeService } from './MessageTypeService'
 import { Notice } from './Notice'
 
-export class MessageChatChangePhoto extends MessageContent
+export class MessageChatChangePhoto extends MessageTypeService
 {
     async build({ content, message }) {
         return [

@@ -8,6 +8,9 @@ export class FormattedText extends Div
         if(init.formattedText) {
             this.innerHTML = this.build(init)
         }
+        if(init.time) {
+            this.append(init.time)
+        }
     }
 
     build({ formattedText }) {
