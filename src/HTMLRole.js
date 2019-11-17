@@ -107,17 +107,7 @@ export class HTMLRole extends Role {
     get tabIndex() {
         return this.ownerElement.tabIndex
     }
-
-    /**
-     * @param {function|class} source
-     */
-    static applyMixin(source) {
-        const { constructor, ...props } = Object.getOwnPropertyDescriptors(source.prototype)
-        const { length, name, prototype, ...staticProps } = Object.getOwnPropertyDescriptors(source)
-        Object.defineProperties(this.prototype, props)
-        Object.defineProperties(this, staticProps)
-    }
-
+    
     /**
      * @param {Object|*} object
      * @returns {boolean}

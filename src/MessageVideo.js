@@ -10,7 +10,7 @@ export class MessageVideo extends MessageContent
 {
     async build({ message, content }) {
         const { video, width, caption } = content.video
-        const text = caption.text
+        const text = caption && caption.text
         return new Bubble({
             style : { maxWidth : width + 'px' },
             children : [

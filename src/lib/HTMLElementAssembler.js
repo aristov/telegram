@@ -87,6 +87,25 @@ export class HTMLElementAssembler extends ElementAssembler {
     }
 
     /**
+     * @param {*} children
+     */
+    set children(children) {
+        if(children instanceof Promise) {
+            children
+                .then(result => super.children = result)
+                .catch(error => super.children = error)
+        }
+        else super.children = children
+    }
+
+    /**
+     * @returns {array.ElementAssembler|*}
+     */
+    get children() {
+        return super.children
+    }
+
+    /**
      * @returns {{}} DOMStringMap
      */
     get dataset() {

@@ -1,4 +1,5 @@
-import TdClient from 'tdweb/dist/tdweb'
+import EventEmitter from 'events'
+import TdClient from '../public/tdweb'
 
 const WASM_FILE_HASH = 'b4b0d61282108a31908dd6b2dbd7067b'
 const WASM_FILE_NAME = WASM_FILE_HASH + '.wasm'
@@ -7,7 +8,7 @@ const API_HASH = 'c18fa7085ac8a713f3df8ea921cfb760'
 const wasmUrl = `${ WASM_FILE_NAME }?_sw-precache=${ WASM_FILE_HASH }`
 const client = new TdClient({ wasmUrl })
 
-export class ApiClient extends EventTarget
+export class ApiClient extends EventEmitter
 {
     constructor(...args) {
         super(...args)
@@ -16,18 +17,11 @@ export class ApiClient extends EventTarget
     }
 
     on(type, callback, options) {
-        this.addEventListener(type, callback, options)
+        this.addListener(type, callback, options)
     }
 
     un(type, callback, options) {
-        this.removeEventListener(type, callback, options)
-    }
-
-    emit(eventOrType, eventInitDict) {
-        if(typeof eventOrType === 'string') {
-            eventOrType = new CustomEvent(eventOrType, eventInitDict)
-        }
-        return this.dispatchEvent(eventOrType)
+        this.removeListener(type, callback, options)
     }
 
     send(type, query = {}) {
