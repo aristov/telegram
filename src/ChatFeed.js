@@ -1,4 +1,5 @@
-import { Expanded, Feed } from './lib'
+import { Expanded } from './lib'
+import { Feed } from './lib'
 import { api } from './api'
 import { ChatCard } from './ChatCard'
 import { CoverProgress } from './CoverProgress'

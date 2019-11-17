@@ -1,5 +1,7 @@
 import './lib/Role.debug'
-import { HTMLDetails, Pre, Summary } from './lib'
+import { HTMLDetails } from './lib'
+import { Pre } from './lib'
+import { Summary } from './lib'
 // import { api } from './api'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'

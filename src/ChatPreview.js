@@ -1,5 +1,6 @@
 import moment from './moment'
-import { Span, Time } from './lib'
+import { Span } from './lib'
+import { Time } from './lib'
 import { api } from './api'
 import { TdUser } from './TdUser'
 

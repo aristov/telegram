@@ -1,4 +1,5 @@
-import { A, Data } from './lib'
+import { A } from './lib'
+import { Data } from './lib'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
