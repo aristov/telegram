@@ -1,0 +1,18 @@
+.InputBox .Box
+{
+    padding: var(--padding__widget);
+}
+.InputBox input
+{
+    font: inherit;
+    padding: 0;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.InputBox input[type=number]::-webkit-inner-spin-button,
+.InputBox input[type=number]::-webkit-outer-spin-button
+{
+    appearance: none;
+    margin: 0;
+}

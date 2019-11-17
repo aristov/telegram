@@ -19,6 +19,8 @@
     --border-color__disabled: transparent;
     --cursor__disabled: default;
 
+    --color__invalid: #f00;
+
     --background__checked_active: rgba(103, 192, 255, .7);
     --background__checked_disabled: rgba(0, 0, 0, .15);
 

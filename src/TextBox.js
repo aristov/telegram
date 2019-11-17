@@ -74,6 +74,7 @@ export class TextBox extends RoleTextBox {
             this.dataset.value = value
         }
         else delete this.dataset.value
+        this.invalid = false
     }
 
     /**

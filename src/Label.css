@@ -27,7 +27,8 @@
 {
     opacity: .5;
 }
-[aria-invalid=true] > .Label
+[aria-invalid=true] > .Label,
+[aria-invalid=true].focus > .Label
 {
     color: #f00;
 }

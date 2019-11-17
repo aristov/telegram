@@ -55,6 +55,11 @@
     border-color: var(--color__text-highlight);
     box-shadow: var(--box-shadow__focus);
 }
+.TextBox[aria-invalid=true] > .Box
+{
+    border-color: var(--color__invalid);
+    box-shadow: 0 0 0 1px var(--color__invalid) inset;
+}
 .TextBox[aria-readonly=true]
 {
     opacity: var(--opacity__readonly);
@@ -72,10 +77,6 @@
 .TextBox[aria-disabled=true]:not([data-value]) .Edit::after
 {
     content: ' ';
-}
-.TextBox[aria-invalid=true] > .Box
-{
-    border-color: #f00;
 }
 .TextBox[aria-multiline] .Edit
 {
