@@ -1,6 +1,7 @@
 {
   "name": "telegram",
   "version": "1.0.0",
+  "author": "Vyacheslav Aristov",
   "devDependencies": {
     "ariamodule": "github:aristov/ariamodule",
     "autoprefixer": "^9.7.1",
@@ -25,6 +26,7 @@
   },
   "scripts": {
     "start": "node server/app.js",
+    "build": "NODE_ENV=production webpack",
     "dev": "webpack-dev-server",
     "watch": "webpack -w"
   }
