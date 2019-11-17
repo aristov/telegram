@@ -15,7 +15,10 @@
     box-sizing: border-box;
     height: 100%;
 }
-.Popup[hidden=false-true],
+.Popup[hidden=false-true]
+{
+    opacity: 0;
+}
 .Popup[hidden=true-false]
 {
     opacity: 0;

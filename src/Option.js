@@ -54,6 +54,13 @@ export class Option extends RoleOption {
      * @returns {string}
      */
     get value() {
-        return this.dataset.value || this.textContent
+        return this.dataset.value || this.text
+    }
+
+    /**
+     * @returns {string}
+     */
+    get text() {
+        return this.textContent
     }
 }

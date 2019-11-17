@@ -1,0 +1,9 @@
+.CountryOption
+{
+    display: flex;
+    justify-content: space-between;
+}
+.CountryOption .CountryCode
+{
+    color: #aaa;
+}

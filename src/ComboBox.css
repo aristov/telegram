@@ -8,6 +8,27 @@
 {
     margin: 0;
 }
+.ComboBox .TextBox > .Box
+{
+    padding-right: 50px;
+}
+.ComboBox .TextBox > .Box::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(icons/down_svg.svg) center center / 45% no-repeat;
+    line-height: 0;
+    padding: 26px;
+    opacity: .3;
+    transition: transform .1s;
+    cursor: pointer;
+}
+.ComboBox[aria-expanded=true] .TextBox > .Box::after
+{
+    transform: rotate(180deg);
+}
 .ComboBox[aria-invalid=true] .TextBox:not(.focus) > .Box
 {
     border-color: #f00;

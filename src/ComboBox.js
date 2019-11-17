@@ -37,7 +37,7 @@ class ComboBox extends RoleComboBox {
     update() {
         const { selectedOptions } = this._listBox
         if(selectedOptions.length) {
-            this._textBox.value = selectedOptions.map(({ textContent }) => textContent).join()
+            this._textBox.value = selectedOptions.map(({ text }) => text).join()
             this.dataset.value = selectedOptions.map(({ value }) => value).join()
         }
     }
@@ -52,7 +52,7 @@ class ComboBox extends RoleComboBox {
     filter() {
         const value = this._textBox.value.toLowerCase()
         return this.options.filter(option => {
-            const result = option.textContent.toLowerCase().includes(value)
+            const result = option.text.toLowerCase().includes(value)
             option.hidden = !result
             return result
         })
@@ -374,7 +374,7 @@ class ComboBox extends RoleComboBox {
         const filtered = options.filter(option => {
             return option.selected = option.value === value
         })
-        this._textBox.value = filtered.map(({ textContent }) => textContent).join()
+        this._textBox.value = filtered.map(({ text }) => text).join()
         if(value) {
             this.dataset.value = value
         }

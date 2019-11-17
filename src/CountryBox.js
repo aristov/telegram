@@ -1,16 +1,12 @@
-import { ComboBox, Option } from './ComboBox'
-import CountryBoxJson from './CountryBoxData'
+import { ComboBox } from './ComboBox'
+import { CountryOption } from './CountryOption'
+import options from './CountryBoxData'
 
 export class CountryBox extends ComboBox
 {
     init(init) {
         super.init(init)
         this.autoComplete = 'list'
-        this.options = CountryBoxJson.map(country => {
-            return new Option({
-                value : country.country_code,
-                children : country.country_name,
-            })
-        })
+        this.options = options.map(country => new CountryOption({ country }))
     }
 }

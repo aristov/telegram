@@ -6,13 +6,21 @@
     display: block;
     color: rgba(0, 0, 0, .3);
 }
-[aria-disabled=true] > .Label,
-.disabled > .Label
-{
-    opacity: .5;
-}
-[data-text] > .Label,
 [data-value] > .Label
 {
-    display: none;
+    font-size: .8rem;
+    padding: 0 3px;
+    margin-top: -9px;
+    margin-left: 12px;
+    background: #fff;
+    color: rgba(0, 0, 0, .4);
+}
+[data-value].focus > .Label
+{
+    color: var(--color__text-highlight);
+}
+.disabled > .Label,
+[aria-disabled=true] > .Label
+{
+    opacity: .5;
 }
