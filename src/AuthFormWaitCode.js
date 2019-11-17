@@ -25,10 +25,8 @@ export class AuthFormWaitCode extends AuthForm
     }
 
     onSubmit() {
-        this._codeBox.invalid = true
-        return
-        api.send('checkAuthenticationCode', {
+        /*api.send('checkAuthenticationCode', {
             code : this._codeBox.value
-        })
+        })*/
     }
 }

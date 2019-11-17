@@ -1,5 +1,4 @@
 import { A, Data } from 'htmlmodule/lib'
-import { api } from './api'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'
@@ -11,7 +10,7 @@ export class MessageDocument extends MessageContent
         const { file_name, document } = content.document
         return new Bubble(new FormattedText([
             new A({
-                href : await api.getFileUrl(document),
+                href : await TdFile.getFileUrl(document),
                 target : '_blank',
                 children : file_name
             }),

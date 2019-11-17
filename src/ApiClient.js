@@ -46,32 +46,6 @@ export class ApiClient extends EventTarget
 
     /*================================================================*/
 
-    async getFileUrl(file) {
-        const { id, local } = file
-        if(local.is_downloading_completed) {
-            return await this.readFile(id)
-        }
-        else if(!local.is_downloading_active && local.can_be_downloaded) {
-            this.send('downloadFile', { file_id : id, priority : 1 })
-            return new Promise(resolve => {
-                const handler = ({ detail : { file } }) => {
-                    if(file.id === id && file.local.is_downloading_completed) {
-                        this.readFile(file.id).then(resolve)
-                        this.un('updateFile', handler)
-                    }
-                }
-                this.on('updateFile', handler)
-            })
-        }
-    }
-
-    async readFile(file_id) {
-        const { data } = await this.send('readFile', { file_id })
-        return URL.createObjectURL(data)
-    }
-
-    /*================================================================*/
-
     updateOption(update) {
         this.options[update.name] = update.value.value
     }
@@ -80,12 +54,12 @@ export class ApiClient extends EventTarget
         const state = update.authorization_state
         const type = state['@type']
         if(typeof this[type] === 'function') {
-            this[type](state)
+            this[type](state).then(console.log).catch(console.error)
         }
     }
 
     authorizationStateWaitTdlibParameters(state) {
-        this.send('setTdlibParameters', {
+        return this.send('setTdlibParameters', {
             parameters : {
                 '@type' : 'tdParameters',
                 api_id : API_ID,
@@ -95,25 +69,25 @@ export class ApiClient extends EventTarget
                 system_version : 'Mac/iOS',
                 application_version : '1.0.0'
             }
-        }).then(console.log).catch(console.error)
+        })
     }
 
     authorizationStateWaitEncryptionKey(state) {
-        this.send('checkDatabaseEncryptionKey', {
+        return this.send('checkDatabaseEncryptionKey', {
             encryption_key : ''
-        }).then(console.log).catch(console.error)
+        })
     }
 
     authorizationStateWaitPhoneNumber(state) {
-        this.send('setAuthenticationPhoneNumber', {
+        return this.send('setAuthenticationPhoneNumber', {
             phone_number : '+79037307615'
-        }).then(console.log).catch(console.error)
+        })
     }
 
     authorizationStateWaitCode(state) {
-        this.send('checkAuthenticationCode', {
+        return this.send('checkAuthenticationCode', {
             code : prompt('Enter authentication code')
-        }).then(console.log).catch(console.error)
+        })
     }
 
     authorizationStateReady(state) {

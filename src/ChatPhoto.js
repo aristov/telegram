@@ -1,6 +1,7 @@
 import { Img } from 'ariamodule'
 import { Span } from 'htmlmodule'
 import { api } from './api'
+import { TdFile } from './TdFile'
 import savedmessages_svg from './icons/savedmessages_svg.svg'
 import './ChatPhoto.css'
 
@@ -19,7 +20,7 @@ export class ChatPhoto extends Img
         const { title, photo } = chat
         this.textContent = title? title.charAt(0).toUpperCase() : 'DA'
         if(photo) {
-            api.getFileUrl(photo.small).then(src => this.src = src)
+            TdFile.getFileUrl(photo.small).then(src => this.src = src)
         }
     }
 

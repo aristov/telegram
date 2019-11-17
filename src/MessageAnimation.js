@@ -1,9 +1,9 @@
 import { Video } from 'htmlmodule/lib'
-import { api } from './api'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MediaContainer } from './MediaContainer'
 import { MessageContent } from './MessageContent'
+import { TdFile } from './TdFile'
 
 export class MessageAnimation extends MessageContent
 {
@@ -13,7 +13,7 @@ export class MessageAnimation extends MessageContent
             style : { maxWidth : width + 'px' },
             children : [
                 new MediaContainer(new Video({
-                    src : await api.getFileUrl(animation),
+                    src : await TdFile.getFileUrl(animation),
                     autoplay : true
                 })),
                 content.caption.text?
