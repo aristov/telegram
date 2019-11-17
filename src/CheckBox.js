@@ -1,5 +1,6 @@
 import { HTMLInput } from 'htmlmodule/lib/HTMLInput'
 import { RoleCheckBox } from 'ariamodule/lib/RoleCheckBox'
+import CheckBoxSvg from './CheckBox.svg'
 import './CheckBox.css'
 
 /**
@@ -10,8 +11,9 @@ export class CheckBox extends RoleCheckBox {
     /**
      * @param {{}} init
      */
-    create(init) {
-        super.create(init)
+    init(init) {
+        super.init(init)
+        this.innerHTML = CheckBoxSvg
         this._input = new HTMLInput({
             type : 'hidden',
             value : 'on'
@@ -61,6 +63,13 @@ export class CheckBox extends RoleCheckBox {
             this.on('mouseup', event => this.classList.remove('active'), { once : true })
             this.on('mouseleave', event => this.classList.remove('active'), { once : true })
         }
+    }
+
+    /**
+     * @param {Role|HTMLElementAssembler|*} label
+     */
+    setLabelInstance(label) {
+        this.append(label)
     }
 
     /**

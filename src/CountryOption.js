@@ -1,4 +1,5 @@
 import { Span } from 'htmlmodule'
+import { CountryCode } from './CountryCode'
 import { Option } from './Option'
 import './CountryOption.css'
 
@@ -17,6 +18,3 @@ export class CountryOption extends Option
     }
 }
 
-class CountryCode extends Span
-{
-}

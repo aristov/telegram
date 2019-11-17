@@ -3,7 +3,8 @@
     --color__text-highlight: #4ea4f6;
 
     --padding__widget: 15px;
-    --border__widget: 1px solid rgba(0, 0, 0, .15);
+    --border-color__widget: rgba(0, 0, 0, .15);
+    --border__widget: 1px solid var(--border-color__widget);
     --margin__widget: 25px 15px 25px 0;
 
     --background-color__hover: rgba(112, 117, 121, .08);

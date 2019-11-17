@@ -9,7 +9,15 @@ import { HTMLElementAssembler } from 'htmlmodule/lib/HTMLElementAssembler'
 let undefined
 const tabIndexKey = Symbol()
 
-export class HTMLRoleType extends RoleRoleType {
+export class HTMLRoleType extends RoleRoleType
+{
+    /**
+     * @param {Role|HTMLElementAssembler|*} label
+     */
+    setLabelInstance(label) {
+        this.prepend(label)
+    }
+
     /**
      * @param {boolean} disabled
      */
@@ -36,11 +44,11 @@ export class HTMLRoleType extends RoleRoleType {
     }
 
     /**
-     * @param {*} label {string|Role|HTMLElementAssembler|*}
+     * @param {string|Role|HTMLElementAssembler|*} label
      */
     set label(label) {
         if(label instanceof Role || label instanceof HTMLElementAssembler) {
-            this.prepend(this.labelledBy = label)
+            this.setLabelInstance(this.labelledBy = label)
         }
         else super.label = label
     }
