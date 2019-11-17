@@ -6,3 +6,7 @@
     width: 100%;
     box-sizing: border-box;
 }
+.ChatHistory .HistoryDate
+{
+    line-height: 1.4;
+}

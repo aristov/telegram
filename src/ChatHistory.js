@@ -1,5 +1,7 @@
+import moment from './moment'
 import { Feed } from 'ariamodule/lib'
 import { api } from './api'
+import { HistoryDate } from './HistoryDate'
 import { MessageChannelPost } from './MessageChannelPost'
 import { MessageIncoming } from './MessageIncoming'
 import { MessageOutgoing } from './MessageOutgoing'
@@ -49,14 +51,25 @@ export class ChatHistory extends Feed
     addMessages(messages) {
         const node = this.node
         this.saveScrollDelta()
+        const article = this.articles[0]
+        let date = moment.unix(article? article.message.date : messages[0].date)
         for(const message of messages) {
-            this.prepend(message.is_channel_post?
-                new MessageChannelPost({ message }) :
-                message.is_outgoing?
-                    new MessageOutgoing({ message }) :
-                    new MessageIncoming({ message }))
+            if(!date.isSame(moment.unix(message.date), 'day')) {
+                this.prepend(new HistoryDate({ date }))
+                date = moment.unix(message.date)
+            }
+            this.prepend(this.getMessageType(message))
         }
         node.scrollTo(0, node.scrollHeight - this._scrollDelta)
+    }
+
+    getMessageType(message) {
+        if(message.is_channel_post) {
+            return new MessageChannelPost({ message })
+        }
+        return message.is_outgoing?
+            new MessageOutgoing({ message }) :
+            new MessageIncoming({ message })
     }
 
     saveScrollDelta() {

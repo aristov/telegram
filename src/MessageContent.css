@@ -17,15 +17,6 @@
 {
     max-width: 100%;
 }
-.MessageContent .Notice
-{
-    color: #fff;
-    background: rgba(0, 0, 0, .3);
-    width: fit-content;
-    padding: 2px 7px;
-    margin: 0 auto;
-    border-radius: 12px;
-}
 .MessageContent .CallTimeInfo,
 .MessageContent .FileSizeInfo
 {
