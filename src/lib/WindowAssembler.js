@@ -1,5 +1,5 @@
-import { EventTargetAssembler } from 'dommodule/lib/EventTargetAssembler'
-import { DocumentAssembler } from 'dommodule/lib/DocumentAssembler'
+import { EventTargetAssembler } from './EventTargetAssembler'
+import { DocumentAssembler } from './DocumentAssembler'
 
 const { Window } = window
 const { getTargetOf } = EventTargetAssembler

@@ -1,7 +1,7 @@
 import { ARIAAttrAssembler } from './ARIAAttrAssembler'
-import { AttrAssembler } from 'dommodule/lib/AttrAssembler'
-import { ElementAssembler } from 'dommodule/lib/ElementAssembler'
-import { EventTargetAssembler } from 'dommodule/lib/EventTargetAssembler'
+import { AttrAssembler } from './AttrAssembler'
+import { ElementAssembler } from './ElementAssembler'
+import { EventTargetAssembler } from './EventTargetAssembler'
 
 const { getPrototypeOf } = Object
 const { Element, Node, document } = window

@@ -1,4 +1,4 @@
-import 'dommodule/lib/debug'
+import 'esmodule/lib/debug'
 import { Role } from './Role'
 
 const create = Role.prototype.create

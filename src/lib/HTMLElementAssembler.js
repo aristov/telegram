@@ -1,4 +1,4 @@
-import { ElementAssembler } from 'dommodule/lib/ElementAssembler'
+import { ElementAssembler } from './ElementAssembler'
 
 let undefined
 const { assign, getPrototypeOf } = Object

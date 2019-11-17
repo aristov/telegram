@@ -1,4 +1,4 @@
-import { DocumentTypeAssembler } from 'dommodule/lib/DocumentTypeAssembler'
+import { DocumentTypeAssembler } from './DocumentTypeAssembler'
 import { HTMLDocumentAssembler } from './HTMLDocumentAssembler'
 
 export class HTMLDocumentTypeAssembler extends DocumentTypeAssembler {

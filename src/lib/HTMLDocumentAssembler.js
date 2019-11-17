@@ -1,4 +1,4 @@
-import { DocumentAssembler } from 'dommodule/lib/DocumentAssembler'
+import { DocumentAssembler } from './DocumentAssembler'
 import { HTMLDocumentTypeAssembler } from './HTMLDocumentTypeAssembler'
 import { HTMLElementAssembler } from './HTMLElementAssembler'
 import { HTMLHtml } from './HTMLHtml'

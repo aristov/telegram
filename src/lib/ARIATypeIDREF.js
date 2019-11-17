@@ -1,5 +1,5 @@
-import 'dommodule/lib/DocumentAssembler'
-import { ElementAssembler } from 'dommodule/lib/ElementAssembler'
+import './DocumentAssembler'
+import { ElementAssembler } from './ElementAssembler'
 import { Role } from './Role'
 import { ARIAAttrAssembler } from './ARIAAttrAssembler'
 

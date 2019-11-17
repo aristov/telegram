@@ -1,4 +1,4 @@
-import { AttrAssembler } from 'dommodule/lib/AttrAssembler'
+import { AttrAssembler } from './AttrAssembler'
 
 const ARIA_CLASS_PREFIX_RE = /^ARIA/
 const ARIA_ATTRIBUTE_PREFIX = 'aria-'
