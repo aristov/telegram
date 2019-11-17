@@ -6,7 +6,7 @@ export class Page extends Body
 {
     init(init) {
         super.init(init)
-        this.setProperty('lastChild', this.build(init))
+        this.setProperty('children', this.build(init))
     }
 
     build(init) {

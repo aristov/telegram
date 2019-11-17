@@ -5,29 +5,15 @@ import './Option.css'
 /**
  * @summary A selectable item in a select list.
  * @see https://www.w3.org/TR/wai-aria-1.1/#option
- *
- * Not to be confused with the native Option constructor of the HTML standard
- * @see https://www.w3.org/TR/html/single-page.html#dom-htmloptionelement-option
- *
- * todo disabled
- * todo checked
- * todo no value => use textContent as value
  */
 export class Option extends RoleOption {
     /**
      * @param {{}} init
      */
-    create(init) {
-        super.create(init)
-        this._input = new HTMLInput({ type : 'hidden' })
-    }
-
-    /**
-     * @param {{}} init
-     */
     init(init) {
-        this.on('click', this.onClick)
         super.init(init)
+        this._input = new HTMLInput({ type : 'hidden' })
+        this.on('click', this.onClick)
     }
 
     /**

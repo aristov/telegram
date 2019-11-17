@@ -29,8 +29,8 @@ export class Popup extends HTMLDiv {
     /**
      * @param {{}} init
      */
-    create(init) {
-        super.create(init)
+    init(init) {
+        super.init(init)
         this._trigger = null
         this._static = true
         this.hidden = true

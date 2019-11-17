@@ -12,7 +12,7 @@
     border-radius: 50%;
     overflow: hidden;
     vertical-align: middle;
-    background: var(--color-highlight) center center / cover no-repeat;
+    background: var(--color--text-highlight) center center / cover no-repeat;
 }
 .ChatPhoto path
 {

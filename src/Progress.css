@@ -14,8 +14,8 @@
     border-color:
             transparent
             transparent
-            var(--color-highlight)
-            var(--color-highlight);
+            var(--color--text-highlight)
+            var(--color--text-highlight);
     vertical-align: middle;
     animation: Progress 0.8s infinite linear;
 }

@@ -7,12 +7,7 @@
 }
 .Option:hover
 {
-    background: var(--Option_hover--background);
-}
-.Option[aria-selected=true]
-{
-    color: var(--Option_selected--color);
-    background: var(--Option_selected--background);
+    background: var(--background-color--hover);
 }
 .Option[aria-checked]
 {

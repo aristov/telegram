@@ -17,6 +17,7 @@
 {
     opacity: .5;
 }
+[data-text] > .Label,
 [data-value] > .Label
 {
     display: none;

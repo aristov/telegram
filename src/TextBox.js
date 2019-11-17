@@ -11,8 +11,8 @@ export class TextBox extends RoleTextBox {
     /**
      * @param {{}} init
      */
-    create(init) {
-        super.create(init)
+    init(init) {
+        super.init(init)
         this.children = [
             this._box = new Box(this._edit = new Edit({
                 contentEditable : true,
@@ -27,14 +27,7 @@ export class TextBox extends RoleTextBox {
         ]
         this._placeholder = null
         this._pointerFocus = false
-    }
-
-    /**
-     * @param {{}} init
-     */
-    init(init) {
         this.on('click', this.onClick)
-        super.init(init)
     }
 
     /**

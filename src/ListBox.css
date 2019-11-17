@@ -11,7 +11,6 @@
     position: relative;
     display: block;
     overflow-y: auto;
-    border: var(--Button--border);
     border-radius: var(--Button--border-radius);
     padding: var(--ListBox--padding);
 }
@@ -19,15 +18,19 @@
 {
     border-color: var(--Button_hover--border-color);
 }
-.ListBox:focus > .Inner
+/*.ListBox:focus > .Inner
 {
     border-color: var(--Button_focus--border-color);
     box-shadow: var(--Button_focus--box-shadow);
-}
+}*/
 .ListBox:focus .Option[aria-selected=true]:active,
 .ListBox:focus .Option[aria-selected=true].active
 {
     background: var(--Option_selected_active--background);
+}
+.ListBox:not(:hover) .Option[aria-selected=true]
+{
+    background: var(--background-color--hover);
 }
 .ListBox[aria-readonly=true] > .Inner,
 .ListBox[aria-readonly=true] label
@@ -55,5 +58,5 @@
 }
 .ListBox[aria-expanded] > .Inner
 {
-    max-height: 500px;
+    max-height: 350px;
 }

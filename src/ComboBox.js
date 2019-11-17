@@ -358,6 +358,14 @@ class ComboBox extends RoleComboBox {
         return this._listBox.selectedOptions
     }
 
+    set label(label) {
+        this._textBox.label = label
+    }
+
+    get label() {
+        return this._textBox.label
+    }
+
     /**
      * @param {string} value
      */

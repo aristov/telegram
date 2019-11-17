@@ -1,6 +1,7 @@
 :root
 {
-    --color-highlight: #4ea4f6;
+    --color--text-highlight: #4ea4f6;
+    --background-color--hover: rgba(112, 117, 121, .08);
 }
 /*================================================================*/
 :root
@@ -37,8 +38,8 @@
     --Button_hover--border-color: rgba(0, 0, 0, .3);
 
     /*--Button_focus--border-color: #7ff;*/
-    --Button_focus--border-color: var(--color-highlight);
-    --Button_focus--box-shadow: 0 0 0 1px var(--color-highlight) inset;
+    --Button_focus--border-color: var(--color--text-highlight);
+    --Button_focus--box-shadow: 0 0 0 1px var(--color--text-highlight) inset;
 
     --Button_active--background: #f3f1ed;
 
@@ -48,7 +49,7 @@
     --Button_disabled--cursor: default;
 
     --Button_pressed--color: #fff;
-    --Button_pressed--background: var(--color-highlight);
+    --Button_pressed--background: var(--color--text-highlight);
     --Button_pressed_active--background: rgba(103, 192, 255, .7);
     --Button_pressed_disabled--background: rgba(0, 0, 0, .15);
 
