@@ -1,4 +1,4 @@
-import { Img } from './lib'
+import { RoleImg as Img } from './lib'
 import { Span } from 'htmlmodule'
 import { api } from './api'
 import { TdFile } from './TdFile'

@@ -1,4 +1,4 @@
-import { Main } from './lib'
+import { RoleMain as Main } from './lib'
 import { ChatHead } from './ChatHead'
 import { ChatHistory } from './ChatHistory'
 import './Chat.css'

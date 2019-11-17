@@ -1,4 +1,4 @@
-import { Form } from './lib'
+import { RoleForm as Form } from './lib'
 import './AuthForm.css'
 
 export class AuthForm extends Form
