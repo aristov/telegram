@@ -1,9 +1,9 @@
 import { Main } from 'ariamodule/lib'
 import { ChatHead } from './ChatHead'
 import { ChatHistory } from './ChatHistory'
-import './ChatMain.css'
+import './Chat.css'
 
-export class ChatMain extends Main
+export class Chat extends Main
 {
     init(init) {
         super.init(init)
@@ -24,4 +24,3 @@ export class ChatMain extends Main
         this._feed.loadMessages()
     }
 }
-
