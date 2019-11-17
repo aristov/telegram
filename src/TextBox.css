@@ -42,6 +42,10 @@
 {
     opacity: .4;
 }
+.TextBox > .Label
+{
+    cursor: text;
+}
 .TextBox:hover > .Box
 {
     border-color: var(--border-color__hover);

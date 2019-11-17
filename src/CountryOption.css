@@ -7,3 +7,9 @@
 {
     color: #aaa;
 }
+.CountryOption .CountryName
+{
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
