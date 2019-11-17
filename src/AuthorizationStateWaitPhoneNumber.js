@@ -10,11 +10,6 @@ import { TelegramLogo } from './TelegramLogo'
 
 export class AuthorizationStateWaitPhoneNumber extends AuthorizationState
 {
-    init(init) {
-        super.init(init)
-        this.setProperty('children', this.build(init))
-    }
-
     build(init) {
         return [
             new TelegramLogo,
@@ -26,6 +21,7 @@ export class AuthorizationStateWaitPhoneNumber extends AuthorizationState
             }),
             this._phoneNumberBox = new PhoneNumberBox({
                 label : new Label('Phone Number'),
+                value : '+7 903 730 7615', // fixme
                 onchange : event => this.onPhoneNumberChange(event)
             }),
             new CheckBox({
