@@ -1,9 +1,16 @@
-import 'esmodule/lib/debug'
-import { Role } from './Role'
+import { Assembler } from './Assembler'
 
-const create = Role.prototype.create
+const setTargetOf = Assembler.setTargetOf
 
-Role.prototype.create = function(init) {
-    create.call(this, init)
-    Object.defineProperty(this.node, '__role__', { value : this })
+Assembler.setTargetOf = function(instance, target) {
+    setTargetOf.call(this, instance, target)
+    Object.defineProperty(target, '__instance__', { value : instance })
+}
+
+if(typeof global !== 'undefined') {
+    global.Assembler = Assembler
+}
+
+if(typeof window !== 'undefined') {
+    window.Assembler = Assembler
 }

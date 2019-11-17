@@ -1,4 +1,4 @@
-import { Assembler } from 'esmodule'
+import { Assembler } from './Assembler'
 
 const { CustomEvent, EventTarget } = window
 const { getTargetOf } = Assembler

@@ -1,4 +1,4 @@
-import './lib/debug'
+import './lib/Role.debug'
 import { Details, Pre, Summary } from './lib'
 // import { api } from './api'
 import { FormattedText } from './FormattedText'
