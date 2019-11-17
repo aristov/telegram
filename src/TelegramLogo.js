@@ -1,4 +1,4 @@
-import { Img } from 'ariamodule/lib'
+import { Img } from './lib'
 import './TelegramLogo.css'
 
 export class TelegramLogo extends Img

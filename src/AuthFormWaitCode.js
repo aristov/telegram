@@ -1,4 +1,4 @@
-import { Heading } from 'ariamodule/lib'
+import { Heading } from './lib'
 import { Span } from 'htmlmodule'
 import { AuthCodeBox } from './AuthCodeBox'
 import { AuthForm } from './AuthForm'

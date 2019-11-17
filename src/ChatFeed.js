@@ -1,4 +1,4 @@
-import { Expanded, Feed } from 'ariamodule/lib'
+import { Expanded, Feed } from './lib'
 import { api } from './api'
 import { ChatCard } from './ChatCard'
 import { CoverProgress } from './CoverProgress'

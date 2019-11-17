@@ -1,4 +1,4 @@
-import { RoleButton } from 'ariamodule/lib/RoleButton'
+import { RoleButton } from './lib'
 import './Button.css'
 
 let undefined

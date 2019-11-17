@@ -1,4 +1,4 @@
-import { Article } from 'ariamodule/lib'
+import { Article } from './lib'
 import { api } from './api'
 import { ChatNotifier } from './ChatNotifier'
 import { ChatPhoto } from './ChatPhoto'

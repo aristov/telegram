@@ -1,5 +1,5 @@
 import moment from './moment'
-import { Feed } from 'ariamodule/lib'
+import { Feed } from './lib'
 import { api } from './api'
 import { HistoryDate } from './HistoryDate'
 import { MessageChannelPost } from './MessageChannelPost'

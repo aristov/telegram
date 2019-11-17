@@ -1,4 +1,4 @@
-import { Region } from 'ariamodule/lib'
+import { Region } from './lib'
 import { Div } from 'htmlmodule/lib'
 import { api } from './api'
 import { ChatPhoto } from './ChatPhoto'

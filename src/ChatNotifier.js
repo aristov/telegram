@@ -1,4 +1,4 @@
-import { Status } from 'ariamodule/lib'
+import { Status } from './lib'
 import { Span } from 'htmlmodule/lib'
 
 export class ChatNotifier extends Status

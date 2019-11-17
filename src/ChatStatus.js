@@ -1,5 +1,5 @@
 import moment from './moment'
-import { Status } from 'ariamodule/lib'
+import { Status } from './lib'
 import { api } from './api'
 
 export class ChatStatus extends Status

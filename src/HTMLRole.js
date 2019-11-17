@@ -1,5 +1,5 @@
-import { Role } from 'ariamodule/lib/Role'
-import { RoleRoleType } from 'ariamodule/lib/RoleRoleType'
+import { Role } from './lib'
+import { RoleRoleType } from './lib'
 import { HTMLDiv } from 'htmlmodule/lib/HTMLDiv'
 
 const ROLE_CLASS_PREFIX_RE = /^Role/

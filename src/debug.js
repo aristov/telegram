@@ -1,4 +1,4 @@
-import 'ariamodule/lib/debug'
+import './lib/debug'
 import { Details, Pre, Summary } from 'htmlmodule/lib'
 // import { api } from './api'
 import { FormattedText } from './FormattedText'

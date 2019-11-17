@@ -1,10 +1,10 @@
 import './HTMLRoleType'
-import { RoleWidget } from 'ariamodule/lib/RoleWidget'
-import { RoleTab } from 'ariamodule/lib/RoleTab'
-import { RoleComposite } from 'ariamodule/lib/RoleComposite'
-import { RoleRange } from 'ariamodule/lib/RoleRange'
-import { RoleCommand } from 'ariamodule/lib/RoleCommand'
-import { RoleInput } from 'ariamodule/lib/RoleInput'
+import { RoleWidget } from './lib'
+import { RoleTab } from './lib'
+import { RoleComposite } from './lib'
+import { RoleRange } from './lib'
+import { RoleCommand } from './lib'
+import { RoleInput } from './lib'
 import { Span } from 'htmlmodule/lib/HTMLSpan'
 
 /**

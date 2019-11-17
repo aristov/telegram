@@ -1,5 +1,5 @@
 import { HTMLInput } from 'htmlmodule/lib/HTMLInput'
-import { RoleCheckBox } from 'ariamodule/lib/RoleCheckBox'
+import { RoleCheckBox } from './lib'
 import CheckBoxSvg from './CheckBox.svg'
 import './CheckBox.css'
 

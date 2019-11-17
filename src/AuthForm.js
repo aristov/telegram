@@ -1,4 +1,4 @@
-import { Form } from 'ariamodule/lib'
+import { Form } from './lib'
 import './AuthForm.css'
 
 export class AuthForm extends Form

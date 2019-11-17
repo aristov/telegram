@@ -1,6 +1,6 @@
 import moment from './moment'
 import { Time } from 'htmlmodule/lib'
-import { Separator } from 'ariamodule/lib'
+import { Separator } from './lib'
 import { Notice } from './Notice'
 
 export class HistoryDate extends Separator

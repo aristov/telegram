@@ -1,4 +1,4 @@
-import { RoleTextBox } from 'ariamodule/lib/RoleTextBox'
+import { RoleTextBox } from './lib'
 import { Span } from 'htmlmodule/lib/HTMLSpan'
 import { TextBoxEdit } from './TextBoxEdit'
 import './TextBox.css'

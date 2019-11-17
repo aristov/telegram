@@ -1,9 +1,9 @@
 import './HTMLRole'
-import { Role } from 'ariamodule/lib/Role'
-import { RoleRoleType } from 'ariamodule/lib/RoleRoleType'
-import { RoleStructure } from 'ariamodule/lib/RoleStructure'
-import { RoleWidget } from 'ariamodule/lib/RoleWidget'
-import { RoleWindow } from 'ariamodule/lib/RoleWindow'
+import { Role } from './lib'
+import { RoleRoleType } from './lib'
+import { RoleStructure } from './lib'
+import { RoleWidget } from './lib'
+import { RoleWindow } from './lib'
 import { HTMLElementAssembler } from 'htmlmodule/lib/HTMLElementAssembler'
 
 let undefined

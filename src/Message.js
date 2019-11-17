@@ -1,4 +1,4 @@
-import { Article } from 'ariamodule/lib'
+import { Article } from './lib'
 import { MessageContent } from './MessageContent'
 import * as index from './MessageContent.index'
 import './Message.css'

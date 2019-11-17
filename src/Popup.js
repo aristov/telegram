@@ -1,7 +1,7 @@
 import 'htmlmodule/lib/HTMLDocumentAssembler'
 import './HTMLRoleType'
 import debounce from 'lodash/debounce'
-import { Expanded, MenuItem } from 'ariamodule'
+import { Expanded, MenuItem } from './lib'
 import { HTMLDiv } from 'htmlmodule/lib/HTMLDiv'
 import { Inner } from './Inner'
 import './Popup.css'

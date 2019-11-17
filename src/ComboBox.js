@@ -1,4 +1,4 @@
-import { RoleComboBox } from 'ariamodule/lib/RoleComboBox'
+import { RoleComboBox } from './lib'
 import { ListBox } from './ListBox'
 import { Option } from './Option'
 import { Popup } from './Popup'

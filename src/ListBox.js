@@ -1,5 +1,5 @@
-import { RoleListBox } from 'ariamodule/lib/RoleListBox'
-import { Selected } from 'ariamodule/lib/ARIASelected'
+import { RoleListBox } from './lib'
+import { Selected } from './lib'
 import { Inner } from './Inner'
 import { Option } from './Option'
 import './ListBox.css'

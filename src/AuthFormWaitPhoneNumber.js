@@ -1,4 +1,4 @@
-import { Heading } from 'ariamodule/lib'
+import { Heading } from './lib'
 import { HTMLLabel } from 'htmlmodule/lib'
 import { AuthForm } from './AuthForm'
 import { AuthMessage } from './AuthMessage'

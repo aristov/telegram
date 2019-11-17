@@ -1,4 +1,4 @@
-import { RoleOption } from 'ariamodule/lib/RoleOption'
+import { RoleOption } from './lib'
 import './Option.css'
 
 /**
