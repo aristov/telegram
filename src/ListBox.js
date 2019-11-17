@@ -9,30 +9,20 @@ const VALUE_SEPARATOR = ','
 /**
  * @summary A widget that allows the user to select one or more items from a list of choices.
  * @see https://www.w3.org/TR/wai-aria-1.1/#listbox
- * todo Home + End + PageDown + PageUp
- * todo Type-ahead
- * todo orientation = horizontal
  */
 class ListBox extends RoleListBox {
     /**
      * @param {{}} init
      */
-    create(init) {
-        super.create(init)
+    init(init) {
+        super.init(init)
         this._name = ''
         this._box = null
         this.tabIndex = 0
-    }
-
-    /**
-     * @param {{}} init
-     */
-    init(init) {
         this.on('keydown', this.onKeyDown)
         this.on('keyup', this.onKeyUp)
         this.on('mousedown', this.onMouseDown)
         this.on('touchstart', this.onMouseDown)
-        super.init(init)
     }
 
     /**
@@ -103,7 +93,6 @@ class ListBox extends RoleListBox {
         const options = this.options
         if(this.selectedOptions.length < options.length) {
             for(const option of options) {
-                option._input.parentNode = option // fixme
                 option.setAttr(Selected, true)
             }
             this._anchor = options[0]
@@ -242,14 +231,9 @@ class ListBox extends RoleListBox {
      */
     update() {
         super.activeDescendant = this.selectedOptions[0] || null
-        this._anchor = this.multiSelectable? this.activeDescendant : null
-        if(this.name) {
-            for(const option of this.options) {
-                if(!option.name) {
-                    option.name = this.name
-                }
-            }
-        }
+        this._anchor = this.multiSelectable?
+            this.activeDescendant :
+            null
     }
 
     /**
@@ -263,7 +247,6 @@ class ListBox extends RoleListBox {
         const range = options.slice(Math.min(index1, index2), Math.max(index1, index2) + 1)
         for(const option of options) {
             if(range.includes(option)) {
-                option._input.parentNode = option // fixme
                 option.setAttr(Selected, true)
             }
             else option.selected = false
@@ -298,19 +281,14 @@ class ListBox extends RoleListBox {
      * @param {string} name
      */
     set name(name) {
-        for(const option of this.options) {
-            if(!option.name) {
-                option.name = name
-            }
-        }
-        this._name = name
+        this.dataset.name = name
     }
 
     /**
      * @return {string}
      */
     get name() {
-        return this._name
+        return this.dataset.name
     }
 
     /**

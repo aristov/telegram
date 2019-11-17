@@ -239,7 +239,9 @@ export class Popup extends HTMLDiv {
     onPopupClick(event) {
         const trigger = this._trigger
         trigger && trigger.focus()
-        this.expanded = false
+        if(this.emit('cancel', { cancelable : true })) {
+            this.expanded = false
+        }
     }
 
     /**
@@ -251,7 +253,9 @@ export class Popup extends HTMLDiv {
      * @param {MouseEvent} event
      */
     onOutsideClick(event) {
-        this.expanded = false
+        if(this.emit('cancel', { cancelable : true })) {
+            this.expanded = false
+        }
     }
 
     /**
@@ -291,7 +295,9 @@ export class Popup extends HTMLDiv {
      * @param {FocusEvent} event
      */
     onOutsideFocusIn(event) {
-        this.expanded = false
+        if(this.emit('cancel', { cancelable : true })) {
+            this.expanded = false
+        }
     }
 
     /**
@@ -307,7 +313,9 @@ export class Popup extends HTMLDiv {
      * @param {KeyboardEvent} event
      */
     onEscapeKeyDown(event) {
-        this.expanded = false
+        if(this.emit('cancel', { cancelable : true })) {
+            this.expanded = false
+        }
     }
 
     /**
@@ -327,6 +335,22 @@ export class Popup extends HTMLDiv {
      */
     get expanded() {
         return this.getAttr(Expanded)
+    }
+
+    /**
+     * @param {boolean} hidden
+     */
+    set hidden(hidden) {
+        if(super.hidden = hidden) {
+            this._static || this.remove()
+        }
+    }
+
+    /**
+     * @returns {boolean}
+     */
+    get hidden() {
+        return super.hidden
     }
 
     /**

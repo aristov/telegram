@@ -15,6 +15,7 @@ export class TextBox extends RoleTextBox {
         super.init(init)
         this.children = [
             this._box = new Box(this._edit = new Edit({
+                tabIndex : 0,
                 contentEditable : true,
                 onblur : event => this.onBlur(event),
                 onfocus : event => this.onFocus(event),
@@ -180,7 +181,6 @@ export class TextBox extends RoleTextBox {
     set readOnly(readOnly) {
         super.readOnly = readOnly
         this._edit.contentEditable = !readOnly
-        this._edit.tabIndex = readOnly? 0 : null
     }
 
     /**
@@ -194,11 +194,12 @@ export class TextBox extends RoleTextBox {
      * @param {string} value
      */
     set value(value) {
-        this._edit.innerHTML = value.replace(/\s/g, '&nbsp;')
         if(value) {
+            this._edit.innerHTML = value.replace(/\s/g, '&nbsp;')
             this.dataset.value = this._input.value = value.replace(/\s/g, ' ')
         }
         else {
+            this._edit.innerHTML = ''
             this._input.value = ''
             delete this.dataset.value
         }

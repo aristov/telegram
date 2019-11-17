@@ -5,6 +5,7 @@ export class CountryBox extends ComboBox
 {
     init(init) {
         super.init(init)
+        this.autoComplete = 'list'
         this.options = CountryBoxJson.map(country => {
             return new Option({
                 value : country.country_code,

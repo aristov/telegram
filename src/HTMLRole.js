@@ -42,9 +42,12 @@ export class HTMLRole extends Role {
      * @param {string} value
      */
     setPropertyFallback(name, value) {
-        const ownerElement = this.ownerElement
+        const { ownerElement, node } = this
         if(name in ownerElement) {
-            this.ownerElement.setProperty(name, value)
+            ownerElement.setProperty(name, value)
+        }
+        else if(name in node) {
+            node[name] = value
         }
         else this.setPropertyMismatch(name, value)
     }
