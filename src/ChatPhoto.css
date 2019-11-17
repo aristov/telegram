@@ -1,4 +1,5 @@
-.ChatPhoto
+.ChatPhoto,
+.UserPhoto /* fixme */
 {
     color: #fff;
     font-size: 1.4rem;
@@ -17,4 +18,9 @@
 .ChatPhoto path
 {
     fill: #fff;
+}
+.UserPhoto
+{
+    width: 33px;
+    height: 33px;
 }

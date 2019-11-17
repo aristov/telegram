@@ -9,3 +9,7 @@
     padding-left: 420px;
     box-sizing: border-box;
 }
+.ChatTypeBasicGroup:not(.ChatChannel) .MessageIncoming
+{
+    padding-left: 40px;
+}

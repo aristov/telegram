@@ -33,6 +33,15 @@
     margin: 10px auto 15px;
     display: block;
 }
+.MessageContent .UserName
+{
+    color: var(--color__text-highlight);
+    padding: 7px 10px 0;
+}
+.MessageContent .UserName + .FormattedText
+{
+    padding-top: 3px;
+}
 .MessageContent.MessageTypeService
 {
     margin: 0 auto;

@@ -58,18 +58,17 @@ export class ChatHistory extends Feed
                 this.prepend(new HistoryDate({ date }))
                 date = moment.unix(message.date)
             }
-            this.prepend(this.getMessageType(message))
+            const messageType = this.getMessageType(message)
+            this.prepend(new messageType({ chat : this.chat, message }))
         }
         node.scrollTo(0, node.scrollHeight - this._scrollDelta)
     }
 
     getMessageType(message) {
         if(message.is_channel_post) {
-            return new MessageChannelPost({ message })
+            return MessageChannelPost
         }
-        return message.is_outgoing?
-            new MessageOutgoing({ message }) :
-            new MessageIncoming({ message })
+        return message.is_outgoing? MessageOutgoing : MessageIncoming
     }
 
     saveScrollDelta() {
