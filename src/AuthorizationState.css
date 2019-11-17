@@ -28,3 +28,12 @@
     display: block;
     width: 100%;
 }
+.AuthorizationState .SubmitButton
+{
+    display: block;
+    margin: 40px 0;
+}
+.AuthorizationState .SubmitButton[aria-disabled=true]
+{
+    opacity: 0;
+}

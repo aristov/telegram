@@ -5,14 +5,14 @@
     --padding__widget: 15px;
     --border-color__widget: rgba(0, 0, 0, .15);
     --border__widget: 1px solid var(--border-color__widget);
+    --border-radius__widget: 10px;
     --margin__widget: 25px 15px 25px 0;
 
     --background-color__hover: rgba(112, 117, 121, .08);
     --border-color__hover: rgba(0, 0, 0, .3);
 
+    --border-color__focus: var(--color__text-highlight);
     --box-shadow__focus: 0 0 0 1px var(--color__text-highlight) inset;
-
-    --background-color__active: #f3f1ed;
 
     --color__disabled: rgba(0, 0, 0, .5);
     --background__disabled: #e8e8e8;

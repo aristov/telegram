@@ -27,3 +27,7 @@
 {
     opacity: .5;
 }
+[aria-invalid=true] > .Label
+{
+    color: #f00;
+}

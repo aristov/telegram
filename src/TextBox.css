@@ -12,7 +12,7 @@
     width: 200px;
     padding: 0 15px 0;
     border: var(--border__widget);
-    border-radius: 10px;
+    border-radius: var(--border-radius__widget);
     vertical-align: middle;
 }
 .TextBox .Edit
@@ -72,6 +72,10 @@
 .TextBox[aria-disabled=true]:not([data-value]) .Edit::after
 {
     content: ' ';
+}
+.TextBox[aria-invalid=true] > .Box
+{
+    border-color: #f00;
 }
 .TextBox[aria-multiline] .Edit
 {

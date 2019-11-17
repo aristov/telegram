@@ -1,60 +1,21 @@
 import { RoleTextBox } from 'ariamodule/lib/RoleTextBox'
-import { HTMLInput } from 'htmlmodule/lib/HTMLInput'
 import { HTMLSpan } from 'htmlmodule/lib/HTMLSpan'
 import './TextBox.css'
 
-/**
- * @summary A type of input that allows free-form text as its value.
- * @see https://www.w3.org/TR/wai-aria-1.1/#textbox
- */
-export class TextBox extends RoleTextBox {
-    /**
-     * @param {{}} init
-     */
+class Box extends HTMLSpan {}
+class Edit extends HTMLSpan {}
+class Placeholder extends HTMLSpan {}
+
+class TextBoxEdit extends Edit
+{
     init(init) {
         super.init(init)
-        this.children = [
-            this._box = new Box(this._edit = new Edit({
-                tabIndex : 0,
-                contentEditable : true,
-                onblur : event => this.onBlur(event),
-                onfocus : event => this.onFocus(event),
-                oninput : event => this.onInput(event),
-                onkeydown : event => this.onKeyDown(event),
-                onmousedown : event => this.onMouseDown(event),
-                onpaste : event => this.onPaste(event)
-            })),
-            this._input = new HTMLInput({ type : 'hidden' })
-        ]
-        this._placeholder = null
         this._pointerFocus = false
-        this.on('click', this.onClick)
-    }
-
-    /**
-     * Focus the input
-     */
-    focus() {
-        this._edit.focus()
-    }
-
-    /**
-     * @param {MouseEvent} event
-     */
-    onClick(event) {
-        if(this.disabled) {
-            event.stopImmediatePropagation()
-        }
-        else if([this._box, ...this.labelledBy].some(label => label.contains(event.target))) {
-            this.focus()
-        }
-    }
-
-    /**
-     * @param {FocusEvent} event
-     */
-    onBlur(event) {
-        this.classList.remove('focus')
+        this.tabIndex = 0,
+        this.contentEditable = 'true'
+        this.on('focus', this.onFocus)
+        this.on('mousedown', this.onMouseDown)
+        this.on('paste', this.onPaste)
     }
 
     /**
@@ -64,35 +25,7 @@ export class TextBox extends RoleTextBox {
         if(this._pointerFocus) {
             this._pointerFocus = false
         }
-        // else getSelection().selectAllChildren(this._edit.node)
-        this.classList.add('focus')
-    }
-
-    /**
-     * @param {InputEvent} event
-     */
-    onInput(event) {
-        const value = this._input.value = this._edit.textContent.replace(/\s/g, ' ')
-        if(value) {
-            this.dataset.value = value
-        }
-        else delete this.dataset.value
-    }
-
-    /**
-     * @param {KeyboardEvent} event
-     */
-    onKeyDown(event) {
-        if(event.key === 'Enter') {
-            this.onEnterKeyDown(event)
-        }
-    }
-
-    /**
-     * @param {KeyboardEvent} event
-     */
-    onEnterKeyDown(event) {
-        this.multiLine || event.preventDefault()
+        // else getSelection().selectAllChildren(this.node)
     }
 
     /**
@@ -122,13 +55,127 @@ export class TextBox extends RoleTextBox {
         this.emit('input', { bubbles : true })
     }
 
+    set disabled(disabled) {
+        this._disabled = disabled
+        this.contentEditable = String(!disabled)
+    }
+
+    get disabled() {
+        return this._disabled
+    }
+
+    set readOnly(readOnly) {
+        this._readOnly = readOnly
+        this.contentEditable = String(!readOnly)
+    }
+
+    get readOnly() {
+        return this._readOnly
+    }
+
+    set value(value) {
+        this.innerHTML = value.replace(/\s/g, '&nbsp;')
+    }
+
+    get value() {
+        return this.textContent.replace(/\s/g, ' ')
+    }
+}
+
+/**
+ * @summary A type of input that allows free-form text as its value.
+ * @see https://www.w3.org/TR/wai-aria-1.1/#textbox
+ */
+export class TextBox extends RoleTextBox {
+    /**
+     * @param {{}} init
+     */
+    init(init) {
+        super.init(init)
+        this._placeholder = null
+        this.children = this.build(init)
+        this.on('focusin', this.onFocusIn)
+        this.on('focusout', this.onFocusOut)
+        this.on('click', this.onClick)
+        this.on('input', this.onInput)
+        this.on('keydown', this.onKeyDown)
+    }
+
+    build(init) {
+        return this._box = new Box(this._edit = this.buildEdit(init))
+    }
+
+    buildEdit(init) {
+        return new TextBoxEdit
+    }
+
+    /**
+     * Focus the input
+     */
+    focus() {
+        this._edit.focus()
+    }
+
+    /**
+     * @param {FocusEvent} event
+     */
+    onFocusIn(event) {
+        this.classList.add('focus')
+    }
+
+    /**
+     * @param {FocusEvent} event
+     */
+    onFocusOut(event) {
+        this.classList.remove('focus')
+    }
+
+    /**
+     * @param {MouseEvent} event
+     */
+    onClick(event) {
+        if(this.disabled) {
+            event.stopImmediatePropagation()
+            return
+        }
+        const items = [this._box, ...this.labelledBy]
+        if(items.some(item => item.contains(event.target))) {
+            this.focus()
+        }
+    }
+
+    /**
+     * @param {InputEvent} event
+     */
+    onInput(event) {
+        const value = this._edit.value
+        if(value) {
+            this.dataset.value = value
+        }
+        else delete this.dataset.value
+    }
+
+    /**
+     * @param {KeyboardEvent} event
+     */
+    onKeyDown(event) {
+        if(event.key === 'Enter') {
+            this.onEnterKeyDown(event)
+        }
+    }
+
+    /**
+     * @param {KeyboardEvent} event
+     */
+    onEnterKeyDown(event) {
+        this.multiLine || event.preventDefault()
+    }
+
     /**
      * @param {boolean} disabled
      */
     set disabled(disabled) {
-        super.disabled = disabled
-        this._edit.contentEditable = !disabled
-        this._input.parentNode = disabled? null : this
+        super.disabled = this._edit.disabled = disabled
     }
 
     /**
@@ -142,14 +189,14 @@ export class TextBox extends RoleTextBox {
      * @param {string} name
      */
     set name(name) {
-        this._input.name = name
+        this.dataset.name = name
     }
 
     /**
      * @return {string}
      */
     get name() {
-        return this._input.name
+        return this.dataset.name
     }
 
     /**
@@ -160,12 +207,7 @@ export class TextBox extends RoleTextBox {
         if(this._placeholder) {
             this._placeholder.textContent = placeholder
         }
-        else {
-            this._placeholder = new Placeholder({
-                nextSibling : this._edit,
-                textContent : placeholder
-            })
-        }
+        else this._edit.before(this._placeholder = new Placeholder(placeholder))
     }
 
     /**
@@ -179,8 +221,7 @@ export class TextBox extends RoleTextBox {
      * @param {boolean} readOnly
      */
     set readOnly(readOnly) {
-        super.readOnly = readOnly
-        this._edit.contentEditable = !readOnly
+        super.readOnly = this._edit.readOnly = readOnly
     }
 
     /**
@@ -194,15 +235,10 @@ export class TextBox extends RoleTextBox {
      * @param {string} value
      */
     set value(value) {
-        if(value) {
-            this._edit.innerHTML = value.replace(/\s/g, '&nbsp;')
-            this.dataset.value = this._input.value = value.replace(/\s/g, ' ')
+        if(this._edit.value = value) {
+            this.dataset.value = value.replace(/\s/g, ' ')
         }
-        else {
-            this._edit.innerHTML = ''
-            this._input.value = ''
-            delete this.dataset.value
-        }
+        else delete this.dataset.value
     }
 
     /**
@@ -212,11 +248,3 @@ export class TextBox extends RoleTextBox {
         return this.dataset.value || ''
     }
 }
-
-class Box extends HTMLSpan {}
-class Edit extends HTMLSpan {}
-class Placeholder extends HTMLSpan {}
-
-TextBox.Box = Box
-TextBox.Edit = Edit
-TextBox.Placeholder = Placeholder

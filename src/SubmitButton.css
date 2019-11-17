@@ -1,0 +1,15 @@
+.SubmitButton
+{
+    color: #fff;
+    background: var(--color__text-highlight);
+}
+.SubmitButton:hover,
+.SubmitButton:focus
+{
+    opacity: .9;
+}
+.SubmitButton:active,
+.SubmitButton.active
+{
+    opacity: .8;
+}

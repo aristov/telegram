@@ -24,21 +24,19 @@
 {
     fill: var(--border-color__hover);
 }
-.CheckBox:active svg *,
-.CheckBox.active svg *
-{
-    fill: var(--background-color__active);
-}
 .CheckBox:focus svg *,
 .CheckBox[aria-checked=true] svg *
 {
     fill: var(--color__text-highlight);
 }
+.CheckBox:focus label
+{
+    color: var(--color__text-highlight);
+}
 .CheckBox:not([aria-disabled=true]) label
 {
     cursor: pointer;
 }
-
 .CheckBox[aria-checked=true] svg .CheckBox_checked_false,
 .CheckBox:not([aria-checked=true]) svg .CheckBox_checked_true
 {

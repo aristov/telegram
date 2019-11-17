@@ -8,7 +8,7 @@ export class CountryOption extends Option
         super.init(init)
         this.children = [
             new CountryName(this._text = init.country.country_name),
-            new CountryCode('+' + init.country.country_code)
+            new CountryCode(this.value = '+' + init.country.country_code)
         ]
     }
 

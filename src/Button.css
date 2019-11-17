@@ -1,0 +1,32 @@
+.Button
+{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 120px;
+    padding: var(--padding__widget);
+    border: var(--border__widget);
+    border-radius: var(--border-radius__widget);
+}
+.Button:hover
+{
+    border-color: var(--border-color__hover);
+}
+.Button:focus
+{
+    border-color: var(--border-color__focus);
+    box-shadow: var(--box-shadow__focus);
+}
+.Button[aria-disabled=true]
+{
+    cursor: var(--cursor__disabled);
+    color: var(--color__disabled);
+    background: var(--background__disabled);
+    border-color: var(--border-color__disabled);
+}
