@@ -1,0 +1,39 @@
+.AuthForm
+{
+    line-height: 1.35;
+}
+.AuthForm,
+.AuthForm .ListBox
+{
+    width: 360px;
+}
+.AuthForm .Heading
+{
+    font-size: 32px;
+    margin: 40px auto 15px;
+    width: fit-content;
+}
+.AuthForm .AuthorizationMessage
+{
+    color: rgba(0, 0, 0, .4);
+    width: 250px;
+    text-align: center;
+    margin: 0 auto 48px;
+}
+.AuthForm .ComboBox,
+.AuthForm .ComboBox > .Box,
+.AuthForm .TextBox,
+.AuthForm .TextBox > .Box
+{
+    display: block;
+    width: 100%;
+}
+.AuthForm .SubmitButton
+{
+    display: block;
+    margin: 40px 0;
+}
+.AuthForm .SubmitButton[aria-disabled=true]
+{
+    opacity: 0;
+}

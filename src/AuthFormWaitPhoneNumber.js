@@ -1,6 +1,6 @@
 import { Heading } from 'ariamodule/lib'
 import { Div, HTMLLabel } from 'htmlmodule/lib'
-import { AuthorizationState } from './AuthorizationState'
+import { AuthForm } from './AuthForm'
 import { CheckBox } from './CheckBox'
 import { CountryBox } from './CountryBox'
 import { Label } from './Label'
@@ -8,7 +8,7 @@ import { PhoneNumberBox } from './PhoneNumberBox'
 import { SubmitButton } from './SubmitButton'
 import { TelegramLogo } from './TelegramLogo'
 
-export class AuthorizationStateWaitPhoneNumber extends AuthorizationState
+export class AuthFormWaitPhoneNumber extends AuthForm
 {
     build(init) {
         return [

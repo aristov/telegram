@@ -1,7 +1,7 @@
 import { Form } from 'ariamodule/lib'
-import './AuthorizationState.css'
+import './AuthForm.css'
 
-export class AuthorizationState extends Form
+export class AuthForm extends Form
 {
     init(init) {
         super.init(init)
