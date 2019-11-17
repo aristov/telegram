@@ -1,4 +1,4 @@
-import { Img } from 'htmlmodule/lib'
+import { HTMLImg as Img } from './lib'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MediaContainer } from './MediaContainer'

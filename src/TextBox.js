@@ -1,5 +1,5 @@
 import { RoleTextBox } from './lib'
-import { Span } from 'htmlmodule/lib/HTMLSpan'
+import { Span } from './lib/HTMLSpan'
 import { TextBoxEdit } from './TextBoxEdit'
 import './TextBox.css'
 

@@ -1,4 +1,4 @@
-import { Img } from 'htmlmodule/lib'
+import { HTMLImg as Img } from './lib'
 import { MediaContainer } from './MediaContainer'
 import { MessageContent } from './MessageContent'
 import { PublicationTime } from './PublicationTime'

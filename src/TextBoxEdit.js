@@ -1,4 +1,4 @@
-import { Span } from 'htmlmodule/lib'
+import { Span } from './lib'
 
 class Edit extends Span
 {

@@ -1,5 +1,5 @@
 import './lib/debug'
-import { Details, Pre, Summary } from 'htmlmodule/lib'
+import { Details, Pre, Summary } from './lib'
 // import { api } from './api'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'

@@ -1,5 +1,5 @@
 import { RoleImg as Img } from './lib'
-import { Span } from 'htmlmodule'
+import { Span } from './lib'
 import { api } from './api'
 import { TdFile } from './TdFile'
 import savedmessages_svg from './icons/savedmessages_svg.svg'

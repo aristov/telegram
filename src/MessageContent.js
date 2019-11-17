@@ -1,4 +1,4 @@
-import { Div } from 'htmlmodule'
+import { Div } from './lib'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import './MessageContent.css'

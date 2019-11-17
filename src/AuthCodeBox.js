@@ -1,4 +1,4 @@
-import { Input } from 'htmlmodule/lib'
+import { HTMLInput as Input } from './lib'
 import { InputBox } from './InputBox'
 
 export class AuthCodeBox extends InputBox

@@ -1,5 +1,5 @@
 import moment from './moment'
-import { Time } from 'htmlmodule/lib'
+import { Time } from './lib'
 import { Separator } from './lib'
 import { Notice } from './Notice'
 

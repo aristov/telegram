@@ -1,5 +1,5 @@
 import { Status } from './lib'
-import { Span } from 'htmlmodule/lib'
+import { Span } from './lib'
 
 export class ChatNotifier extends Status
 {

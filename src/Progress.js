@@ -1,4 +1,4 @@
-import { Span } from 'htmlmodule'
+import { Span } from './lib'
 import './Progress.css'
 
 export class Progress extends Span {}

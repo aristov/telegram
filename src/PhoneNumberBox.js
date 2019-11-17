@@ -1,4 +1,4 @@
-import { Input } from 'htmlmodule/lib'
+import { HTMLInput as Input } from './lib'
 import { InputBox } from './InputBox'
 
 const REPLACE_RE = /[+\-\s.()\[\]]+/g

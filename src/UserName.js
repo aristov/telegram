@@ -1,4 +1,4 @@
-import { Div } from 'htmlmodule/lib'
+import { Div } from './lib'
 import { api } from './api'
 import { TdUser } from './TdUser'
 

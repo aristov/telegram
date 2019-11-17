@@ -1,4 +1,4 @@
-import { Div } from 'htmlmodule/lib'
+import { Div } from './lib'
 import './FormattedText.css'
 
 export class FormattedText extends Div

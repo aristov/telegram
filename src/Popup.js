@@ -1,8 +1,8 @@
-import 'htmlmodule/lib/HTMLDocumentAssembler'
+import './lib/HTMLDocumentAssembler'
 import './HTMLRoleType'
 import debounce from 'lodash/debounce'
 import { Expanded, MenuItem } from './lib'
-import { HTMLDiv } from 'htmlmodule/lib/HTMLDiv'
+import { HTMLDiv } from './lib/HTMLDiv'
 import { Inner } from './Inner'
 import './Popup.css'
 

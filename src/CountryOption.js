@@ -1,4 +1,4 @@
-import { Span } from 'htmlmodule'
+import { Span } from './lib'
 import { Option } from './Option'
 import './CountryOption.css'
 

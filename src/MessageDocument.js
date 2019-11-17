@@ -1,4 +1,4 @@
-import { A, Data } from 'htmlmodule/lib'
+import { A, Data } from './lib'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MessageContent } from './MessageContent'

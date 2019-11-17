@@ -4,7 +4,7 @@ import { RoleRoleType } from './lib'
 import { RoleStructure } from './lib'
 import { RoleWidget } from './lib'
 import { RoleWindow } from './lib'
-import { HTMLElementAssembler } from 'htmlmodule/lib/HTMLElementAssembler'
+import { HTMLElementAssembler } from './lib/HTMLElementAssembler'
 
 let undefined
 const tabIndexKey = Symbol()

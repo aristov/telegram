@@ -1,5 +1,5 @@
 import { Region } from './lib'
-import { Div } from 'htmlmodule/lib'
+import { Div } from './lib'
 import { api } from './api'
 import { ChatPhoto } from './ChatPhoto'
 import { ChatStatus } from './ChatStatus'

@@ -1,4 +1,4 @@
-import { Body } from 'htmlmodule/lib'
+import { Body } from './lib'
 import { CoverProgress } from './CoverProgress'
 import './Page.css'
 

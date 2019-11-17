@@ -5,7 +5,7 @@ import { RoleComposite } from './lib'
 import { RoleRange } from './lib'
 import { RoleCommand } from './lib'
 import { RoleInput } from './lib'
-import { Span } from 'htmlmodule/lib/HTMLSpan'
+import { Span } from './lib/HTMLSpan'
 
 /**
  * @summary An interactive component of a graphical user interface (GUI).

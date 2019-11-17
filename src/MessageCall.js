@@ -1,4 +1,4 @@
-import { Div, Time } from 'htmlmodule/lib'
+import { Div, Time } from './lib'
 import { api } from './api'
 import { CallTimeInfo } from './CallTimeInfo'
 import { Bubble } from './Bubble'

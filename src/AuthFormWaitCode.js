@@ -1,5 +1,5 @@
 import { Heading } from './lib'
-import { Span } from 'htmlmodule'
+import { Span } from './lib'
 import { AuthCodeBox } from './AuthCodeBox'
 import { AuthForm } from './AuthForm'
 import { AuthMessage } from './AuthMessage'

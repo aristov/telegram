@@ -1,4 +1,4 @@
-import { HTMLInput } from 'htmlmodule/lib/HTMLInput'
+import { HTMLInput } from './lib/HTMLInput'
 import { RoleCheckBox } from './lib'
 import CheckBoxSvg from './CheckBox.svg'
 import './CheckBox.css'

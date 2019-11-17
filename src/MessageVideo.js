@@ -1,4 +1,4 @@
-import { Video } from 'htmlmodule/lib'
+import { Video } from './lib'
 import { Bubble } from './Bubble'
 import { FormattedText } from './FormattedText'
 import { MediaContainer } from './MediaContainer'

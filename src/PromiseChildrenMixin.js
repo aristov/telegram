@@ -1,4 +1,4 @@
-import { HTMLElementAssembler } from 'htmlmodule/lib'
+import { HTMLElementAssembler } from './lib'
 import { HTMLRole } from './HTMLRole'
 
 const proto = HTMLElementAssembler.ParentNodeAssembler.prototype

@@ -1,5 +1,5 @@
 import { Heading } from './lib'
-import { HTMLLabel } from 'htmlmodule/lib'
+import { HTMLLabel } from './lib'
 import { AuthForm } from './AuthForm'
 import { AuthMessage } from './AuthMessage'
 import { CheckBox } from './CheckBox'

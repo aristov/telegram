@@ -1,4 +1,4 @@
-import { Div } from 'htmlmodule/lib'
+import { Div } from './lib'
 
 export class AuthMessage extends Div
 {
